@@ -1,7 +1,9 @@
 using UnityEngine;
 
 public class Character : MonoBehaviour
-{
+{/// <summary>
+ ///  hallo 
+ /// </summary>
     public int health = 100;
     public float speed = 3f; 
 
