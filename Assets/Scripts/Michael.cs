@@ -2,30 +2,24 @@ using UnityEngine;
 
 public class Michael : Character
 {
-    protected Animator animator;
-    private string currentAnimation = "";
-    private int lastDirection = 0;
+    private bool isAttacking = false;
 
-    protected override void Awake()
-    {
-        base.Awake();
-        animator = GetComponent<Animator>();
-    }
-
-    void Update()
+    protected override void Update()
     {
         HandleInput();
-        UpdateAnimator();
+        HandleAttack();
+        base.Update(); 
     }
 
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
-    }
-
-    // input for wasd (DO NOT USE NEW ANIMATION INPUTS)
+    // movement 
     private void HandleInput()
     {
+        if (isAttacking)
+        {
+            SetMovement(Vector2.zero);
+            return;
+        }
+
         Vector2 input = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
@@ -34,39 +28,48 @@ public class Michael : Character
         SetMovement(input);
     }
 
-    // Animation code
-    private void UpdateAnimator()
+    //attack system
+    private void HandleAttack()
     {
-        if (animator == null) return;
+        bool holding = Input.GetKey(KeyCode.Space);
+
+        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+
+        // start attack if not already attacking
+        if (holding && !isAttacking)
+        {
+            StartAttack();
+        }
+
+        // check if current animation finished
+        if (isAttacking && state.IsName("Attack" + GetLastDirection()) && state.normalizedTime >= 1f)
+        {
+            isAttacking = false;
+        }
+    }
+
+    private void StartAttack()
+    {
+        isAttacking = true;
 
         int direction = GetDirection();
 
-        // store last direction for idle
-        if (direction != -1)
+        // fallback if not moving
+        if (direction == -1)
         {
-            lastDirection = direction;
+            direction = GetLastDirection();
         }
 
-        // decide animation
-        string animName;
-
-        if (movement == Vector2.zero)
-        {
-            animName = "Idle" + lastDirection;
-        }
-        else
-        {
-            animName = "Run" + direction;
-        }
+        string animName = "Attack" + direction;
 
         PlayAnimation(animName);
     }
 
-    private void PlayAnimation(string animName)
+    // override animation so attack takes priority
+    protected override void UpdateAnimator()
     {
-        if (currentAnimation == animName) return;
+        if (isAttacking) return;
 
-        animator.Play(animName);
-        currentAnimation = animName;
+        base.UpdateAnimator();
     }
 }
