@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 305879eed26e6fa468ae3f5e4f0ce632
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5707399615644425241
+    second: GreatSwordKnight_ReadyIdle2_dir4_0
+  - first:
+      213: -8289720128629951039
+    second: GreatSwordKnight_ReadyIdle2_dir4_1
+  - first:
+      213: -6374487594507611534
+    second: GreatSwordKnight_ReadyIdle2_dir4_2
+  - first:
+      213: 7926416579547484880
+    second: GreatSwordKnight_ReadyIdle2_dir4_3
+  - first:
+      213: 5085687475002019039
+    second: GreatSwordKnight_ReadyIdle2_dir4_4
+  - first:
+      213: -1912224907871202951
+    second: GreatSwordKnight_ReadyIdle2_dir4_5
+  - first:
+      213: 8717351094556073489
+    second: GreatSwordKnight_ReadyIdle2_dir4_6
+  - first:
+      213: 3935405070160775688
+    second: GreatSwordKnight_ReadyIdle2_dir4_7
+  - first:
+      213: 6023909444877446917
+    second: GreatSwordKnight_ReadyIdle2_dir4_8
+  - first:
+      213: -4402711820490876945
+    second: GreatSwordKnight_ReadyIdle2_dir4_9
+  - first:
+      213: -1654853540726371724
+    second: GreatSwordKnight_ReadyIdle2_dir4_10
+  - first:
+      213: 8868334984473443876
+    second: GreatSwordKnight_ReadyIdle2_dir4_11
+  - first:
+      213: -7800864440918210414
+    second: GreatSwordKnight_ReadyIdle2_dir4_12
+  - first:
+      213: -8507798394578178456
+    second: GreatSwordKnight_ReadyIdle2_dir4_13
+  - first:
+      213: 8143392666667241109
+    second: GreatSwordKnight_ReadyIdle2_dir4_14
+  - first:
+      213: -4686061891532084578
+    second: GreatSwordKnight_ReadyIdle2_dir4_15
+  - first:
+      213: 8031562151931106914
+    second: GreatSwordKnight_ReadyIdle2_dir4_16
+  - first:
+      213: 8132131660694409781
+    second: GreatSwordKnight_ReadyIdle2_dir4_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_0
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1774
+        width: 67
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e32056e94e3bc0b0800000000000000
+      internalID: -5707399615644425241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_1
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1774
+        width: 67
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c53b9db67ff4fc80800000000000000
+      internalID: -8289720128629951039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_2
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1774
+        width: 68
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2725d386e454987a0800000000000000
+      internalID: -6374487594507611534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_3
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1774
+        width: 69
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2d1b512e9400e60800000000000000
+      internalID: 7926416579547484880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_4
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1774
+        width: 70
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc062a30ddf39640800000000000000
+      internalID: 5085687475002019039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1262
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971dea3e3996675e0800000000000000
+      internalID: -1912224907871202951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_6
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1262
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e906d42a04af870800000000000000
+      internalID: 8717351094556073489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_7
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1262
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a44368f0e5d9630800000000000000
+      internalID: 3935405070160775688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_8
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1262
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f6a0d59b9399350800000000000000
+      internalID: 6023909444877446917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_9
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1262
+        width: 71
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe75a330dec66e2c0800000000000000
+      internalID: -4402711820490876945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_10
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 750
+        width: 69
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a05b5f877c809e0800000000000000
+      internalID: -1654853540726371724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 750
+        width: 68
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e75b29ea7a21b70800000000000000
+      internalID: 8868334984473443876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_12
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 750
+        width: 68
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298081a2f13cdb390800000000000000
+      internalID: -7800864440918210414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_13
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 750
+        width: 70
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e6786bf6a3ee980800000000000000
+      internalID: -8507798394578178456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_14
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 750
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ec83b1c74230170800000000000000
+      internalID: 8143392666667241109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 238
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a2cb79983c7feb0800000000000000
+      internalID: -4686061891532084578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_16
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 238
+        width: 71
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26653516937d57f60800000000000000
+      internalID: 8031562151931106914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_ReadyIdle2_dir4_17
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 238
+        width: 69
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532d566d8a22bd070800000000000000
+      internalID: 8132131660694409781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GreatSwordKnight_ReadyIdle2_dir4_0: -5707399615644425241
+      GreatSwordKnight_ReadyIdle2_dir4_1: -8289720128629951039
+      GreatSwordKnight_ReadyIdle2_dir4_10: -1654853540726371724
+      GreatSwordKnight_ReadyIdle2_dir4_11: 8868334984473443876
+      GreatSwordKnight_ReadyIdle2_dir4_12: -7800864440918210414
+      GreatSwordKnight_ReadyIdle2_dir4_13: -8507798394578178456
+      GreatSwordKnight_ReadyIdle2_dir4_14: 8143392666667241109
+      GreatSwordKnight_ReadyIdle2_dir4_15: -4686061891532084578
+      GreatSwordKnight_ReadyIdle2_dir4_16: 8031562151931106914
+      GreatSwordKnight_ReadyIdle2_dir4_17: 8132131660694409781
+      GreatSwordKnight_ReadyIdle2_dir4_2: -6374487594507611534
+      GreatSwordKnight_ReadyIdle2_dir4_3: 7926416579547484880
+      GreatSwordKnight_ReadyIdle2_dir4_4: 5085687475002019039
+      GreatSwordKnight_ReadyIdle2_dir4_5: -1912224907871202951
+      GreatSwordKnight_ReadyIdle2_dir4_6: 8717351094556073489
+      GreatSwordKnight_ReadyIdle2_dir4_7: 3935405070160775688
+      GreatSwordKnight_ReadyIdle2_dir4_8: 6023909444877446917
+      GreatSwordKnight_ReadyIdle2_dir4_9: -4402711820490876945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
