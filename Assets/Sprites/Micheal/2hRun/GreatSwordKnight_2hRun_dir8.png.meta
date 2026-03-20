@@ -127,12 +127,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1284
-        width: 64
-        height: 113
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_1
       rect:
         serializedVersion: 2
-        x: 719
-        y: 1286
-        width: 66
-        height: 110
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_2
       rect:
         serializedVersion: 2
-        x: 1226
-        y: 1270
-        width: 70
-        height: 124
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_3
       rect:
         serializedVersion: 2
-        x: 201
-        y: 756
-        width: 72
-        height: 129
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_4
       rect:
         serializedVersion: 2
-        x: 716
-        y: 761
-        width: 70
-        height: 130
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_5
       rect:
         serializedVersion: 2
-        x: 1232
-        y: 770
-        width: 66
-        height: 128
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_6
       rect:
         serializedVersion: 2
-        x: 213
-        y: 250
-        width: 61
-        height: 140
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_7
       rect:
         serializedVersion: 2
-        x: 729
-        y: 248
-        width: 56
-        height: 141
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: GreatSwordKnight_2hRun_dir8_8
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 248
-        width: 57
-        height: 135
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b9f288ac634c964791950fc2b708d87
     internalID: 0
     vertices: []
     indices: 
@@ -333,7 +333,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       GreatSwordKnight_2hRun_dir8_0: 8971687778014418171
       GreatSwordKnight_2hRun_dir8_1: -3815186585469198696

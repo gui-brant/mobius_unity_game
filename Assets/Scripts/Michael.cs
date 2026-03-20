@@ -3,6 +3,7 @@ using UnityEngine;
 public class Michael : Character
 {
     private bool isAttacking = false;
+    private int attackDirection;
 
     protected override void Update()
     {
@@ -28,23 +29,32 @@ public class Michael : Character
         SetMovement(input);
     }
 
-    //attack system
+    // attack system 
     private void HandleAttack()
     {
         bool holding = Input.GetKey(KeyCode.Space);
 
-        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
-
-        // start attack if not already attacking
+        // start attack if not attacking and space is held
         if (holding && !isAttacking)
         {
             StartAttack();
         }
 
-        // check if current animation finished
-        if (isAttacking && state.IsName("Attack" + GetLastDirection()) && state.normalizedTime >= 1f)
+        // check if current attack finished
+        if (isAttacking)
         {
-            isAttacking = false;
+            AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+
+            if (state.normalizedTime >= 1f)
+            {
+                isAttacking = false;
+
+                // if still holding space, start next attack
+                if (holding)
+                {
+                    StartAttack();
+                }
+            }
         }
     }
 
@@ -52,15 +62,22 @@ public class Michael : Character
     {
         isAttacking = true;
 
-        int direction = GetDirection();
+        // get attack direction based on input
+        Vector2 input = new Vector2(
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical")
+        );
 
-        // fallback if not moving
-        if (direction == -1)
+        if (input != Vector2.zero)
         {
-            direction = GetLastDirection();
+            attackDirection = CalculateDirection(input);
+        }
+        else
+        {
+            attackDirection = GetLastDirection();
         }
 
-        string animName = "Attack" + direction;
+        string animName = "Attack" + attackDirection;
 
         PlayAnimation(animName);
     }

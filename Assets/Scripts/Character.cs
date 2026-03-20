@@ -52,7 +52,7 @@ public class Character : MonoBehaviour
         return lastDirection;
     }
 
-    private int CalculateDirection(Vector2 dir)
+    protected int CalculateDirection(Vector2 dir)
     {
         if (dir == Vector2.zero) return -1;
 
