@@ -2,10 +2,21 @@ using UnityEngine;
 
 public class Michael : Character
 {
+    [SerializeField] private int attackDamage = 20;
+    [SerializeField] private float attackRange = 1.25f;
+    [SerializeField] private int armor = 0;
+    [SerializeField] private int experience = 0;
     private bool isAttacking = false;
+
+    public override int AttackDamage => attackDamage;
+    public float AttackRange => attackRange;
+    public int Armor => armor;
+    public int Experience => experience;
 
     protected override void Update()
     {
+        if (IsDead) return;
+
         HandleInput();
         HandleAttack();
         base.Update(); 
@@ -63,6 +74,47 @@ public class Michael : Character
         string animName = "Attack" + direction;
 
         PlayAnimation(animName);
+    }
+
+    public override void Attack(IDamageable target)
+    {
+        if (isDead || target == null) return;
+        target.TakeDamage(AttackDamage);
+    }
+
+    public override void TakeDamage(int amount)
+    {
+        int reducedDamage = Mathf.Max(0, amount - armor);
+        if (reducedDamage <= 0) return;
+
+        base.TakeDamage(reducedDamage);
+    }
+
+    public void ModifyAttackDamage(int amount)
+    {
+        attackDamage = Mathf.Max(0, attackDamage + amount);
+    }
+
+    public void ModifyAttackRange(float amount)
+    {
+        attackRange = Mathf.Max(0.1f, attackRange + amount);
+    }
+
+    public void Heal(int amount)
+    {
+        if (amount <= 0) return;
+        health += amount;
+    }
+
+    public void AddArmor(int amount)
+    {
+        armor = Mathf.Max(0, armor + amount);
+    }
+
+    public void AddExperience(int amount)
+    {
+        if (amount <= 0) return;
+        experience += amount;
     }
 
     // override animation so attack takes priority
