@@ -6397,6 +6397,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Michael
   health: 100
   speed: 3
+  attackDamage: 20
+  attackRange: 1.25
+  armor: 0
+  experience: 0
 --- !u!212 &1194457840
 SpriteRenderer:
   serializedVersion: 2
@@ -6444,7 +6448,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 114377165
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4551370982138507139, guid: 559695114a1389a44b921311d178cf34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
