@@ -3,7 +3,8 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     public int health = 100;
-    public float speed = 3f; 
+    public float speed = 3f;
+    public float damage = 1;
 
     protected Rigidbody2D rb;
     protected Vector2 movement;
