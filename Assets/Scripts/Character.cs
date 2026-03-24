@@ -4,6 +4,7 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITarg
 {
     public int health = 100;
     public float speed = 3f;
+    public float damage = 1;
 
     protected Rigidbody2D rb;
     protected Vector2 movement;
