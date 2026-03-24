@@ -54,6 +54,9 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.slnx
+*.user
+*.userprefs
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -97,3 +100,10 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+.idea/
+
+.vscode/
+
+.DS_Store
+
