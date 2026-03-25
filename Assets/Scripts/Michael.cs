@@ -16,6 +16,8 @@ public class Michael : Character
     protected override void Update()
     {
         if (IsDead) return;
+        //DO NOT FORGET TO DELETE THIS LINE BEFORE SUBMIT!!!
+        if (Input.GetKeyDown(KeyCode.X)) TakeDamage(9999);
 
         HandleInput();
         HandleAttack();
@@ -39,7 +41,7 @@ public class Michael : Character
         SetMovement(input);
     }
 
-    //attack system
+    // attack system
     private void HandleAttack()
     {
         bool holding = Input.GetKey(KeyCode.Space);
@@ -90,6 +92,16 @@ public class Michael : Character
         base.TakeDamage(reducedDamage);
     }
 
+    public override void Die()
+    {
+        if (IsDead) return;
+
+        // cancel any in-progress attack so the death animation isn't blocked
+        isAttacking = false;
+
+        base.Die(); // sets isDead, zeroes movement, plays death animation
+    }
+
     public void ModifyAttackDamage(int amount)
     {
         attackDamage = Mathf.Max(0, attackDamage + amount);
@@ -117,7 +129,7 @@ public class Michael : Character
         experience += amount;
     }
 
-    // override animation so attack takes priority
+    // override animation so attack takes priority; death is handled separately in Die()
     protected override void UpdateAnimator()
     {
         if (isAttacking) return;
