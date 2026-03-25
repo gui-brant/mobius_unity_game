@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 8341f4d21ef063b4f972552196a11840
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5725583798109280553
+    second: GreatSwordKnight_2hWalk_dir3_0
+  - first:
+      213: 5838225848153811666
+    second: GreatSwordKnight_2hWalk_dir3_1
+  - first:
+      213: 6824462759053542274
+    second: GreatSwordKnight_2hWalk_dir3_2
+  - first:
+      213: -2465106431745879472
+    second: GreatSwordKnight_2hWalk_dir3_3
+  - first:
+      213: -2255565280640628684
+    second: GreatSwordKnight_2hWalk_dir3_4
+  - first:
+      213: -6507996989296074123
+    second: GreatSwordKnight_2hWalk_dir3_5
+  - first:
+      213: 7062582599096967596
+    second: GreatSwordKnight_2hWalk_dir3_6
+  - first:
+      213: 8327470573142023705
+    second: GreatSwordKnight_2hWalk_dir3_7
+  - first:
+      213: 3526802700334508217
+    second: GreatSwordKnight_2hWalk_dir3_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_0
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1278
+        width: 57
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6e6fdfed3aa80b0800000000000000
+      internalID: -5725583798109280553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_1
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1275
+        width: 60
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da26b50a7b850150800000000000000
+      internalID: 5838225848153811666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_2
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1272
+        width: 58
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283c448c8bc55be50800000000000000
+      internalID: 6824462759053542274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 759
+        width: 65
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0529142d2ce2acdd0800000000000000
+      internalID: -2465106431745879472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_4
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 763
+        width: 65
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43806b7e35f92b0e0800000000000000
+      internalID: -2255565280640628684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_5
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 762
+        width: 59
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57222b51833fea5a0800000000000000
+      internalID: -6507996989296074123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 248
+        width: 59
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1a7086475530260800000000000000
+      internalID: 7062582599096967596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_7
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 245
+        width: 60
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e16ad8d5e119370800000000000000
+      internalID: 8327470573142023705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSwordKnight_2hWalk_dir3_8
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 245
+        width: 59
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8a352ce58b1f030800000000000000
+      internalID: 3526802700334508217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GreatSwordKnight_2hWalk_dir3_0: -5725583798109280553
+      GreatSwordKnight_2hWalk_dir3_1: 5838225848153811666
+      GreatSwordKnight_2hWalk_dir3_2: 6824462759053542274
+      GreatSwordKnight_2hWalk_dir3_3: -2465106431745879472
+      GreatSwordKnight_2hWalk_dir3_4: -2255565280640628684
+      GreatSwordKnight_2hWalk_dir3_5: -6507996989296074123
+      GreatSwordKnight_2hWalk_dir3_6: 7062582599096967596
+      GreatSwordKnight_2hWalk_dir3_7: 8327470573142023705
+      GreatSwordKnight_2hWalk_dir3_8: 3526802700334508217
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
