@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITargetable, IInteractable, IMovementController
+public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, IMovementController
 {
     public int health = 100;
     public float speed = 3f;
-    public float damage = 1;
 
     protected Rigidbody2D rb;
     protected Vector2 movement;
@@ -16,9 +15,6 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITarg
     protected bool isDead = false;
 
     public bool IsDead => isDead;
-    public virtual int AttackDamage => 0;
-    public virtual Transform TargetTransform => transform;
-    public virtual bool CanBeTargeted => !isDead;
 
     protected virtual void Awake()
     {
@@ -73,11 +69,6 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITarg
 
         // Halt the game when character dies.
         Time.timeScale = 0f;
-    }
-
-    public virtual void Attack(IDamageable target)
-    {
-        // Base Character has no default attack behavior.
     }
 
     public virtual void Interact(GameObject interactor)

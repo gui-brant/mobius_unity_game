@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Michael : Character
+public class Michael : Character, IAttacker, ITargetable
 {
     [SerializeField] private int attackDamage = 20;
     [SerializeField] private float attackRange = 1.25f;
@@ -10,10 +10,13 @@ public class Michael : Character
     [SerializeField] private LayerMask attackableLayers = ~0;
     [SerializeField] private int armor = 0;
     private bool isAttacking = false;
+    private readonly HashSet<string> objectiveItems = new HashSet<string>();
 
-    public override int AttackDamage => attackDamage;
+    public int AttackDamage => attackDamage;
     public float AttackRange => attackRange;
     public int Armor => armor;
+    public Transform TargetTransform => transform;
+    public bool CanBeTargeted => !IsDead;
 
     protected override void Update()
     {
@@ -79,7 +82,7 @@ public class Michael : Character
         PerformAttackHit(direction);
     }
 
-    public override void Attack(IDamageable target)
+    public void Attack(IDamageable target)
     {
         if (isDead || target == null) return;
         target.TakeDamage(AttackDamage);
@@ -165,6 +168,18 @@ public class Michael : Character
     public void AddArmor(int amount)
     {
         armor = Mathf.Max(0, armor + amount);
+    }
+
+    public void ReceiveObjectiveItem(string objectiveId)
+    {
+        if (string.IsNullOrWhiteSpace(objectiveId)) return;
+        objectiveItems.Add(objectiveId);
+    }
+
+    public bool HasObjectiveItem(string objectiveId)
+    {
+        if (string.IsNullOrWhiteSpace(objectiveId)) return false;
+        return objectiveItems.Contains(objectiveId);
     }
 
     // override animation so attack takes priority
