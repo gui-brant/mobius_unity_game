@@ -32,6 +32,14 @@ public class Enemy : Character
     private float deathTimer;
 
     protected IMovementStrategy _movementStrategy;
+
+    // Overriden for each enemy type
+    public virtual void Init(Michael michael)
+    {
+        // Assigning micheal reference
+        targetMichael = michael;
+        targetTransform = michael.transform;
+    }
     
     protected override void Awake()
     {
