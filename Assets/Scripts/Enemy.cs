@@ -99,7 +99,7 @@ public class Enemy : Character
         }
 
         // Check if Michael is within attack range. If so, then attack or move towards him.
-        Vector2 toTarget = targetMichael.transform.position - transform.position;
+        Vector2 toTarget = targetTransform.position - transform.position;
         float distanceToTarget = toTarget.magnitude;
 
         if (distanceToTarget <= attackRange && attackCooldownTimer <= 0f)

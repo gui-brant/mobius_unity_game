@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITargetable, IInteractable, IMovementController
+public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, IInteractable, IMovementController
 {
     public int health = 100;
     public float speed = 3f;
