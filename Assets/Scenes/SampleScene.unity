@@ -9451,6 +9451,10 @@ MonoBehaviour:
   health: 100
   speed: 3
   damage: 1
+  attackDamage: 20
+  attackRange: 1.25
+  armor: 0
+  experience: 0
 --- !u!212 &1194457840
 SpriteRenderer:
   serializedVersion: 2
@@ -9561,9 +9565,9 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.10452968, y: 0.5487807}
   m_SpriteTilingProperty:
-    border: {x: 0.28, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.73, y: 1.08}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12125, y: 5.12}
     newSize: {x: 0.73, y: 1.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
