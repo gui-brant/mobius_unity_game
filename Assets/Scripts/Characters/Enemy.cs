@@ -5,7 +5,7 @@ The class definition currently implemenets a basic enemy.
 The enemy will chase Michael on spawn, take damage, attack Michael if close enough, and die when health reaches 0.
 Animation handling is also implemented here, although it lacks actual animations. 
 */
-public class Enemy : Character
+public class Enemy : Character, IAttacker, ITargetable
 {
     //[SerializeField] allows for you to keep variables private while still being visible on the inspector.
     [Header("Targeting")]
@@ -30,6 +30,10 @@ public class Enemy : Character
     private float attackTimer;
     private float hurtTimer;
     private float deathTimer;
+
+    public int AttackDamage => attackDamage;
+    public Transform TargetTransform => transform;
+    public bool CanBeTargeted => !IsDead;
 
     protected override void Awake()
     {
@@ -232,8 +236,19 @@ Below, you will find the helper funcitons that allow for start attacking, handli
 
         if (targetMichael != null)
         {
-            targetMichael.TakeDamage(attackDamage);
+            Attack(targetMichael);
         }
+    }
+
+    public void Attack(IDamageable target)
+    {
+        if (isDead || target == null) return;
+        target.TakeDamage(AttackDamage);
+    }
+
+    public void ModifyAttackDamage(int amount)
+    {
+        attackDamage = Mathf.Max(0, attackDamage + amount);
     }
 
     private void HandleAttackState()

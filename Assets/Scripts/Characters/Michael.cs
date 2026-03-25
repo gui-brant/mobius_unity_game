@@ -1,17 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Michael : Character
+public class Michael : Character, IAttacker, ITargetable
 {
     [SerializeField] private int attackDamage = 20;
     [SerializeField] private float attackRange = 1.25f;
+    [SerializeField] private float attackHitRadius = 0.45f;
+    [SerializeField] private Transform attackOrigin;
+    [SerializeField] private LayerMask attackableLayers = ~0;
     [SerializeField] private int armor = 0;
-    [SerializeField] private int experience = 0;
     private bool isAttacking = false;
+    private readonly HashSet<string> objectiveItems = new HashSet<string>();
 
-    public override int AttackDamage => attackDamage;
+    public int AttackDamage => attackDamage;
     public float AttackRange => attackRange;
     public int Armor => armor;
-    public int Experience => experience;
+    public Transform TargetTransform => transform;
+    public bool CanBeTargeted => !IsDead;
 
     protected override void Update()
     {
@@ -74,12 +79,66 @@ public class Michael : Character
         string animName = "Attack" + direction;
 
         PlayAnimation(animName);
+        PerformAttackHit(direction);
     }
 
-    public override void Attack(IDamageable target)
+    public void Attack(IDamageable target)
     {
         if (isDead || target == null) return;
         target.TakeDamage(AttackDamage);
+    }
+
+    private void PerformAttackHit(int direction)
+    {
+        Vector2 directionVector = DirectionToVector(direction);
+        Vector2 origin = attackOrigin != null ? attackOrigin.position : transform.position;
+        Vector2 hitCenter = origin + (directionVector * attackRange);
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(hitCenter, attackHitRadius, attackableLayers);
+        HashSet<IDamageable> damagedTargets = new HashSet<IDamageable>();
+
+        foreach (Collider2D hit in hits)
+        {
+            if (hit == null) continue;
+
+            GameObject targetObject = hit.attachedRigidbody != null ? hit.attachedRigidbody.gameObject : hit.gameObject;
+            if (targetObject == gameObject) continue;
+
+            IDamageable damageable = GetDamageableFromObject(targetObject);
+            if (damageable == null || damagedTargets.Contains(damageable)) continue;
+
+            Attack(damageable);
+            damagedTargets.Add(damageable);
+        }
+    }
+
+    private Vector2 DirectionToVector(int direction)
+    {
+        return direction switch
+        {
+            0 => Vector2.right,
+            1 => new Vector2(1f, 1f).normalized,
+            2 => Vector2.up,
+            3 => new Vector2(-1f, 1f).normalized,
+            4 => Vector2.left,
+            5 => new Vector2(-1f, -1f).normalized,
+            6 => Vector2.down,
+            7 => new Vector2(1f, -1f).normalized,
+            _ => Vector2.right
+        };
+    }
+
+    private IDamageable GetDamageableFromObject(GameObject targetObject)
+    {
+        foreach (MonoBehaviour behaviour in targetObject.GetComponents<MonoBehaviour>())
+        {
+            if (behaviour is IDamageable damageable)
+            {
+                return damageable;
+            }
+        }
+
+        return null;
     }
 
     public override void TakeDamage(int amount)
@@ -111,10 +170,16 @@ public class Michael : Character
         armor = Mathf.Max(0, armor + amount);
     }
 
-    public void AddExperience(int amount)
+    public void ReceiveObjectiveItem(string objectiveId)
     {
-        if (amount <= 0) return;
-        experience += amount;
+        if (string.IsNullOrWhiteSpace(objectiveId)) return;
+        objectiveItems.Add(objectiveId);
+    }
+
+    public bool HasObjectiveItem(string objectiveId)
+    {
+        if (string.IsNullOrWhiteSpace(objectiveId)) return false;
+        return objectiveItems.Contains(objectiveId);
     }
 
     // override animation so attack takes priority
@@ -123,5 +188,15 @@ public class Michael : Character
         if (isAttacking) return;
 
         base.UpdateAnimator();
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Vector2 directionVector = DirectionToVector(GetLastDirection());
+        Vector2 origin = attackOrigin != null ? attackOrigin.position : transform.position;
+        Vector2 hitCenter = origin + (directionVector * attackRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(hitCenter, attackHitRadius);
     }
 }

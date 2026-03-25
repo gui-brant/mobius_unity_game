@@ -4,7 +4,6 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
 {
     [Header("Durability")]
     [SerializeField] private int maxHealth = 25;
-    [SerializeField] private int impactDamage = 25;
 
     [Header("Targeting")]
     [SerializeField] private bool canBeTargeted = true;
@@ -21,22 +20,19 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
         currentHealth = Mathf.Max(1, maxHealth);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        TryHandleImpact(collision.gameObject);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        TryHandleImpact(other.gameObject);
-    }
-
     public void Interact(GameObject interactor)
     {
-        if (isDead) return;
-        if (!IsValidImpactor(interactor)) return;
+        if (isDead || interactor == null) return;
 
-        TakeDamage(impactDamage);
+        // Route interaction through attacker capability so damage comes from the attacker.
+        foreach (MonoBehaviour behaviour in interactor.GetComponents<MonoBehaviour>())
+        {
+            if (behaviour is IAttacker attacker)
+            {
+                attacker.Attack(this);
+                return;
+            }
+        }
     }
 
     public void TakeDamage(int amount)
@@ -64,18 +60,5 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
         }
 
         Destroy(gameObject);
-    }
-
-    private void TryHandleImpact(GameObject impactor)
-    {
-        if (isDead) return;
-        if (!IsValidImpactor(impactor)) return;
-
-        Interact(impactor);
-    }
-
-    private bool IsValidImpactor(GameObject impactor)
-    {
-        return impactor.GetComponent<Character>() != null;
     }
 }

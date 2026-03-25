@@ -51,7 +51,10 @@ public class SkillTreeManager : MonoBehaviour
         if (skillPoints < 10) return;
 
         skillPoints -= 10;
-        player.damage += 5f;
+        if (player is IAttacker attacker)
+        {
+            attacker.ModifyAttackDamage(5);
+        }
 
         SetButtonState(damage1, false);
         SetButtonState(damage2, true);
@@ -66,7 +69,10 @@ public class SkillTreeManager : MonoBehaviour
         if (skillPoints < 30) return;
 
         skillPoints -= 30;
-        player.damage += 10f;
+        if (player is IAttacker attacker)
+        {
+            attacker.ModifyAttackDamage(10);
+        }
 
         SetButtonState(damage2, false);
         SetButtonState(damage3, true);
@@ -81,7 +87,10 @@ public class SkillTreeManager : MonoBehaviour
         if (skillPoints < 50) return;
 
         skillPoints -= 50;
-        player.damage += 20f;
+        if (player is IAttacker attacker)
+        {
+            attacker.ModifyAttackDamage(20);
+        }
 
         SetButtonState(damage3, false);
 
