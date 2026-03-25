@@ -57,18 +57,23 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Static; // prevent any residual physics movement
         }
 
-        // TODO: Implement death animation trigger when available.
-        // Example:
-        // animator.SetTrigger("Die");
+        PlayDeathAnimation();
 
         // TODO: Implement death screen popup animation when UI system is ready.
         // Example:
         // DeathScreenUI.Instance.ShowDeathScreen();
+    }
 
-        // Halt the game when character dies.
-        Time.timeScale = 0f;
+    // plays the death animation
+    protected virtual void PlayDeathAnimation()
+    {
+        if (animator == null) return;
+
+        string animName = "Die";
+        PlayAnimation(animName);
     }
 
     public virtual void Interact(GameObject interactor)
