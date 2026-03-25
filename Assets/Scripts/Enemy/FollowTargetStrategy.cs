@@ -11,7 +11,7 @@ public class FollowTargetStrategy : IMovementStrategy
         _target = target;
     }
 
-    public void Execute(Rigidbody2D rigidbody, Animator animator, float speed)
+    public void Execute(Rigidbody2D rigidbody, float speed)
     {
         if (_target == null) return;
         
@@ -22,7 +22,7 @@ public class FollowTargetStrategy : IMovementStrategy
        // Apply physics to rigidbody
        rigidbody.linearVelocity = direction * speed;
        
-       // Handle Animation
+       // Handle Animation - animator taken out of method header
        // animator.SetFloat("Speed", rigidbody.linearVelocity.magnitude);
     }
 }

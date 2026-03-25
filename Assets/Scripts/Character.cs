@@ -16,7 +16,7 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITarg
 
     public bool IsDead => isDead;
     public virtual int AttackDamage => 0;
-    public virtual Transform TargetTransform => transform;
+    public Transform targetTransform;
     public virtual bool CanBeTargeted => !isDead;
 
     protected virtual void Awake()
@@ -89,7 +89,7 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITarg
         // Characters are not collectible by default.
     }
 
-    protected void Move()
+    protected virtual void Move()
     {
         rb.linearVelocity = movement * speed;
         currentDirection = CalculateDirection(movement);
@@ -115,7 +115,7 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IAttacker, ITarg
     {
         return lastDirection;
     }
-
+    
     private int CalculateDirection(Vector2 dir)
     {
         if (dir == Vector2.zero) return -1;

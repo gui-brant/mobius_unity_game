@@ -9,7 +9,7 @@ public class Enemy : Character
 {
     //[SerializeField] allows for you to keep variables private while still being visible on the inspector.
     [Header("Targeting")]
-    [SerializeField] private Michael targetMichael;
+    [SerializeField] protected Michael targetMichael;
     [SerializeField] private bool aggroOnSpawn = true;
 
     [Header("Combat")]
@@ -21,7 +21,7 @@ public class Enemy : Character
     [Header("Reactions")]
     [SerializeField] private float hurtDuration = 0.25f;
     [SerializeField] private float deathAnimationDuration = 0.8f;
-
+    
     private bool isAggroed;
     private bool isAttacking;
     private bool isHurt;
@@ -31,11 +31,15 @@ public class Enemy : Character
     private float hurtTimer;
     private float deathTimer;
 
+    protected IMovementStrategy _movementStrategy;
+    
     protected override void Awake()
     {
         //awake behaviour definition: chase Michael. 
         base.Awake();
 
+        InitializeStrategy(_movementStrategy);
+        
         if (targetMichael == null)
         {
             targetMichael = FindFirstObjectByType<Michael>();
@@ -108,21 +112,32 @@ public class Enemy : Character
     */
     protected override void FixedUpdate()
     {
+        // Stop moving
         if (isDead || isHurt || isAttacking)
         {
             if (rb != null)
             {
-                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
             }
 
             return;
         }
-
-        base.FixedUpdate();
-        //base. allows you to run the original code from the parent class (Character) on top of the new code written here.
-        //The basic behaviour allows the Character to move on base update. This means that if the enemy is not in a state, then it may move like any Character.
+        
+        Move();
+        
     }
 
+    // Used by factory to set strategy
+    public void InitializeStrategy(IMovementStrategy movementStrategy)
+    {
+        _movementStrategy = movementStrategy;
+    }
+
+    protected override void Move()
+    {
+        _movementStrategy?.Execute(rb, speed);
+    }
+    
     public override void TakeDamage(int amount)
     {
         /*

@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
     
     void FixedUpdate()
     {
-        _movementStrategy?.Execute(_rigidBody,  new Animator(), 0.5f);
+        _movementStrategy?.Execute(_rigidBody, 0.5f);
     }
     
     // Update is called once per frame
