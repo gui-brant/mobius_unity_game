@@ -62,14 +62,7 @@ public class MoveScene : MonoBehaviour
                     StartCoroutine(MoveToPGR());
                 }
             }
-            else if (currentActiveScene == pgrSceneName)
-            {
-                if (currentPos.x < -5f)
-                {
-                    isTransitioning = true;
-                    StartCoroutine(MoveBackToSample());
-                }
-            }
+            
         }
         
     }

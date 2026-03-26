@@ -4330,6 +4330,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1125214861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.284}
+--- !u!1 &474422068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3367867620678197763, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+  m_PrefabInstance: {fileID: 489622161027362818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &477285141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9756,12 +9761,26 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
   m_PrefabInstance: {fileID: 489622161027362818}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 474422068}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b95642c83a83c4f4aba863b59924382c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Michael
+--- !u!114 &1194457845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474422068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3d918a052d89747b6b63089c369ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttachCamera
+  targetName: Michael
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &1200289035
 GameObject:
   m_ObjectHideFlags: 0
@@ -18282,7 +18301,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3367867620678197763, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194457845}
   m_SourcePrefab: {fileID: 100100000, guid: 083805666f317e9408f22b9a4224f087, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

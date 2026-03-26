@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Michael : Character, IAttacker, ITargetable
 {
+    
     [SerializeField] private int attackDamage = 20;
     [SerializeField] private float attackRange = 1.25f;
     [SerializeField] private float attackHitRadius = 0.45f;
