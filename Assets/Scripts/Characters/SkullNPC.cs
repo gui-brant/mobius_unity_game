@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class SkullNPC : Character
 {
     public NPCDialogue dialogueData;
-    public GameObject dialoguePanel;
-    public TMP_Text dialogueText, nameText;
-    public Image portraitImage;
+    private DialogueController dialogueUI;
     
     protected Rigidbody2D rb;
     protected Vector2 movement;
@@ -18,6 +16,7 @@ public class SkullNPC : Character
     
     void Start()
     {
+        dialogueUI = DialogueController.Instance;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -50,17 +49,16 @@ public class SkullNPC : Character
         isDialogueActive = true;
         dialogueIndex = 0;
         
-        nameText.SetText(dialogueData.npcName);
-        portraitImage.sprite = dialogueData.npcSprite;
+        dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcSprite);
         
-        dialoguePanel.SetActive(true);
+        dialogueUI.ShowDialogueUI(true);
         
         // pause (from saahil's work)
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        StartCoroutine(TypeLine());
+        DisplayCurrentLine();
     }
 
     void NextLine()
@@ -68,12 +66,29 @@ public class SkullNPC : Character
         if (isTyping)
         {
             StopAllCoroutines();
-            dialogueText.SetText(dialogueData.dialogueLines[dialogueIndex]);
+            dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
             isTyping = false;
         }
-        else if (++dialogueIndex < dialogueData.dialogueLines.Length)
+        // clear choices
+        dialogueUI.ClearChoices();
+        //check endDialogue
+        if (dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
         {
-            StartCoroutine(TypeLine());
+            EndDialogue();
+            return;
+        }
+        // check if choices
+        foreach(DialogueChoice dialogueChoice in dialogueData.choices)
+        {
+            if (dialogueChoice.dialogueIndex == dialogueIndex)
+            {
+                DisplayChoices(dialogueChoice);
+            }
+        }
+        
+        if (++dialogueIndex < dialogueData.dialogueLines.Length)
+        {
+            DisplayCurrentLine();
         }
         else
         {
@@ -84,11 +99,11 @@ public class SkullNPC : Character
     IEnumerator TypeLine()
     {
         isTyping = true;
-        dialogueText.SetText("");
+        dialogueUI.SetDialogueText("");
 
         foreach (char x in dialogueData.dialogueLines[dialogueIndex])
         {
-            dialogueText.text += x;
+            dialogueUI.SetDialogueText(dialogueUI.dialogueText.text += x);
             yield return new WaitForSecondsRealtime(dialogueData.typingSpeed);
         }
         
@@ -101,12 +116,34 @@ public class SkullNPC : Character
         }
     }
 
+    void DisplayChoices(DialogueChoice choice)
+    {
+        for (int i = 0; i < choice.choices.Length; i++)
+        {
+            int nextIndex = choice.nextDialogueIndexes[i];
+            dialogueUI.CreateChoiceButton(choice.choices[i], ()=> ChooseOption(nextIndex));
+        }
+    }
+
+    void ChooseOption(int nextIndex)
+    {
+        dialogueIndex = nextIndex;
+        dialogueUI.ClearChoices();
+        DisplayCurrentLine();
+    }
+
+    void DisplayCurrentLine()
+    {
+        StopAllCoroutines();
+        StartCoroutine(TypeLine());
+    }
+
     public void EndDialogue()
     {
         StopAllCoroutines();
         isDialogueActive = false;
-        dialogueText.SetText("");
-        dialoguePanel.SetActive(false);
+        dialogueUI.SetDialogueText("");
+        dialogueUI.ShowDialogueUI(false);
         
         //unpause
         Time.timeScale = 1f;
