@@ -22,6 +22,8 @@ public class Michael : Character, IAttacker, ITargetable
     {
         if (IsDead) return;
 
+        if (Input.GetKeyDown(KeyCode.X)) TakeDamage(9999); // kys button
+
         HandleInput();
         HandleAttack();
         base.Update(); 
