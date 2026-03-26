@@ -19,6 +19,8 @@ public class Michael : Character, IAttacker, ITargetable
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
 
+    private SkullNPC interactableSkullNPC;
+    
     protected override void Update()
     {
         if (IsDead) return;
@@ -27,7 +29,12 @@ public class Michael : Character, IAttacker, ITargetable
 
         HandleInput();
         HandleAttack();
-        base.Update(); 
+        base.Update();
+
+        if (interactableSkullNPC != null && Input.GetKeyDown(KeyCode.E))
+        {
+            interactableSkullNPC.Interact();
+        }
     }
 
     // movement 
@@ -45,6 +52,23 @@ public class Michael : Character, IAttacker, ITargetable
         );
 
         SetMovement(input);
+    }
+    
+    // interacting with skull npc
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent<SkullNPC>(out SkullNPC skull))
+        {
+            interactableSkullNPC = skull;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent<SkullNPC>(out SkullNPC skull))
+        {
+            interactableSkullNPC = null;
+        }
     }
 
     //attack system

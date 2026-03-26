@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6905939ed75c36249a743b820422590b, type: 3}
+  m_Name: SkullDialgoue
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Skull
+  npcSprite: {fileID: 3737911869956679271, guid: b4c1d4429e9087742a84c494f9e9069b, type: 3}
+  dialogueLines:
+  - Welcome, Michael... to Mobius.
+  - You must be confused.
+  - This temple is your own mind.
+  - You must face your fears in order to escape.
+  - Then can you truly solve your problems.
+  typingSpeed: 0.05
+  autoProgressLines: 0100010100
+  autoProgressDelay: 1.5
