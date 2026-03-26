@@ -12424,8 +12424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a7effbee3cb024e85a13be00930327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveScene
-  targetSceneName: (PGR) Procedurally generated rooms
-  sceneToUnload: SampleScene
+  pgrSceneName: (PGR) Procedurally generated rooms
+  sampleSceneName: SampleScene
 --- !u!4 &1515212206
 Transform:
   m_ObjectHideFlags: 0
@@ -18190,6 +18190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Michael
       objectReference: {fileID: 0}
+    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18257,41 +18261,44 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6246548857206323026, guid: 863465decfbc74b41930ca08b70bcbad, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6923249690643396843}
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 863465decfbc74b41930ca08b70bcbad, type: 3}
---- !u!1 &6923249690643396842 stripped
+--- !u!1 &6923249690643396842
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6246548857206323026, guid: 863465decfbc74b41930ca08b70bcbad, type: 3}
-  m_PrefabInstance: {fileID: 6923249690643396841}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6923249690643396843
-MonoBehaviour:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6923249690643396843}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6923249690643396843
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6923249690643396842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 236f19c3380da4d8e9bfe73cf7a98815, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  dungeonGenerator: {fileID: 0}
-  michael: {fileID: 0}
-  playerTransform: {fileID: 0}
-  prefabsToSpawn: []
-  objectiveItemPrefab: {fileID: 0}
-  minRoomSpawnCap: 10
-  maxRoomSpawnCap: 20
-  minWorldObjectSpawns: 5
-  maxWorldObjectSpawns: 15
-  avoidDuplicateSpawnTiles: 1
-  maxPlacementAttemptsPerObject: 20
-  spawnYOffset: 0
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 6923249690643396843}
   - {fileID: 489622161027362818}
   - {fileID: 519420032}
   - {fileID: 619394802}

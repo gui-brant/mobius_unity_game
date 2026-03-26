@@ -1,72 +1,116 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System;
 
 public class MoveScene : MonoBehaviour
 {
-    // We leave this hidden or empty; the script will find it automatically
-    private GameObject prefabInstance;
 
-    public string targetSceneName = "(PGR) Procedurally generated rooms";
-    public string sceneToUnload = "SampleScene";
+    // Keeping this static so it persists, but we need to find it first
+    static private GameObject prefabInstance;
+    private Character michaelScript; // Declare this here without assigning yet
+
+    [Header("Scene Names")]
+    public string pgrSceneName = "(PGR) Procedurally generated rooms";
+    public string sampleSceneName = "SampleScene";
 
     private bool isTransitioning = false;
-
+    private void Awake(){ DontDestroyOnLoad(this.gameObject);}
     void Update()
     {
-        // AUTOMATIC FINDER: 
-        // If the slot is empty, look for the object tagged "Player"
+        
+        // 1. FIRST: Find the Player if we don't have it
         if (prefabInstance == null)
         {
             prefabInstance = GameObject.FindWithTag("Player");
-
-            // If we still can't find it, stop here so we don't crash
-            if (prefabInstance == null) return;
-
-            Debug.Log($"<color=cyan>Found Player:</color> {prefabInstance.name} at {prefabInstance.transform.position}");
+            if (prefabInstance == null) return; // Exit and wait for next frame if not found
         }
 
-        Vector3 currentPos = prefabInstance.transform.position;
-
-        // Log coordinates so you can see them moving in the console
-        // (Only logs if you are actually moving)
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        // 2. SECOND: Get the Character script from the found player
+        if (michaelScript == null)
         {
-            Debug.Log($"Tracking: {currentPos.x:F2}, {currentPos.y:F2}");
+            michaelScript = prefabInstance.GetComponent<Character>();
         }
+
+        // 3. THIRD: Check health (Only if we successfully found the script)
+        if (michaelScript != null)
+        {
+            
+            // Usually we check for <= 0 for death
+            if (michaelScript.health == 0)
+            {
+
+
+
+               
+                //StartCoroutine(MoveBackToSample());
+                return; // Stop here for this frame
+            }
+        }
+
+        // 4. FOURTH: Movement Logic
+        Vector3 currentPos = prefabInstance.transform.position;
+        string currentActiveScene = SceneManager.GetActiveScene().name;
 
         if (!isTransitioning)
         {
-            // Update these to coordinates you WANT to reach (away from your start point)
-            if (currentPos.x > 2.4f && currentPos.y > -3f )
+            if (currentActiveScene == sampleSceneName)
             {
-                isTransitioning = true;
-                StartCoroutine(MoveAndUnload());
+                if (currentPos.x > 2.4f && currentPos.y > -3f)
+                {
+                    isTransitioning = true;
+                    StartCoroutine(MoveToPGR());
+                }
+            }
+            else if (currentActiveScene == pgrSceneName)
+            {
+                if (currentPos.x < -5f)
+                {
+                    isTransitioning = true;
+                    StartCoroutine(MoveBackToSample());
+                }
             }
         }
+        
     }
 
-    IEnumerator MoveAndUnload()
+    IEnumerator MoveToPGR()
     {
-        Debug.Log("<color=yellow>Transitioning Scenes...</color>");
+        Debug.Log("<color=yellow>Entering PGR...</color>");
+        yield return StartCoroutine(TransitionProcess(sampleSceneName, pgrSceneName));
+        isTransitioning = false;
+    }
 
-        AsyncOperation loadOp = SceneManager.LoadSceneAsync(targetSceneName, LoadSceneMode.Additive);
+    public IEnumerator MoveBackToSample()
+    {
+        Debug.Log("<color=cyan>Returning to Sample Scene...</color>");
+        yield return StartCoroutine(TransitionProcess(pgrSceneName, sampleSceneName));
+        isTransitioning = false;
+    }
+
+    IEnumerator TransitionProcess(string fromScene, string toScene)
+    {
+        
+            AsyncOperation loadOp = SceneManager.LoadSceneAsync(toScene, LoadSceneMode.Additive);
         while (!loadOp.isDone) yield return null;
 
-        Scene targetScene = SceneManager.GetSceneByName(targetSceneName);
+        Scene targetScene = SceneManager.GetSceneByName(toScene);
 
-        // Disconnect from any parents (like a Grid) before moving
         prefabInstance.transform.parent = null;
         SceneManager.MoveGameObjectToScene(prefabInstance, targetScene);
         SceneManager.SetActiveScene(targetScene);
 
-        // Move Camera to the player's world position
         if (Camera.main != null)
         {
             Vector3 pos = prefabInstance.transform.position;
             Camera.main.transform.position = new Vector3(pos.x, pos.y, -20f);
         }
 
-        SceneManager.UnloadSceneAsync(sceneToUnload);
+        AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(fromScene);
+        while (!unloadOp.isDone) yield return null;
+
+        Debug.Log($"<color=green>Successfully moved to {toScene}</color>");
+        if (toScene == "(PGR) Procedurally generated rooms") { prefabInstance.transform.position = new Vector3(0f,0f,0f); }
+        else if (toScene == "SampleScene") { prefabInstance.transform.position = new Vector3(0f,-4.6f,1); }
     }
 }

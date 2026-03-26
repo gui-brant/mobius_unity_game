@@ -1,9 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // Required for scene logic
 
 public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, IMovementController
 {
+    [Header("Stats")]
     public int health = 100;
     public float speed = 3f;
+
+    [Header("References")]
+    private MoveScene sceneController; // Reference to your transition script
 
     protected Rigidbody2D rb;
     protected Vector2 movement;
@@ -20,6 +25,14 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        // Automatically find the MoveScene script in the current hierarchy
+        sceneController = Object.FindFirstObjectByType<MoveScene>();
+        
+        if (sceneController == null)
+        {
+            Debug.LogWarning("MoveScene script not found! Scene transitions on death will not work.");
+        }
     }
 
     protected virtual void Update()
@@ -44,6 +57,9 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         {
             health = 0;
             Die();
+            Debug.Log("1");
+            sceneController.StartCoroutine(sceneController.MoveBackToSample());
+            
         }
     }
 
@@ -57,39 +73,30 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.bodyType = RigidbodyType2D.Static; // prevent any residual physics movement
+            rb.bodyType = RigidbodyType2D.Static; // Stop physics
         }
 
         PlayDeathAnimation();
-
-        // TODO: Implement death screen popup animation when UI system is ready.
-        // Example:
-        // DeathScreenUI.Instance.ShowDeathScreen();
+        Debug.Log($"{gameObject.name} has died and is returning to SampleScene.");
     }
 
-    // plays the death animation
     protected virtual void PlayDeathAnimation()
     {
         if (animator == null) return;
-
-        string animName = "Die";
-        PlayAnimation(animName);
+        PlayAnimation("Die");
     }
 
-    public virtual void Interact(GameObject interactor)
-    {
-        // Base Character has no default interaction behavior.
-    }
+    public virtual void Interact(GameObject interactor) { }
 
-    public virtual void Collect(GameObject collector)
-    {
-        // Characters are not collectible by default.
-    }
+    public virtual void Collect(GameObject collector) { }
 
     protected void Move()
     {
-        rb.linearVelocity = movement * speed;
-        currentDirection = CalculateDirection(movement);
+        if (rb != null)
+        {
+            rb.linearVelocity = movement * speed;
+            currentDirection = CalculateDirection(movement);
+        }
     }
 
     protected void SetMovement(Vector2 dir)
@@ -102,16 +109,9 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         SetMovement(direction);
     }
 
-    // direction system
-    public int GetDirection()
-    {
-        return currentDirection;
-    }
+    public int GetDirection() => currentDirection;
 
-    public int GetLastDirection()
-    {
-        return lastDirection;
-    }
+    public int GetLastDirection() => lastDirection;
 
     private int CalculateDirection(Vector2 dir)
     {
@@ -123,28 +123,16 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         return Mathf.RoundToInt(angle / 45f) % 8;
     }
 
-    // animation system
     protected virtual void UpdateAnimator()
     {
         if (animator == null) return;
 
         int direction = GetDirection();
+        if (direction != -1) lastDirection = direction;
 
-        if (direction != -1)
-        {
-            lastDirection = direction;
-        }
-
-        string animName;
-
-        if (movement == Vector2.zero)
-        {
-            animName = "Idle" + lastDirection;
-        }
-        else
-        {
-            animName = "Run" + direction;
-        }
+        string animName = (movement == Vector2.zero) 
+            ? "Idle" + lastDirection 
+            : "Run" + direction;
 
         PlayAnimation(animName);
     }
