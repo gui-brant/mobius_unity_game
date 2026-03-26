@@ -16,7 +16,7 @@ public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
     [SerializeField]
     public bool startRandomlyEachIteration = true;
 
-    protected override void RunProceduralGeneration() 
+    protected override HashSet<Vector2> RunProceduralGeneration() 
     {
         //create a map of all floors through random walks
         HashSet<Vector2> floorPositions = RunRandomWalk();
@@ -25,6 +25,7 @@ public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
         tilemapVisualizer.PaintFloorTiles(floorPositions);
         
         WallGenerator.CreateWalls(floorPositions,tilemapVisualizer);
+        return floorPositions;
     }
 
     private HashSet<Vector2> RunRandomWalk()
