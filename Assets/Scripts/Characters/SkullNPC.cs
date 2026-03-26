@@ -14,6 +14,9 @@ public class SkullNPC : Character
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
     
+    public SpriteRenderer playerRenderer;
+    public int colourPickerChoiceIndex = 2;
+    
     void Start()
     {
         dialogueUI = DialogueController.Instance;
@@ -129,6 +132,12 @@ public class SkullNPC : Character
     {
         dialogueIndex = nextIndex;
         dialogueUI.ClearChoices();
+        if (nextIndex == colourPickerChoiceIndex)
+        {
+            EndDialogue();
+            ColourPickerUI.Instance.OpenColourPicker(playerRenderer);
+            return;
+        }
         DisplayCurrentLine();
     }
 

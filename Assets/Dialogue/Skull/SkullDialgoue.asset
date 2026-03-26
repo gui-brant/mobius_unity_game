@@ -17,9 +17,18 @@ MonoBehaviour:
   dialogueLines:
   - Welcome, Michael... to Mobius.
   - You must be confused.
+  - Of course you can.
   - This temple is your own mind.
   - You must face your fears in order to escape.
   - Then can you truly solve your problems.
+  autoProgressLines: 010000010100
+  endDialogueLines: 000001000001
   typingSpeed: 0.05
-  autoProgressLines: 0100010100
   autoProgressDelay: 1.5
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - Where am I? What is this?
+    - Can I change how I look?
+    nextDialogueIndexes: 0300000002000000
+  colourPickerDialogueIndex: 2

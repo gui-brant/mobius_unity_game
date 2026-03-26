@@ -12,6 +12,8 @@ public class NPCDialogue : ScriptableObject
     public float autoProgressDelay = 1.5f;
 
     public DialogueChoice[] choices;
+    
+    public int colourPickerDialogueIndex = 2;
 }
 
 [System.Serializable]
