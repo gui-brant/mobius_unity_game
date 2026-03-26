@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5905359432504206998}
   - component: {fileID: 3405121944926250419}
   - component: {fileID: 6438486436453452326}
+  - component: {fileID: 5037563601548321759}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -212,3 +213,27 @@ MonoBehaviour:
   attackDuration: 0.35
   hurtDuration: 0.25
   deathAnimationDuration: 0.8
+--- !u!114 &5037563601548321759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6246548857206323026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236f19c3380da4d8e9bfe73cf7a98815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  dungeonGenerator: {fileID: 0}
+  michael: {fileID: 0}
+  playerTransform: {fileID: 0}
+  prefabsToSpawn: []
+  objectiveItemPrefab: {fileID: 0}
+  minRoomSpawnCap: 10
+  maxRoomSpawnCap: 20
+  minWorldObjectSpawns: 5
+  maxWorldObjectSpawns: 15
+  avoidDuplicateSpawnTiles: 1
+  maxPlacementAttemptsPerObject: 20
+  spawnYOffset: 0
