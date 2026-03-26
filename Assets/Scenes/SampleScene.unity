@@ -13958,6 +13958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveScene
   pgrSceneName: (PGR) Procedurally generated rooms
   sampleSceneName: SampleScene
+  cameraOffset: {x: 0, y: 0, z: -10}
 --- !u!4 &1515212206
 Transform:
   m_ObjectHideFlags: 0
@@ -20515,7 +20516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.52
+      value: -4.15
       objectReference: {fileID: 0}
     - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20549,13 +20550,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1571640740461394782, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: m_Size.x
+      value: 0.28848982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571640740461394782, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4044392
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571640740461394782, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0023832321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571640740461394782, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.116716504
+      objectReference: {fileID: 0}
     - target: {fileID: 3367867620678197763, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: m_Name
       value: Michael
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: health
-      value: 1
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: attackDamage
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

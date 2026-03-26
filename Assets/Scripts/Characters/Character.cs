@@ -57,7 +57,7 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         {
             health = 0;
             Die();
-            Debug.Log("1");
+            Spawner.ResetRoomClearProgress();
             sceneController.StartCoroutine(sceneController.MoveBackToSample());
             
         }

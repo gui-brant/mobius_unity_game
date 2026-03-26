@@ -157,9 +157,39 @@ public class Michael : Character, IAttacker, ITargetable
 
     private IDamageable GetDamageableFromObject(GameObject targetObject)
     {
-        foreach (MonoBehaviour behaviour in targetObject.GetComponents<MonoBehaviour>())
+        if (targetObject == null)
         {
-            if (behaviour is IDamageable damageable)
+            return null;
+        }
+
+        IDamageable damageable = GetDamageableFromBehaviours(targetObject.GetComponents<MonoBehaviour>());
+        if (damageable != null)
+        {
+            return damageable;
+        }
+
+        Transform parent = targetObject.transform.parent;
+        while (parent != null)
+        {
+            damageable = GetDamageableFromBehaviours(parent.GetComponents<MonoBehaviour>());
+            if (damageable != null)
+            {
+                return damageable;
+            }
+
+            parent = parent.parent;
+        }
+
+        return null;
+    }
+
+    private IDamageable GetDamageableFromBehaviours(MonoBehaviour[] behaviours)
+    {
+        if (behaviours == null) return null;
+
+        for (int i = 0; i < behaviours.Length; i++)
+        {
+            if (behaviours[i] is IDamageable damageable)
             {
                 return damageable;
             }
