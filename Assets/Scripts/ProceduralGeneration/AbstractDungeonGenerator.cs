@@ -5,6 +5,10 @@ using UnityEngine;
 
 public abstract class AbstractDungeonGenerator : MonoBehaviour
 {
+    public event Action<IReadOnlyCollection<Vector2>> DungeonGenerated;
+
+    public IReadOnlyCollection<Vector2> LastGeneratedFloorPositions { get; private set; } = Array.Empty<Vector2>();
+
     // The file to access all of the methods
     [SerializeField]
     protected TilemapVisualizer tilemapVisualizer = null;
@@ -17,8 +21,10 @@ public abstract class AbstractDungeonGenerator : MonoBehaviour
         //clear the map
         tilemapVisualizer.Clear();
         //create a new one
-        RunProceduralGeneration();
+        HashSet<Vector2> floorPositions = RunProceduralGeneration();
+        LastGeneratedFloorPositions = floorPositions;
+        DungeonGenerated?.Invoke(LastGeneratedFloorPositions);
     }
     //requires te actual method to create it
-    protected abstract void RunProceduralGeneration();
+    protected abstract HashSet<Vector2> RunProceduralGeneration();
 }
