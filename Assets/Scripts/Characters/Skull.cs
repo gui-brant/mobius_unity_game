@@ -9,12 +9,22 @@ public class Skull : Character
     private DialogueController dialogueUI;
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
+    
+    private SpriteRenderer targetRenderer;
+    public int colourPickerChoiceIndex = 3;
 
     private void Start()
     {
         dialogueUI = DialogueController.Instance;
         
         rb = GetComponent<Rigidbody2D>();
+        
+        GameObject player =  GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            targetRenderer = player.GetComponent<SpriteRenderer>();
+        }
+        
     }
     
     public override void Interact()
@@ -123,6 +133,15 @@ public class Skull : Character
     {
         dialogueIndex = nextIndex;
         dialogueUI.ClearChoices();
+        
+        if (nextIndex == colourPickerChoiceIndex)
+        {
+            // End dialogue first, then open the colour picker
+            EndDialogue();
+            ColourPickerUI.Instance.OpenColourPicker(targetRenderer);
+            return;
+        }
+        
         DisplayCurrentLine();
     }
 
