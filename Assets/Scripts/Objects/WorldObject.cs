@@ -35,11 +35,6 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
         }
     }
 
-    public void Interact()
-    {
-        
-    }
-
     public void TakeDamage(int amount)
     {
         if (isDead || amount <= 0) return;

@@ -13,8 +13,6 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
     private int lastDirection = 0;
     private string currentAnimation = "";
     protected bool isDead = false;
-    
-    private IInteractable currentInteractable;
 
     public bool IsDead => isDead;
 
@@ -28,11 +26,6 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
     {
         if (isDead) return;
         UpdateAnimator();
-        
-        if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
-        {
-            currentInteractable.Interact();
-        }
     }
 
     protected virtual void FixedUpdate()
@@ -83,30 +76,9 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         PlayAnimation(animName);
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.TryGetComponent<IInteractable>(out IInteractable interactable))
-        {
-            currentInteractable = interactable;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D collider)
-    {
-        if (collider.TryGetComponent<IInteractable>(out IInteractable interactable))
-            {
-            currentInteractable = null;
-            }
-    }
-    
     public virtual void Interact(GameObject interactor)
     {
         // Base Character has no default interaction behavior.
-    }
-
-    public virtual void Interact()
-    {
-        
     }
 
     public virtual void Collect(GameObject collector)
