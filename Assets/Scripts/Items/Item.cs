@@ -27,6 +27,8 @@ public abstract class Item : MonoBehaviour, IInteractable, ICollectible
 
         Collect(interactor);
     }
+    
+    public virtual void Interact() {}
 
     public virtual void Collect(GameObject collector)
     {
