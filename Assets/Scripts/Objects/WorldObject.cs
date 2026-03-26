@@ -8,12 +8,22 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
     [Header("Targeting")]
     [SerializeField] private bool canBeTargeted = true;
 
+    [Header("Drops")]
+    [SerializeField] private GameObject objectiveItemPrefab;
+    [SerializeField] private float dropYOffset = 0f;
+
     private int currentHealth;
     private bool isDead;
 
     public bool IsDead => isDead;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => canBeTargeted && !isDead;
+
+    public void ConfigureObjectiveDrop(GameObject objectivePrefab)
+    {
+        if (objectivePrefab == null) return;
+        objectiveItemPrefab = objectivePrefab;
+    }
 
     private void Awake()
     {
@@ -59,6 +69,17 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
             collider2D.enabled = false;
         }
 
+        SpawnObjectiveDrop();
+
         Destroy(gameObject);
+    }
+
+    private void SpawnObjectiveDrop()
+    {
+        if (objectiveItemPrefab == null) return;
+
+        Vector3 dropPosition = new Vector3(transform.position.x, transform.position.y + dropYOffset, transform.position.z);
+        Transform parent = transform.parent;
+        Instantiate(objectiveItemPrefab, dropPosition, Quaternion.identity, parent);
     }
 }

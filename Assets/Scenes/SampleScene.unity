@@ -18254,8 +18254,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 81ac7dfa502d139418d0da4f5756cb31, type: 3}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6246548857206323026, guid: 863465decfbc74b41930ca08b70bcbad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6923249690643396843}
+  m_SourcePrefab: {fileID: 100100000, guid: 863465decfbc74b41930ca08b70bcbad, type: 3}
+--- !u!1 &6923249690643396842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6246548857206323026, guid: 863465decfbc74b41930ca08b70bcbad, type: 3}
+  m_PrefabInstance: {fileID: 6923249690643396841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6923249690643396843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923249690643396842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236f19c3380da4d8e9bfe73cf7a98815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  dungeonGenerator: {fileID: 0}
+  michael: {fileID: 0}
+  playerTransform: {fileID: 0}
+  prefabsToSpawn: []
+  objectiveItemPrefab: {fileID: 0}
+  minRoomSpawnCap: 10
+  maxRoomSpawnCap: 20
+  minWorldObjectSpawns: 5
+  maxWorldObjectSpawns: 15
+  avoidDuplicateSpawnTiles: 1
+  maxPlacementAttemptsPerObject: 20
+  spawnYOffset: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
