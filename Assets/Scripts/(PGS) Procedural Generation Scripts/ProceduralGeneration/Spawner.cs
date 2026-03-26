@@ -18,7 +18,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] [Min(1)] private int maxRoomSpawnCap = 20;
     [SerializeField] [Min(0)] private int minWorldObjectSpawns = 5;
     [SerializeField] [Min(0)] private int maxWorldObjectSpawns = 15;
-
+        
     [Header("Placement")]
     [SerializeField] private bool avoidDuplicateSpawnTiles = true;
     [SerializeField] private int maxPlacementAttemptsPerObject = 20;
@@ -35,9 +35,9 @@ public class Spawner : MonoBehaviour
 
     private void OnEnable()
     {
-        ResolveReferences();
-        SubscribeToGenerator();
-        ObjectiveItem.Collected += HandleObjectiveCollected;
+            ResolveReferences();
+            SubscribeToGenerator();
+            ObjectiveItem.Collected += HandleObjectiveCollected;
     }
 
     private void Start()
