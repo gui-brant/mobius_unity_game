@@ -3,31 +3,40 @@ using System.Collections;
 
 public class AttachCamera : MonoBehaviour
 {
-    public string targetName = "Michael"; // name of object to follow
-    public Vector3 offset = new Vector3(0, 5, -10);
+    public Vector3 offset = new Vector3(0, 0, -10);
 
     void Start()
     {
-        // Start a coroutine that waits until the target exists in the scene
         StartCoroutine(AttachWhenReady());
     }
 
     IEnumerator AttachWhenReady()
     {
-        // Wait until the target is found
-        Transform target = null;
-        while (target == null)
+        Character targetCharacter = null;
+
+        // Wait until we find a valid (alive) character
+        while (targetCharacter == null || targetCharacter.isDead)
         {
-            target = GameObject.Find(targetName)?.transform;
+            Character[] allCharacters = FindObjectsByType<Character>(FindObjectsSortMode.None);
+
+            foreach (Character c in allCharacters)
+            {
+                if (!c.isDead)
+                {
+                    targetCharacter = c;
+                    break;
+                }
+            }
+
             yield return null; // wait one frame
         }
 
-        // Wait one more frame to ensure the target has moved into position
+        // Ensure position is settled
         yield return null;
 
-        // Attach the camera
+        // Attach camera
         Transform cam = Camera.main.transform;
-        cam.SetParent(target);
+        cam.SetParent(targetCharacter.transform);
         cam.localPosition = offset;
         cam.localRotation = Quaternion.identity;
     }

@@ -31,7 +31,27 @@ public class MoveScene : MonoBehaviour
         {
             michaelScript = prefabInstance.GetComponent<Character>();
         }
+        
+        if (prefabInstance == null || michaelScript == null || michaelScript.isDead)
+        {
+            Character[] allCharacters = FindObjectsByType<Character>(FindObjectsSortMode.None);
 
+            foreach (Character c in allCharacters)
+            {
+                Debug.Log(c.transform.position);
+                Vector3 pos = c.transform.position;
+                Vector3 min = new Vector3(-3.5f, -5f, 0f);
+                Vector3 max = new Vector3(-2f, -3f, 0f);
+
+                if (pos.x >= min.x && pos.x <= max.x &&
+                    pos.y >= min.y && pos.y <= max.y)
+                {
+                    prefabInstance = c.gameObject;
+                    michaelScript = c;
+                    break;
+                }
+            }
+        }
         // 3. THIRD: Check health (Only if we successfully found the script)
         if (michaelScript != null)
         {
