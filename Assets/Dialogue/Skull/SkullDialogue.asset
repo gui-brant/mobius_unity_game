@@ -18,8 +18,18 @@ MonoBehaviour:
   - Welcome, Michael... to Mobius.
   - This is the temple of your mind.
   - Would you perhaps need anything?
-  typingSpeed: 0
-  voiceSound: {fileID: 0}
-  voicePitch: 1
-  autoProgressLines: 010100
+  - Of course.
+  - Morbius is the labyrinth you created, Michael.
+  - You have lost yourself, young one.
+  - You must face what is ahead in this dungeon to truly reconcile with yourself.
+  - And you must do so... at any cost.
+  autoProgressLines: 0101000001010100
+  endDialogueLines: 0000000100000001
+  typingSpeed: 0.05
   autoProgressDelay: 1.5
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - What is this...? What do I do?
+    - Can I change how I look...?
+    nextDialogueIndexes: 0400000003000000
