@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// UI for User to select what colour they want their character to be
+
 public class ColourPickerUI : MonoBehaviour
 {
     public static ColourPickerUI Instance { get; private set; }
@@ -17,16 +19,24 @@ public class ColourPickerUI : MonoBehaviour
 
     public void OpenColourPicker(SpriteRenderer renderer)
     {
+        
         targetRenderer = renderer;
         defaultColour = renderer.color;
         colourPickerPanel.SetActive(true);
+        
+        // pause
+        Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        
     }
 
     public void CloseColourPicker()
     {
         colourPickerPanel.SetActive(false);
+        
+        // unpause
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

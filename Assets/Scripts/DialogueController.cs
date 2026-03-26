@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// General Controller for Dialogue UI
+
 public class DialogueController : MonoBehaviour
 {
     public static DialogueController Instance { get; private set; }

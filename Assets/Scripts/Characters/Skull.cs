@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// NPC Character that the User can interact with to ask about lore OR to change colour of character
+
 public class Skull : Character
 {
     public NPCDialogue dialogueData;

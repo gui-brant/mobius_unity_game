@@ -1,6 +1,8 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NPCDialogue", menuName = "Scriptable Objects/NPCDialogue")]
+
+// General Use Class for NPC Dialogue
 public class NPCDialogue : ScriptableObject
 {
     public string npcName;
