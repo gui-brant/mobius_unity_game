@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public static int RoomClearCount { get; private set; }
+
     [Header("References")]
     [SerializeField] private SimpleRandomWalkDungeonGenerator dungeonGenerator;
     [SerializeField] private Michael michael;
@@ -18,7 +20,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] [Min(1)] private int maxRoomSpawnCap = 20;
     [SerializeField] [Min(0)] private int minWorldObjectSpawns = 5;
     [SerializeField] [Min(0)] private int maxWorldObjectSpawns = 15;
-
+    [SerializeField] [Min(1)] private int roomsBeforeReturningToHub = 3;
+        
     [Header("Placement")]
     [SerializeField] private bool avoidDuplicateSpawnTiles = true;
     [SerializeField] private int maxPlacementAttemptsPerObject = 20;
@@ -33,11 +36,16 @@ public class Spawner : MonoBehaviour
     private bool isTransitioningRoom;
     private int currentRoomSpawnCap;
 
+    public static void ResetRoomClearProgress()
+    {
+        RoomClearCount = 0;
+    }
+
     private void OnEnable()
     {
-        ResolveReferences();
-        SubscribeToGenerator();
-        ObjectiveItem.Collected += HandleObjectiveCollected;
+            ResolveReferences();
+            SubscribeToGenerator();
+            ObjectiveItem.Collected += HandleObjectiveCollected;
     }
 
     private void Start()
@@ -56,13 +64,10 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
+        ResolvePlayerReference();
+
         if (!hasSpawnedForCurrentRoom)
         {
-            if (playerTransform == null)
-            {
-                ResolvePlayerReference();
-            }
-
             TrySpawnWhenReady();
             return;
         }
@@ -89,9 +94,30 @@ public class Spawner : MonoBehaviour
 
     private void ResolvePlayerReference()
     {
-        if (michael == null)
+        if (michael == null || !michael.gameObject.activeInHierarchy || michael.IsDead)
         {
-            michael = FindFirstObjectByType<Michael>();
+            Michael[] candidates = FindObjectsByType<Michael>(FindObjectsSortMode.None);
+            Michael fallback = null;
+            for (int i = 0; i < candidates.Length; i++)
+            {
+                Michael candidate = candidates[i];
+                if (candidate == null || !candidate.gameObject.activeInHierarchy) continue;
+                if (!candidate.IsDead)
+                {
+                    michael = candidate;
+                    break;
+                }
+
+                if (fallback == null)
+                {
+                    fallback = candidate;
+                }
+            }
+
+            if (michael == null)
+            {
+                michael = fallback;
+            }
         }
 
         if (michael != null)
@@ -100,7 +126,7 @@ public class Spawner : MonoBehaviour
             return;
         }
 
-        if (playerTransform == null)
+        if (playerTransform == null || !playerTransform.gameObject.activeInHierarchy)
         {
             GameObject playerByTag = GameObject.FindGameObjectWithTag("Player");
             if (playerByTag != null)
@@ -155,12 +181,7 @@ public class Spawner : MonoBehaviour
 
     private void HandleObjectiveCollected(ObjectiveItem objectiveItem, Michael collectedBy)
     {
-        if (objectiveItem == null || collectedBy == null || michael == null)
-        {
-            return;
-        }
-
-        if (collectedBy != michael)
+        if (objectiveItem == null || collectedBy == null || collectedBy.IsDead)
         {
             return;
         }
@@ -215,6 +236,7 @@ public class Spawner : MonoBehaviour
         }
 
         HashSet<Vector2> blockedPositions = new HashSet<Vector2>();
+        List<WorldObject> spawnedWorldObjects = new List<WorldObject>();
         if (avoidDuplicateSpawnTiles && playerTransform != null)
         {
             Vector2 playerTile = new Vector2(
@@ -264,9 +286,14 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < worldObjectCount; i++)
         {
-            if (TrySpawnFromPool(worldObjectPrefabs, floorList, blockedPositions, out _))
+            if (TrySpawnFromPool(worldObjectPrefabs, floorList, blockedPositions, out GameObject spawnedWorldObject))
             {
                 remainingCapacity--;
+                if (spawnedWorldObject != null &&
+                    spawnedWorldObject.TryGetComponent<WorldObject>(out WorldObject worldObject))
+                {
+                    spawnedWorldObjects.Add(worldObject);
+                }
             }
         }
 
@@ -294,6 +321,8 @@ public class Spawner : MonoBehaviour
                 break;
             }
         }
+
+        ConfigureSingleObjectiveMapDrop(spawnedWorldObjects, floorList, blockedPositions);
     }
 
     private int TrySpawnOneFromPool(
@@ -344,11 +373,6 @@ public class Spawner : MonoBehaviour
         spawnedObjects.Add(spawned);
         spawnedObject = spawned;
 
-        if (spawned.TryGetComponent<WorldObject>(out WorldObject worldObject))
-        {
-            worldObject.ConfigureObjectiveDrop(objectiveItemPrefab);
-        }
-
         if (spawned.TryGetComponent<Enemy>(out Enemy enemy))
         {
             activeRoomEnemies.Add(enemy);
@@ -396,7 +420,7 @@ public class Spawner : MonoBehaviour
 
     private void TryAdvanceToNextRoom()
     {
-        if (!hasSpawnedForCurrentRoom || isTransitioningRoom || dungeonGenerator == null)
+        if (!hasSpawnedForCurrentRoom || isTransitioningRoom)
         {
             return;
         }
@@ -408,7 +432,28 @@ public class Spawner : MonoBehaviour
         }
 
         isTransitioningRoom = true;
-        dungeonGenerator.GenerateDungeon();
+        RoomClearCount++;
+
+        if (RoomClearCount >= roomsBeforeReturningToHub)
+        {
+            Debug.Log("You win");
+            ResetRoomClearProgress();
+            MoveScene moveScene = FindFirstObjectByType<MoveScene>();
+            if (moveScene != null)
+            {
+                moveScene.StartCoroutine(moveScene.MoveBackToSample());
+            }
+            return;
+        }
+
+        if (dungeonGenerator != null)
+        {
+            dungeonGenerator.GenerateDungeon();
+        }
+        else
+        {
+            isTransitioningRoom = false;
+        }
     }
 
     private void PlacePlayerInRoom(IReadOnlyCollection<Vector2> floorPositions)
@@ -476,8 +521,45 @@ public class Spawner : MonoBehaviour
             maxWorldObjectSpawns = minWorldObjectSpawns;
         }
 
-        // Room cap must support: 1 weapon + 1 healing + 1 armor + at least 5 world objects.
-        minRoomSpawnCap = Mathf.Max(8, minRoomSpawnCap);
+        // Room cap must support: 1 weapon + 1 healing + 1 armor + at least 5 world objects + at least 1 enemy.
+        minRoomSpawnCap = Mathf.Max(9, minRoomSpawnCap);
         maxRoomSpawnCap = Mathf.Max(minRoomSpawnCap, maxRoomSpawnCap);
+        roomsBeforeReturningToHub = Mathf.Max(1, roomsBeforeReturningToHub);
+    }
+
+    private void ConfigureSingleObjectiveMapDrop(
+        List<WorldObject> spawnedWorldObjects,
+        List<Vector2> floorList,
+        HashSet<Vector2> blockedPositions)
+    {
+        if (objectiveItemPrefab == null)
+        {
+            return;
+        }
+
+        if (spawnedWorldObjects != null && spawnedWorldObjects.Count > 0)
+        {
+            int selectedIndex = Random.Range(0, spawnedWorldObjects.Count);
+            for (int i = 0; i < spawnedWorldObjects.Count; i++)
+            {
+                if (spawnedWorldObjects[i] == null) continue;
+                spawnedWorldObjects[i].ConfigureObjectiveDrop(i == selectedIndex ? objectiveItemPrefab : null);
+            }
+            return;
+        }
+
+        if (!TryGetSpawnPosition(floorList, blockedPositions, out Vector2 spawnPosition))
+        {
+            return;
+        }
+
+        Vector3 worldPosition = new Vector3(spawnPosition.x, spawnPosition.y + spawnYOffset, 0f);
+        GameObject objective = Instantiate(objectiveItemPrefab, worldPosition, Quaternion.identity, transform);
+        spawnedObjects.Add(objective);
+
+        if (avoidDuplicateSpawnTiles)
+        {
+            blockedPositions.Add(spawnPosition);
+        }
     }
 }

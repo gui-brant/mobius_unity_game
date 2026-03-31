@@ -21,7 +21,6 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
 
     public void ConfigureObjectiveDrop(GameObject objectivePrefab)
     {
-        if (objectivePrefab == null) return;
         objectiveItemPrefab = objectivePrefab;
     }
 
