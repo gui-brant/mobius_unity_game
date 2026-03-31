@@ -1,43 +1,108 @@
 using UnityEngine;
-using System.Collections;
 
 public class AttachCamera : MonoBehaviour
 {
-    public Vector3 offset = new Vector3(0, 0, -10);
+    [SerializeField] private string targetName = "Michael";
+    [SerializeField] private Vector3 offset = new Vector3(0, 5, -10);
 
-    void Start()
+    private Transform target;
+    private Character targetCharacter;
+    private Transform cameraTransform;
+
+    private void Awake()
     {
-        StartCoroutine(AttachWhenReady());
+        ResolveCamera();
     }
 
-    IEnumerator AttachWhenReady()
+    private void LateUpdate()
     {
-        Character targetCharacter = null;
-
-        // Wait until we find a valid (alive) character
-        while (targetCharacter == null || targetCharacter.isDead)
+        if (!HasValidTarget())
         {
-            Character[] allCharacters = FindObjectsByType<Character>(FindObjectsSortMode.None);
-
-            foreach (Character c in allCharacters)
-            {
-                if (!c.isDead)
-                {
-                    targetCharacter = c;
-                    break;
-                }
-            }
-
-            yield return null; // wait one frame
+            ResolveTarget();
         }
 
-        // Ensure position is settled
-        yield return null;
+        if (!HasValidCamera())
+        {
+            ResolveCamera();
+        }
 
-        // Attach camera
-        Transform cam = Camera.main.transform;
-        cam.SetParent(targetCharacter.transform);
-        cam.localPosition = offset;
-        cam.localRotation = Quaternion.identity;
+        if (target == null || cameraTransform == null)
+        {
+            return;
+        }
+
+        Vector3 targetPosition = target.position;
+        cameraTransform.position = new Vector3(
+            targetPosition.x + offset.x,
+            targetPosition.y + offset.y,
+            targetPosition.z + offset.z
+        );
+    }
+
+    private bool HasValidTarget()
+    {
+        return target != null &&
+               target.gameObject.activeInHierarchy &&
+               targetCharacter != null &&
+               !targetCharacter.IsDead;
+    }
+
+    private bool HasValidCamera()
+    {
+        return cameraTransform != null && cameraTransform.gameObject.activeInHierarchy;
+    }
+
+    private void ResolveCamera()
+    {
+        Camera mainCamera = Camera.main;
+        if (mainCamera != null && mainCamera.isActiveAndEnabled)
+        {
+            cameraTransform = mainCamera.transform;
+            return;
+        }
+
+        Camera[] allCameras = FindObjectsByType<Camera>(FindObjectsSortMode.None);
+        for (int i = 0; i < allCameras.Length; i++)
+        {
+            Camera candidate = allCameras[i];
+            if (candidate == null || !candidate.isActiveAndEnabled) continue;
+            cameraTransform = candidate.transform;
+            return;
+        }
+
+        cameraTransform = null;
+    }
+
+    private void ResolveTarget()
+    {
+        target = null;
+        targetCharacter = null;
+
+        if (!string.IsNullOrWhiteSpace(targetName))
+        {
+            GameObject namedObject = GameObject.Find(targetName);
+            if (namedObject != null &&
+                namedObject.activeInHierarchy &&
+                namedObject.TryGetComponent<Character>(out Character namedCharacter) &&
+                !namedCharacter.IsDead)
+            {
+                target = namedObject.transform;
+                targetCharacter = namedCharacter;
+                return;
+            }
+        }
+
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        for (int i = 0; i < players.Length; i++)
+        {
+            GameObject candidate = players[i];
+            if (candidate == null || !candidate.activeInHierarchy) continue;
+            if (!candidate.TryGetComponent<Character>(out Character candidateCharacter)) continue;
+            if (candidateCharacter.IsDead) continue;
+
+            target = candidate.transform;
+            targetCharacter = candidateCharacter;
+            return;
+        }
     }
 }

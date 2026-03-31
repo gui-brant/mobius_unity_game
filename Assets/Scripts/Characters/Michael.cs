@@ -19,6 +19,8 @@ public class Michael : Character, IAttacker, ITargetable
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
 
+    private SkullNPC interactableSkullNPC;
+    
     protected override void Update()
     {
         if (IsDead) return;
@@ -27,7 +29,12 @@ public class Michael : Character, IAttacker, ITargetable
 
         HandleInput();
         HandleAttack();
-        base.Update(); 
+        base.Update();
+
+        if (interactableSkullNPC != null && Input.GetKeyDown(KeyCode.E))
+        {
+            interactableSkullNPC.Interact();
+        }
     }
 
     // movement 
@@ -45,6 +52,23 @@ public class Michael : Character, IAttacker, ITargetable
         );
 
         SetMovement(input);
+    }
+    
+    // interacting with skull npc
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent<SkullNPC>(out SkullNPC skull))
+        {
+            interactableSkullNPC = skull;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent<SkullNPC>(out SkullNPC skull))
+        {
+            interactableSkullNPC = null;
+        }
     }
 
     //attack system
@@ -133,9 +157,39 @@ public class Michael : Character, IAttacker, ITargetable
 
     private IDamageable GetDamageableFromObject(GameObject targetObject)
     {
-        foreach (MonoBehaviour behaviour in targetObject.GetComponents<MonoBehaviour>())
+        if (targetObject == null)
         {
-            if (behaviour is IDamageable damageable)
+            return null;
+        }
+
+        IDamageable damageable = GetDamageableFromBehaviours(targetObject.GetComponents<MonoBehaviour>());
+        if (damageable != null)
+        {
+            return damageable;
+        }
+
+        Transform parent = targetObject.transform.parent;
+        while (parent != null)
+        {
+            damageable = GetDamageableFromBehaviours(parent.GetComponents<MonoBehaviour>());
+            if (damageable != null)
+            {
+                return damageable;
+            }
+
+            parent = parent.parent;
+        }
+
+        return null;
+    }
+
+    private IDamageable GetDamageableFromBehaviours(MonoBehaviour[] behaviours)
+    {
+        if (behaviours == null) return null;
+
+        for (int i = 0; i < behaviours.Length; i++)
+        {
+            if (behaviours[i] is IDamageable damageable)
             {
                 return damageable;
             }
