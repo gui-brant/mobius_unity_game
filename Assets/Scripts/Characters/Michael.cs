@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Michael : Character, IAttacker, ITargetable
+public class Michael : Character, ITargetable
 {
     
     [SerializeField] private int attackDamage = 20;
@@ -90,22 +91,24 @@ public class Michael : Character, IAttacker, ITargetable
             isAttacking = false;
         }
     }
+    
 
     private void StartAttack()
     {
         isAttacking = true;
-
         int direction = GetDirection();
-
-        // fallback if not moving
-        if (direction == -1)
-        {
-            direction = GetLastDirection();
-        }
+        if (direction == -1) direction = GetLastDirection();
 
         string animName = "Attack" + direction;
-
         PlayAnimation(animName);
+
+        // Change: Start a coroutine instead of calling PerformAttackHit immediately
+        StartCoroutine(DelayedAttackHit(direction));
+    }
+
+    private IEnumerator DelayedAttackHit(int direction)
+    {
+        yield return new WaitForSeconds(0.35f); // The requested delay
         PerformAttackHit(direction);
     }
 

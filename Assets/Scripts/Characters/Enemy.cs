@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /*
@@ -5,7 +6,7 @@ The class definition currently implemenets a basic enemy.
 The enemy will chase Michael on spawn, take damage, attack Michael if close enough, and die when health reaches 0.
 Animation handling is also implemented here, although it lacks actual animations. 
 */
-public class Enemy : Character, IAttacker, ITargetable
+public class Enemy : Character, ITargetable
 {
     //[SerializeField] allows for you to keep variables private while still being visible on the inspector.
     [Header("Targeting")]
@@ -15,8 +16,9 @@ public class Enemy : Character, IAttacker, ITargetable
     [Header("Combat")]
     [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackRange = 1.25f;
-    [SerializeField] private float attackCooldown = 1.0f;
-    [SerializeField] private float attackDuration = 0.35f;
+    [SerializeField] private float attackCooldown = 2.0f; // Adjusted for longer animation
+    [SerializeField] private float attackDuration = 1.09f; // Locked duration
+    [SerializeField] private float hitDelay = 0.35f;      // Delay before damage
 
     [Header("Reactions")]
     [SerializeField] private float hurtDuration = 0.25f;
@@ -204,7 +206,7 @@ public class Enemy : Character, IAttacker, ITargetable
 
         if (isDead)
         {
-            PlayAnimation("Death" + direction);
+            PlayAnimation("Die");
             return;
         }
 
@@ -230,25 +232,28 @@ Below, you will find the helper funcitons that allow for start attacking, handli
     private void StartAttack()
     {
         isAttacking = true;
-        attackTimer = attackDuration;
+        attackTimer = attackDuration; // This locks the state for 1.09s
         attackCooldownTimer = attackCooldown;
         SetMovement(Vector2.zero);
 
-        if (targetMichael != null)
+        // Trigger the delayed hit calculation
+        StartCoroutine(DelayedEnemyHit());
+    }
+
+    private IEnumerator DelayedEnemyHit()
+    {
+        yield return new WaitForSeconds(hitDelay); // Wait 0.35s
+
+        // Only deal damage if the enemy didn't die or get interrupted during the wind-up
+        if (!isDead && !isHurt && targetMichael != null)
         {
-            Attack(targetMichael);
+            // Optional: Check distance again to see if Michael moved away during the 0.35s
+            float dist = Vector2.Distance(transform.position, targetMichael.transform.position);
+            if (dist <= attackRange)
+            {
+                targetMichael.TakeDamage(attackDamage);
+            }
         }
-    }
-
-    public void Attack(IDamageable target)
-    {
-        if (isDead || target == null) return;
-        target.TakeDamage(AttackDamage);
-    }
-
-    public void ModifyAttackDamage(int amount)
-    {
-        attackDamage = Mathf.Max(0, attackDamage + amount);
     }
 
     private void HandleAttackState()
