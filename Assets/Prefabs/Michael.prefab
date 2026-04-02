@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2276533913878827557}
   - component: {fileID: 1571640740461394782}
   - component: {fileID: 1220837781185724671}
+  - component: {fileID: 7017284275821988826}
   m_Layer: 0
   m_Name: Michael
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3367867620678197763}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -5, z: 0}
+  m_LocalPosition: {x: 6, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62,7 +63,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,8 +82,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 114377165
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -783805479349295894, guid: b0e0ea9d369546d48acb16a3e259a720, type: 3}
@@ -110,7 +111,7 @@ MonoBehaviour:
   health: 100
   speed: 3
   isDead: 0
-  attackDamage: 20
+  attackDamage: 100
   attackRange: 1.25
   attackHitRadius: 0.45
   attackOrigin: {fileID: 0}
@@ -179,7 +180,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.016728997, y: 0.35561943}
+  m_Offset: {x: -0.0023832321, y: 0.116716504}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -189,7 +190,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.556061, y: 1.0383339}
+  m_Size: {x: 0.28848982, y: 0.4044392}
   m_EdgeRadius: 0
 --- !u!95 &1220837781185724671
 Animator:
@@ -213,3 +214,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7017284275821988826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3367867620678197763}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3d918a052d89747b6b63089c369ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttachCamera
+  targetName: Michael
+  offset: {x: 0, y: 0, z: -10}

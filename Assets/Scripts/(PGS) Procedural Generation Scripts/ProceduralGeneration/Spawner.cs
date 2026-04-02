@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     private readonly List<Enemy> activeRoomEnemies = new List<Enemy>();
 
     private IReadOnlyCollection<Vector2> pendingFloorPositions;
-    private bool hasSpawnedForCurrentRoom;
+    public bool hasSpawnedForCurrentRoom;
     private bool objectiveCollectedForCurrentRoom;
     private bool isTransitioningRoom;
     private int currentRoomSpawnCap;
@@ -200,7 +200,7 @@ public class Spawner : MonoBehaviour
         TryAdvanceToNextRoom();
     }
 
-    private void TrySpawnWhenReady()
+    public void TrySpawnWhenReady()
     {
         if (hasSpawnedForCurrentRoom)
         {
