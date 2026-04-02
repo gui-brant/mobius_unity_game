@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5143958073238637928}
   - component: {fileID: 8130904661451790211}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: ArrowProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,9 +157,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 377947037369754235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d9b789ac06342d194bf874a60a38831, type: 3}
+  m_Script: {fileID: 11500000, guid: a31ad3fca5ff54f589a30e6e35c78535, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeleeWeapon
-  baseDamage: 45
-  baseAttackRange: 1.5
-  baseAttackHitRadius: 0.45
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  speed: 14
+  baseDamage: 20

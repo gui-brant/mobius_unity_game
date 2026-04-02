@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Items/Item.cs" />
+    <Compile Include="Assets/Scripts/Combat/Projectile.cs" />
     <Compile Include="Assets/Scripts/(PGS) Procedural Generation Scripts/ProcedGenScripts/SimpleRandomWalkDungeonGenerator.cs" />
     <Compile Include="Assets/Scripts/Interfaces/IKillable.cs" />
     <Compile Include="Assets/Scripts/Characters/Character.cs" />
@@ -56,10 +57,12 @@
     <Compile Include="Assets/Scripts/ColourSwatchButton.cs" />
     <Compile Include="Assets/Scripts/Characters/SkullNPC.cs" />
     <Compile Include="Assets/Scripts/NPCDialogue.cs" />
+    <Compile Include="Assets/Scripts/Combat/ProjectileSpawner.cs" />
     <Compile Include="Assets/Scripts/Interfaces/IConsumable.cs" />
-    <Compile Include="Assets/Scripts/Interfaces/IEquipable.cs" />
+    <Compile Include="Assets/Scripts/Interfaces/ITeamMember.cs" />
     <Compile Include="Assets/Scripts/MenuToggle.cs" />
     <Compile Include="Assets/Scripts/Items/ArmorItem.cs" />
+    <Compile Include="Assets/Scripts/Combat/CombatTeam.cs" />
     <Compile Include="Assets/Scripts/Interfaces/IHasEffect.cs" />
     <Compile Include="Assets/Scripts/Interfaces/ITargetable.cs" />
     <Compile Include="Assets/Scripts/(PGS) Procedural Generation Scripts/ProcedGenScripts/WallGenerator.cs" />
@@ -74,8 +77,10 @@
     <Compile Include="Assets/Scripts/(PGS) Procedural Generation Scripts/ProcedGenScripts/WallTypesHelper.cs" />
     <Compile Include="Assets/Scripts/ColourPickerUI.cs" />
     <Compile Include="Assets/Scripts/Characters/Michael.cs" />
+    <Compile Include="Assets/Scripts/Items/MeleeWeapon.cs" />
     <Compile Include="Assets/Scripts/(PGS) Procedural Generation Scripts/ProcedGenScripts/TileMapVisualizer.cs" />
     <Compile Include="Assets/Scripts/Interfaces/ICollectible.cs" />
+    <Compile Include="Assets/Scripts/Items/RangedWeapon.cs" />
     <Compile Include="Assets/Scripts/(PGS) Procedural Generation Scripts/SceneStuff/MoveScene.cs" />
     <Compile Include="Assets/Scripts/Items/HealingItem.cs" />
     <Compile Include="Assets/Scripts/Characters/Enemies/Enemy.cs" />

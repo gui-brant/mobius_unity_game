@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5143958073238637928}
   - component: {fileID: 8130904661451790211}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2204259319021686512, guid: 859ba7a5142f84d2db5db670fc21bb72, type: 3}
+  m_Sprite: {fileID: 8813382698077936911, guid: a3544eb8c2d0448db87c8b66e8618a4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,7 +131,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.23, y: 0.23}
+    oldSize: {x: 0.25, y: 0.25}
     newSize: {x: 0.23, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -157,9 +157,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 377947037369754235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d9b789ac06342d194bf874a60a38831, type: 3}
+  m_Script: {fileID: 11500000, guid: 6574a089e7ec4f71acac4e50e5a130ce, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeleeWeapon
-  baseDamage: 45
-  baseAttackRange: 1.5
-  baseAttackHitRadius: 0.45
+  m_EditorClassIdentifier: Assembly-CSharp::RangedWeapon
+  projectilePrefab: {fileID: 377947037369754235, guid: 4dbadfe9b03a4f7ead00dd937352d7f3, type: 3}
+  projectileDamage: 35

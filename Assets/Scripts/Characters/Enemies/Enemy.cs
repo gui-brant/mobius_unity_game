@@ -6,7 +6,7 @@ The class definition currently implemenets a basic enemy.
 The enemy will chase Michael on spawn, take damage, attack Michael if close enough, and die when health reaches 0.
 Animation handling is also implemented here, although it lacks actual animations. 
 */
-public class Enemy : Character, ITargetable
+public class Enemy : Character, ITargetable, ITeamMember
 {
     //[SerializeField] allows for you to keep variables private while still being visible on the inspector.
     [Header("Targeting")]
@@ -34,6 +34,7 @@ public class Enemy : Character, ITargetable
     private float deathTimer;
 
     public int AttackDamage => attackDamage;
+    public CombatTeam Team => CombatTeam.Enemy;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
 
