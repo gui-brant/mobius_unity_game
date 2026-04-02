@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Collider2D), typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour, IMovementController
 {
     [Header("Projectile Stats")]
@@ -12,6 +12,11 @@ public class Projectile : MonoBehaviour, IMovementController
     private CombatTeam sourceTeam;
     private int? damageOverride;
     private bool isInitialized;
+
+    private void Awake()
+    {
+        EnsureProjectilePhysics();
+    }
 
     public void Initialize(
         Vector2 direction,
@@ -198,5 +203,25 @@ public class Projectile : MonoBehaviour, IMovementController
         }
 
         return null;
+    }
+
+    private void EnsureProjectilePhysics()
+    {
+        Collider2D collider2D = GetComponent<Collider2D>();
+        if (collider2D != null)
+        {
+            collider2D.isTrigger = true;
+        }
+
+        Rigidbody2D rb2D = GetComponent<Rigidbody2D>();
+        if (rb2D == null)
+        {
+            rb2D = gameObject.AddComponent<Rigidbody2D>();
+        }
+
+        rb2D.bodyType = RigidbodyType2D.Kinematic;
+        rb2D.gravityScale = 0f;
+        rb2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb2D.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 }
