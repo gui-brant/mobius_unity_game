@@ -59,7 +59,24 @@ public class ProceduralGenerationDebugger : Editor
             spawner.hasSpawnedForCurrentRoom = false;  
             spawner.TrySpawnWhenReady();
         }
-        
+        if (GUILayout.Button("Trigger change of room")/*create button */) // which if presed
+        {
+            //fulfill criteria for room change( Finds all Enemy components in the scene & kill em, pickup var for if you picked up the map)
+            Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+            foreach (Enemy enemy in enemies)
+            {
+                if (enemy.gameObject.name == "Zombie(Clone)")
+                {
+                    Destroy(enemy.gameObject);
+                }
+            }
+
+
+            spawner.objectiveCollectedForCurrentRoom= true;
+            spawner.TryAdvanceToNextRoom();
+
+        }
+
 
 
     }

@@ -26,16 +26,26 @@ public class Spawner : MonoBehaviour
     [SerializeField] private bool avoidDuplicateSpawnTiles = true;
     [SerializeField] private int maxPlacementAttemptsPerObject = 20;
     [SerializeField] private float spawnYOffset = 0f;
-
+    [SerializeField] private bool AllowSwitchToBoss = false;
     private readonly List<GameObject> spawnedObjects = new List<GameObject>();
     private readonly List<Enemy> activeRoomEnemies = new List<Enemy>();
 
     private IReadOnlyCollection<Vector2> pendingFloorPositions;
     public bool hasSpawnedForCurrentRoom;
-    private bool objectiveCollectedForCurrentRoom;
+    public bool objectiveCollectedForCurrentRoom;
     private bool isTransitioningRoom;
     private int currentRoomSpawnCap;
-
+    //Values for change of difficulty per room
+    [Header("Difficulty change per new room")]
+    [Tooltip("Increase Spawn Of Objects Per New Room")]
+    [SerializeField]
+    private int IncObjects= 3;
+    [Tooltip("Increase Spawn Of Enemies Per New Room")]
+    [SerializeField]
+    private int IncEnemies = 9;
+    [Tooltip("Increase Number Of Attempts For Spawn")]
+    [SerializeField]
+    private int IncAttempts = 5;
     public static void ResetRoomClearProgress()
     {
         RoomClearCount = 0;
@@ -418,7 +428,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void TryAdvanceToNextRoom()
+    public void TryAdvanceToNextRoom()
     {
         if (!hasSpawnedForCurrentRoom || isTransitioningRoom)
         {
@@ -439,15 +449,25 @@ public class Spawner : MonoBehaviour
             Debug.Log("You win");
             ResetRoomClearProgress();
             MoveScene moveScene = FindFirstObjectByType<MoveScene>();
-            if (moveScene != null)
+            if (moveScene != null && AllowSwitchToBoss)
             {
-                moveScene.StartCoroutine(moveScene.MoveBackToSample());
+                moveScene.StartCoroutine(moveScene.MoveToRandomBossRoom());
+                return;
             }
-            return;
+            
         }
 
         if (dungeonGenerator != null)
         {
+            //update the size of the room to make it harder to progress
+            SimpleRandomWalkDungeonGenerator RoomGeneratorObject = FindFirstObjectByType<SimpleRandomWalkDungeonGenerator>();
+            Debug.Log(RoomGeneratorObject);
+            RoomGeneratorObject.iterations+=10;
+            RoomGeneratorObject.walkLength+=30;
+            maxWorldObjectSpawns += IncObjects;
+            maxRoomSpawnCap += IncEnemies;
+            maxPlacementAttemptsPerObject += IncAttempts;
+            //actual call for transition
             dungeonGenerator.GenerateDungeon();
         }
         else
