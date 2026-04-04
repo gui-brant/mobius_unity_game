@@ -13,7 +13,15 @@ public class CameraFollow : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if  (targetCharacter == null) return;
+        if (targetCharacter == null)
+        {
+            targetCharacter = FindObjectOfType<Michael>();
+            Debug.Log("Michael found");
+        }
+        else
+        {
+            Debug.Log("target given");
+        }
         _targetTransform = targetCharacter.transform;
         Debug.Log("target transform found");
     }
