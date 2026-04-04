@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 1e830678351a74540aaa74393c406887
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4124434666665020750
+    second: Idle_Bow_Shadow_180_0
+  - first:
+      213: -9105113767640120580
+    second: Idle_Bow_Shadow_180_1
+  - first:
+      213: 2519808904378410977
+    second: Idle_Bow_Shadow_180_2
+  - first:
+      213: -2581427538250397176
+    second: Idle_Bow_Shadow_180_3
+  - first:
+      213: -8176962288818502730
+    second: Idle_Bow_Shadow_180_4
+  - first:
+      213: 7393329474807202928
+    second: Idle_Bow_Shadow_180_5
+  - first:
+      213: 7725796877490271836
+    second: Idle_Bow_Shadow_180_6
+  - first:
+      213: -2423017772690295916
+    second: Idle_Bow_Shadow_180_7
+  - first:
+      213: -5222283347022085547
+    second: Idle_Bow_Shadow_180_8
+  - first:
+      213: 8694434571430044323
+    second: Idle_Bow_Shadow_180_9
+  - first:
+      213: 452867409080318731
+    second: Idle_Bow_Shadow_180_10
+  - first:
+      213: 5777716880941745620
+    second: Idle_Bow_Shadow_180_11
+  - first:
+      213: 5336296649504949915
+    second: Idle_Bow_Shadow_180_12
+  - first:
+      213: 7349258336669579716
+    second: Idle_Bow_Shadow_180_13
+  - first:
+      213: 454065628947820171
+    second: Idle_Bow_Shadow_180_14
+  - first:
+      213: 2357350522785353055
+    second: Idle_Bow_Shadow_180_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 559
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d00e52a7fec3930800000000000000
+      internalID: 4124434666665020750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 559
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2ca40f44324a180800000000000000
+      internalID: -9105113767640120580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 559
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7675719d828f220800000000000000
+      internalID: 2519808904378410977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_3
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 559
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a8c29b45dec2cd0800000000000000
+      internalID: -2581427538250397176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 379
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b345392f18958e80800000000000000
+      internalID: -8176962288818502730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 378
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0740f4d5cf16a9660800000000000000
+      internalID: 7393329474807202928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 378
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5631a9b35b873b60800000000000000
+      internalID: 7725796877490271836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_7
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 378
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49336566c26bf5ed0800000000000000
+      internalID: -2423017772690295916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 198
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5528f48f6f8b687b0800000000000000
+      internalID: -5222283347022085547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_9
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 198
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2a6f87d26d8a870800000000000000
+      internalID: 8694434571430044323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 198
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b75985288e84600800000000000000
+      internalID: 452867409080318731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_11
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 198
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d58f4d34e29e2050800000000000000
+      internalID: 5777716880941745620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 19
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9689d1a7855e0a40800000000000000
+      internalID: 5336296649504949915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_13
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 19
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9b4c7e48fcdf560800000000000000
+      internalID: 7349258336669579716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_14
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 19
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e2626a84a2d4600800000000000000
+      internalID: 454065628947820171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Bow_Shadow_180_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 19
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5dc3b98fcdf6b020800000000000000
+      internalID: 2357350522785353055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idle_Bow_Shadow_180_0: 4124434666665020750
+      Idle_Bow_Shadow_180_1: -9105113767640120580
+      Idle_Bow_Shadow_180_10: 452867409080318731
+      Idle_Bow_Shadow_180_11: 5777716880941745620
+      Idle_Bow_Shadow_180_12: 5336296649504949915
+      Idle_Bow_Shadow_180_13: 7349258336669579716
+      Idle_Bow_Shadow_180_14: 454065628947820171
+      Idle_Bow_Shadow_180_15: 2357350522785353055
+      Idle_Bow_Shadow_180_2: 2519808904378410977
+      Idle_Bow_Shadow_180_3: -2581427538250397176
+      Idle_Bow_Shadow_180_4: -8176962288818502730
+      Idle_Bow_Shadow_180_5: 7393329474807202928
+      Idle_Bow_Shadow_180_6: 7725796877490271836
+      Idle_Bow_Shadow_180_7: -2423017772690295916
+      Idle_Bow_Shadow_180_8: -5222283347022085547
+      Idle_Bow_Shadow_180_9: 8694434571430044323
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
