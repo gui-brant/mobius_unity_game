@@ -1,7 +1,10 @@
+using NUnit.Framework;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
-using System;
+using Random = UnityEngine.Random;
 
 public class MoveScene : MonoBehaviour
 {
@@ -12,10 +15,14 @@ public class MoveScene : MonoBehaviour
 
     [Header("Scene Names")]
     public string pgrSceneName = "(PGR) Procedurally generated rooms";
+    [Header("Scene Names")]
+    public List<String> ListOfAllBossScenes = new List<String> { "SecondBoss", "EmilBoss" };
+    [Header("Scene Names")]
     public string sampleSceneName = "SampleScene";
-    public Vector3 cameraOffset = new Vector3(0f, 0f, -10f);
+    public Vector3 cameraOffset = new Vector3(-5f, 0f, 0f);
 
     private bool isTransitioning = false;
+    public int BossSceneForTransition;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -126,18 +133,27 @@ public class MoveScene : MonoBehaviour
     IEnumerator MoveToPGR()
     {
         Debug.Log("<color=yellow>Entering PGR...</color>");
-        yield return StartCoroutine(TransitionProcess(sampleSceneName, pgrSceneName));
+        yield return StartCoroutine(TransitionProcess(pgrSceneName));
         isTransitioning = false;
     }
 
     public IEnumerator MoveBackToSample()
     {
         Debug.Log("<color=cyan>Returning to Sample Scene...</color>");
-        yield return StartCoroutine(TransitionProcess(pgrSceneName, sampleSceneName));
+        yield return StartCoroutine(TransitionProcess(sampleSceneName));
+        isTransitioning = false;
+    }
+    public IEnumerator MoveToRandomBossRoom()
+    {
+        BossSceneForTransition = Random.Range(0,1);
+
+        Debug.Log("<color=cyan>Entering random boss room...</color>");
+        Debug.Log(ListOfAllBossScenes[BossSceneForTransition]);
+        yield return StartCoroutine(TransitionProcess(ListOfAllBossScenes[BossSceneForTransition]));
         isTransitioning = false;
     }
 
-    IEnumerator TransitionProcess(string fromScene, string toScene)
+    IEnumerator TransitionProcess(string toScene)
     {
         Scene destinationScene = SceneManager.GetSceneByName(toScene);
         if (!destinationScene.isLoaded)
