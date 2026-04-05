@@ -73,6 +73,11 @@ public class TorchManager : MonoBehaviour
             torch.StopAttacking();
         }
         
+        for (int i = SpiritProjectile.ActiveSpirits.Count - 1; i >= 0; i--)
+        {
+            Destroy(SpiritProjectile.ActiveSpirits[i].gameObject);
+        }
+        
         // Trigger LevelController here to open door or whatever
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
