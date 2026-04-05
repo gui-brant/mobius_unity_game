@@ -8,9 +8,10 @@ public class TorchManager : MonoBehaviour
     
     void Awake()
     {  
-        // store
+        // store reference to torches
         _torches = GetComponentsInChildren<Torch>().ToList();
         Debug.Log("Torches found: " + _torches.Count);
+        int index =  _torches.Count - 0;
     }
         
     // Start is called once before the first execution of Update after the MonoBehaviour is created
