@@ -1,32 +1,39 @@
 using UnityEngine;
 
 public class Torch : MonoBehaviour, IInteractable
-{
-
-    // used to determine if friendly or not
-    private bool IsReal { get; set; } = true;
+{ 
+    public bool IsReal { get; set; } = false; // Set true by TorchManager
+    private bool _isActive = false; // Interacted with yet?
     
-    // represents if player has interacted with it
-    private bool IsActive { get; set; }
-
     private Animator _anim;
-
     private GameObject _target;
+    
+    // For attacks
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float spawnRate = 2.5f;
 
+    public TorchManager manager;
+    
     public void Interact(GameObject interactor)
     {
-        if (IsActive) return;
+        if (_isActive) return;
         
         // assigned private variable for attack
         _target =  interactor;
 
         // set new state
-        IsActive = true;
+        _isActive = true;
         
+        // one-time animation change if real
         if (IsReal)
         {
             Debug.Log("animation change triggered");
             _anim.SetTrigger("isLit");
+        }
+        else
+        {
+            // If it's a fake/trap torch, start the spawning loop
+            InvokeRepeating(nameof(SpawnSpirit), 1f, spawnRate);
         }
 
     }
@@ -47,4 +54,18 @@ public class Torch : MonoBehaviour, IInteractable
     {
         
     }
+
+    private void SpawnSpirit()
+    {
+        if (_target == null) return;
+
+        GameObject go = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        SpiritProjectile spirit = go.GetComponent<SpiritProjectile>();
+        
+        if (spirit != null)
+        {
+            spirit.Setup(_target);
+        }
+    }
+
 }
