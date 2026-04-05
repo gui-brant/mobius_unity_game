@@ -10,7 +10,8 @@ public class Torch : MonoBehaviour, IInteractable
     
     // For attacks
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float spawnRate = 2.5f;
+    [SerializeField] private float spawnRate = 2f;
+    [SerializeField] private float headStart = 0.5f;
 
     public TorchManager manager;
     
@@ -34,7 +35,7 @@ public class Torch : MonoBehaviour, IInteractable
         else
         {
             // If it's a fake/trap torch, start the spawning loop
-            InvokeRepeating(nameof(SpawnSpirit), 1f, spawnRate);
+            InvokeRepeating(nameof(SpawnSpirit), headStart, spawnRate);
         }
 
     }
