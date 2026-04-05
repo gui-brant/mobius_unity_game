@@ -17,7 +17,7 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
     private int currentDirection = -1;
     private int lastDirection = 0;
     private string currentAnimation = "";
-    protected bool isDead = false;
+    public bool isDead = false;
 
     public bool IsDead => isDead;
 

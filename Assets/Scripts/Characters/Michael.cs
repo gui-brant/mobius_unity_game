@@ -2,21 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Michael : Character, ITargetable
+public class Michael : Character, ITargetable, ITeamMember, IAttacker
 {
-    
-    [SerializeField] private int attackDamage = 20;
-    [SerializeField] private float attackRange = 1.25f;
-    [SerializeField] private float attackHitRadius = 0.45f;
+    private enum WeaponMode
+    {
+        Melee = 0,
+        Ranged = 1
+    }
+
+    [Header("Default Weapon (Melee)")]
+    [SerializeField] private int defaultMeleeDamage = 20;
+    [SerializeField] private float defaultMeleeRange = 1.25f;
+    [SerializeField] private float defaultMeleeHitRadius = 0.45f;
+
+    [Header("Attack Timing")]
+    [SerializeField] private float attackWindupDelay = 0.35f;
+
+    [Header("Ranged")]
+    [SerializeField] private ProjectileSpawner projectileSpawner;
     [SerializeField] private Transform attackOrigin;
     [SerializeField] private LayerMask attackableLayers = ~0;
+
+    [Header("Defense")]
     [SerializeField] private int armor = 0;
+
     private bool isAttacking = false;
     private readonly HashSet<string> objectiveItems = new HashSet<string>();
 
-    public int AttackDamage => attackDamage;
-    public float AttackRange => attackRange;
+    private WeaponMode currentWeaponMode = WeaponMode.Melee;
+    private int meleeBaseDamage;
+    private float meleeBaseRange;
+    private float meleeBaseHitRadius;
+    private GameObject rangedProjectilePrefab;
+    private int rangedBaseDamage;
+
+    private int bonusAttackDamage;
+    private float bonusAttackRange;
+
+    public int AttackDamage => Mathf.Max(0, GetActiveBaseDamage() + bonusAttackDamage);
+    public float AttackRange => Mathf.Max(0.1f, meleeBaseRange + bonusAttackRange);
     public int Armor => armor;
+    public CombatTeam Team => CombatTeam.Player;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
 
@@ -108,8 +134,8 @@ public class Michael : Character, ITargetable
 
     private IEnumerator DelayedAttackHit(int direction)
     {
-        yield return new WaitForSeconds(0.35f); // The requested delay
-        PerformAttackHit(direction);
+        yield return new WaitForSeconds(attackWindupDelay);
+        PerformAttackAction(direction);
     }
 
     public void Attack(IDamageable target)
@@ -118,13 +144,25 @@ public class Michael : Character, ITargetable
         target.TakeDamage(AttackDamage);
     }
 
-    private void PerformAttackHit(int direction)
+    private void PerformAttackAction(int direction)
+    {
+        if (currentWeaponMode == WeaponMode.Ranged)
+        {
+            PerformRangedAttack(direction);
+            return;
+        }
+
+        PerformMeleeAttack(direction);
+    }
+
+    private void PerformMeleeAttack(int direction)
     {
         Vector2 directionVector = DirectionToVector(direction);
         Vector2 origin = attackOrigin != null ? attackOrigin.position : transform.position;
-        Vector2 hitCenter = origin + (directionVector * attackRange);
+        Vector2 hitCenter = origin + (directionVector * AttackRange);
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(hitCenter, attackHitRadius, attackableLayers);
+        float effectiveHitRadius = Mathf.Max(0.05f, meleeBaseHitRadius);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(hitCenter, effectiveHitRadius, attackableLayers);
         HashSet<IDamageable> damagedTargets = new HashSet<IDamageable>();
 
         foreach (Collider2D hit in hits)
@@ -140,6 +178,33 @@ public class Michael : Character, ITargetable
             Attack(damageable);
             damagedTargets.Add(damageable);
         }
+    }
+
+    private void PerformRangedAttack(int direction)
+    {
+        if (rangedProjectilePrefab == null)
+        {
+            Debug.LogWarning("Ranged attack requested, but no projectile prefab is equipped.");
+            return;
+        }
+
+        ProjectileSpawner spawner = ResolveProjectileSpawner();
+        if (spawner == null)
+        {
+            Debug.LogWarning("Ranged attack requested, but no ProjectileSpawner is available.");
+            return;
+        }
+
+        Transform spawnPoint = attackOrigin != null ? attackOrigin : transform;
+        Vector2 directionVector = DirectionToVector(direction);
+        spawner.SpawnProjectile(
+            rangedProjectilePrefab,
+            spawnPoint,
+            gameObject,
+            Team,
+            AttackDamage,
+            directionVector
+        );
     }
 
     private Vector2 DirectionToVector(int direction)
@@ -211,12 +276,27 @@ public class Michael : Character, ITargetable
 
     public void ModifyAttackDamage(int amount)
     {
-        attackDamage = Mathf.Max(0, attackDamage + amount);
+        bonusAttackDamage = Mathf.Max(0, bonusAttackDamage + amount);
     }
 
     public void ModifyAttackRange(float amount)
     {
-        attackRange = Mathf.Max(0.1f, attackRange + amount);
+        bonusAttackRange = Mathf.Max(0f, bonusAttackRange + amount);
+    }
+
+    public void EquipMeleeWeapon(int baseDamage, float baseRange, float hitRadius)
+    {
+        currentWeaponMode = WeaponMode.Melee;
+        meleeBaseDamage = Mathf.Max(0, baseDamage);
+        meleeBaseRange = Mathf.Max(0.1f, baseRange);
+        meleeBaseHitRadius = Mathf.Max(0.05f, hitRadius);
+    }
+
+    public void EquipRangedWeapon(GameObject projectilePrefab, int projectileDamage)
+    {
+        currentWeaponMode = WeaponMode.Ranged;
+        rangedProjectilePrefab = projectilePrefab;
+        rangedBaseDamage = Mathf.Max(0, projectileDamage);
     }
 
     public void Heal(int amount)
@@ -254,9 +334,37 @@ public class Michael : Character, ITargetable
     {
         Vector2 directionVector = DirectionToVector(GetLastDirection());
         Vector2 origin = attackOrigin != null ? attackOrigin.position : transform.position;
-        Vector2 hitCenter = origin + (directionVector * attackRange);
+        Vector2 hitCenter = origin + (directionVector * AttackRange);
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(hitCenter, attackHitRadius);
+        Gizmos.DrawWireSphere(hitCenter, Mathf.Max(0.05f, meleeBaseHitRadius));
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
+        EquipMeleeWeapon(defaultMeleeDamage, defaultMeleeRange, defaultMeleeHitRadius);
+    }
+
+    private int GetActiveBaseDamage()
+    {
+        return currentWeaponMode == WeaponMode.Ranged ? rangedBaseDamage : meleeBaseDamage;
+    }
+
+    private ProjectileSpawner ResolveProjectileSpawner()
+    {
+        if (projectileSpawner != null)
+        {
+            return projectileSpawner;
+        }
+
+        projectileSpawner = FindFirstObjectByType<ProjectileSpawner>();
+        if (projectileSpawner != null)
+        {
+            return projectileSpawner;
+        }
+
+        projectileSpawner = gameObject.AddComponent<ProjectileSpawner>();
+        return projectileSpawner;
     }
 }
