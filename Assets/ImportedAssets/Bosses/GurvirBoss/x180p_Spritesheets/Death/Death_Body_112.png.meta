@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 3043b3b2e068e664e85447b5a3c4ecd9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3887606359786023498
+    second: Death_Body_112_0
+  - first:
+      213: 1408199363401927519
+    second: Death_Body_112_1
+  - first:
+      213: -942417341788752190
+    second: Death_Body_112_2
+  - first:
+      213: -3942704898864426928
+    second: Death_Body_112_3
+  - first:
+      213: 163191656077263884
+    second: Death_Body_112_4
+  - first:
+      213: 7388493321665371383
+    second: Death_Body_112_5
+  - first:
+      213: 478788334259874376
+    second: Death_Body_112_6
+  - first:
+      213: -1932768904597158865
+    second: Death_Body_112_7
+  - first:
+      213: 1435785370843266405
+    second: Death_Body_112_8
+  - first:
+      213: 3433820048706055150
+    second: Death_Body_112_9
+  - first:
+      213: 5891872301541685684
+    second: Death_Body_112_10
+  - first:
+      213: 5128417380770319428
+    second: Death_Body_112_11
+  - first:
+      213: -5776333239583748434
+    second: Death_Body_112_12
+  - first:
+      213: -6733436766228571000
+    second: Death_Body_112_13
+  - first:
+      213: -7560393571817603861
+    second: Death_Body_112_14
+  - first:
+      213: 9195364592363209040
+    second: Death_Body_112_15
+  - first:
+      213: 1569160575209871527
+    second: Death_Body_112_16
+  - first:
+      213: 141456579077824043
+    second: Death_Body_112_17
+  - first:
+      213: -6024319668334051190
+    second: Death_Body_112_18
+  - first:
+      213: -548867537434232848
+    second: Death_Body_112_19
+  - first:
+      213: 265678885315447166
+    second: Death_Body_112_20
+  - first:
+      213: 6476341470834106925
+    second: Death_Body_112_21
+  - first:
+      213: -4684362530779623143
+    second: Death_Body_112_22
+  - first:
+      213: -2792765495514655173
+    second: Death_Body_112_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_Body_112_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 578
+        width: 60
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a6895036d83f530800000000000000
+      internalID: 3887606359786023498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 578
+        width: 65
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc08c2cddea8310800000000000000
+      internalID: 1408199363401927519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 579
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c67388bb6cdbe2f0800000000000000
+      internalID: -942417341788752190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_3
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 576
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0505ef8a8c2b849c0800000000000000
+      internalID: -3942704898864426928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_4
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 576
+        width: 69
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c040bc252f5c34200800000000000000
+      internalID: 163191656077263884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_5
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 575
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcd537b783398660800000000000000
+      internalID: 7388493321665371383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 395
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a292a047ff4a600800000000000000
+      internalID: 478788334259874376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_7
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 395
+        width: 63
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24c098ebec6d25e0800000000000000
+      internalID: -1932768904597158865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 397
+        width: 64
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56db0da003fece310800000000000000
+      internalID: 1435785370843266405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_9
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 397
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb2db1242167af20800000000000000
+      internalID: 3433820048706055150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_10
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 399
+        width: 66
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9fa5b44a224c150800000000000000
+      internalID: 5891872301541685684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_11
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 398
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c01c0bf6ccb2740800000000000000
+      internalID: 5128417380770319428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 219
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae445ed58756dfa0800000000000000
+      internalID: -5776333239583748434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 218
+        width: 103
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c1467bfe60e82a0800000000000000
+      internalID: -6733436766228571000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_14
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 216
+        width: 109
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec3aa56a16141790800000000000000
+      internalID: -7560393571817603861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_15
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 216
+        width: 105
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051830ca06f7c9f70800000000000000
+      internalID: 9195364592363209040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_16
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 211
+        width: 99
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a89ee8ba37c6c510800000000000000
+      internalID: 1569160575209871527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_17
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 213
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e531b520e86f100800000000000000
+      internalID: 141456579077824043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 31
+        width: 102
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80cc8b0e21556ca0800000000000000
+      internalID: -6024319668334051190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 31
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f73d7af1e70268f0800000000000000
+      internalID: -548867537434232848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_20
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 32
+        width: 104
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e798c8fd981efa300800000000000000
+      internalID: 265678885315447166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_21
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 32
+        width: 105
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22a23d214690e950800000000000000
+      internalID: 6476341470834106925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_22
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 32
+        width: 105
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9111bb9d81dcdfeb0800000000000000
+      internalID: -4684362530779623143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Body_112_23
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 32
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3691ea149a1e39d0800000000000000
+      internalID: -2792765495514655173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Death_Body_112_0: 3887606359786023498
+      Death_Body_112_1: 1408199363401927519
+      Death_Body_112_10: 5891872301541685684
+      Death_Body_112_11: 5128417380770319428
+      Death_Body_112_12: -5776333239583748434
+      Death_Body_112_13: -6733436766228571000
+      Death_Body_112_14: -7560393571817603861
+      Death_Body_112_15: 9195364592363209040
+      Death_Body_112_16: 1569160575209871527
+      Death_Body_112_17: 141456579077824043
+      Death_Body_112_18: -6024319668334051190
+      Death_Body_112_19: -548867537434232848
+      Death_Body_112_2: -942417341788752190
+      Death_Body_112_20: 265678885315447166
+      Death_Body_112_21: 6476341470834106925
+      Death_Body_112_22: -4684362530779623143
+      Death_Body_112_23: -2792765495514655173
+      Death_Body_112_3: -3942704898864426928
+      Death_Body_112_4: 163191656077263884
+      Death_Body_112_5: 7388493321665371383
+      Death_Body_112_6: 478788334259874376
+      Death_Body_112_7: -1932768904597158865
+      Death_Body_112_8: 1435785370843266405
+      Death_Body_112_9: 3433820048706055150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

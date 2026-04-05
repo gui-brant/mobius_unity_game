@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: c3b4f739756e165488088b975ae18733
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -769675251342238771
+    second: Attack_Stance_Shadow_330_0
+  - first:
+      213: 5165556939208629968
+    second: Attack_Stance_Shadow_330_1
+  - first:
+      213: 1617671029154278714
+    second: Attack_Stance_Shadow_330_2
+  - first:
+      213: -8600025063810634598
+    second: Attack_Stance_Shadow_330_3
+  - first:
+      213: 2954467441290368307
+    second: Attack_Stance_Shadow_330_4
+  - first:
+      213: -8093339658268137222
+    second: Attack_Stance_Shadow_330_5
+  - first:
+      213: 6254620297146480435
+    second: Attack_Stance_Shadow_330_6
+  - first:
+      213: -8407011444125792645
+    second: Attack_Stance_Shadow_330_7
+  - first:
+      213: -1069155455586640059
+    second: Attack_Stance_Shadow_330_8
+  - first:
+      213: -6044305601217644975
+    second: Attack_Stance_Shadow_330_9
+  - first:
+      213: 2565517775460318309
+    second: Attack_Stance_Shadow_330_10
+  - first:
+      213: 4435244871891926908
+    second: Attack_Stance_Shadow_330_11
+  - first:
+      213: 974635681702971822
+    second: Attack_Stance_Shadow_330_12
+  - first:
+      213: 1103897927288883591
+    second: Attack_Stance_Shadow_330_13
+  - first:
+      213: 4727609780841991611
+    second: Attack_Stance_Shadow_330_14
+  - first:
+      213: 1628393094413225279
+    second: Attack_Stance_Shadow_330_15
+  - first:
+      213: -257287401253976018
+    second: Attack_Stance_Shadow_330_16
+  - first:
+      213: 7390152668105886442
+    second: Attack_Stance_Shadow_330_17
+  - first:
+      213: -1539081335837468052
+    second: Attack_Stance_Shadow_330_18
+  - first:
+      213: 4276318159685871983
+    second: Attack_Stance_Shadow_330_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1087
+        width: 127
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb1653df609155f0800000000000000
+      internalID: -769675251342238771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1088
+        width: 130
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de959cfaaebfa740800000000000000
+      internalID: 5165556939208629968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1087
+        width: 132
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d6e20fa3f137610800000000000000
+      internalID: 1617671029154278714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_3
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1086
+        width: 134
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c6c14f4c296a880800000000000000
+      internalID: -8600025063810634598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 829
+        width: 135
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335d1920c70600920800000000000000
+      internalID: 2954467441290368307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_5
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 827
+        width: 136
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8a85e067eaeaf80800000000000000
+      internalID: -8093339658268137222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_6
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 824
+        width: 137
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3373d589500ecc650800000000000000
+      internalID: 6254620297146480435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_7
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 821
+        width: 138
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b760d3242ab445b80800000000000000
+      internalID: -8407011444125792645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 562
+        width: 138
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f561c17c89921f0800000000000000
+      internalID: -1069155455586640059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_9
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 561
+        width: 138
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156b48d64105e1ca0800000000000000
+      internalID: -6044305601217644975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_10
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 563
+        width: 138
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c3347f2dc8a9320800000000000000
+      internalID: 2565517775460318309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_11
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 563
+        width: 137
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fbdf846b72d8d30800000000000000
+      internalID: 4435244871891926908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 308
+        width: 137
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea983591df9968d00800000000000000
+      internalID: 974635681702971822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_13
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 309
+        width: 136
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7890850f055d15f00800000000000000
+      internalID: 1103897927288883591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_14
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 311
+        width: 135
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdcfb73c08db9140800000000000000
+      internalID: 4727609780841991611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_15
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 313
+        width: 134
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d033b44e6399610800000000000000
+      internalID: 1628393094413225279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_16
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 59
+        width: 132
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28c213c87eed6cf0800000000000000
+      internalID: -257287401253976018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_17
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 61
+        width: 130
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea4b5a62b81f8660800000000000000
+      internalID: 7390152668105886442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 62
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a59f0fda514aae0800000000000000
+      internalID: -1539081335837468052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Shadow_330_19
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 63
+        width: 126
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69e0a695b8885b30800000000000000
+      internalID: 4276318159685871983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack_Stance_Shadow_330_0: -769675251342238771
+      Attack_Stance_Shadow_330_1: 5165556939208629968
+      Attack_Stance_Shadow_330_10: 2565517775460318309
+      Attack_Stance_Shadow_330_11: 4435244871891926908
+      Attack_Stance_Shadow_330_12: 974635681702971822
+      Attack_Stance_Shadow_330_13: 1103897927288883591
+      Attack_Stance_Shadow_330_14: 4727609780841991611
+      Attack_Stance_Shadow_330_15: 1628393094413225279
+      Attack_Stance_Shadow_330_16: -257287401253976018
+      Attack_Stance_Shadow_330_17: 7390152668105886442
+      Attack_Stance_Shadow_330_18: -1539081335837468052
+      Attack_Stance_Shadow_330_19: 4276318159685871983
+      Attack_Stance_Shadow_330_2: 1617671029154278714
+      Attack_Stance_Shadow_330_3: -8600025063810634598
+      Attack_Stance_Shadow_330_4: 2954467441290368307
+      Attack_Stance_Shadow_330_5: -8093339658268137222
+      Attack_Stance_Shadow_330_6: 6254620297146480435
+      Attack_Stance_Shadow_330_7: -8407011444125792645
+      Attack_Stance_Shadow_330_8: -1069155455586640059
+      Attack_Stance_Shadow_330_9: -6044305601217644975
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

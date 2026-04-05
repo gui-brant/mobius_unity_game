@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 4f44beacc5d4ffb42918c53d892fcc72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2563336780510190638
+    second: Down_Shadow_225_0
+  - first:
+      213: 2216455077595798503
+    second: Down_Shadow_225_1
+  - first:
+      213: -213394849575663521
+    second: Down_Shadow_225_2
+  - first:
+      213: -5542430470671889803
+    second: Down_Shadow_225_3
+  - first:
+      213: 2031106720917187741
+    second: Down_Shadow_225_4
+  - first:
+      213: 4811058420893881578
+    second: Down_Shadow_225_5
+  - first:
+      213: 7122127126801090476
+    second: Down_Shadow_225_6
+  - first:
+      213: -6921328003061648789
+    second: Down_Shadow_225_7
+  - first:
+      213: 5853131266160712673
+    second: Down_Shadow_225_8
+  - first:
+      213: -2088132435379603206
+    second: Down_Shadow_225_9
+  - first:
+      213: -198445134720493418
+    second: Down_Shadow_225_10
+  - first:
+      213: 1358564483530410633
+    second: Down_Shadow_225_11
+  - first:
+      213: 453325265633455845
+    second: Down_Shadow_225_12
+  - first:
+      213: -8294041871031671316
+    second: Down_Shadow_225_13
+  - first:
+      213: -8564471748041645930
+    second: Down_Shadow_225_14
+  - first:
+      213: 1960554420765379304
+    second: Down_Shadow_225_15
+  - first:
+      213: 3406443565269027367
+    second: Down_Shadow_225_16
+  - first:
+      213: -3438168871240681738
+    second: Down_Shadow_225_17
+  - first:
+      213: 2440460531052447424
+    second: Down_Shadow_225_18
+  - first:
+      213: -7329919564255441592
+    second: Down_Shadow_225_19
+  - first:
+      213: 3218006142818819989
+    second: Down_Shadow_225_20
+  - first:
+      213: 455698671880429696
+    second: Down_Shadow_225_21
+  - first:
+      213: -2325820297155646706
+    second: Down_Shadow_225_22
+  - first:
+      213: 7299051252974349950
+    second: Down_Shadow_225_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Down_Shadow_225_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 304
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cd002883dc29320800000000000000
+      internalID: 2563336780510190638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 303
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb55b8562e62ce10800000000000000
+      internalID: 2216455077595798503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 307
+        width: 60
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f580522d38ed90df0800000000000000
+      internalID: -213394849575663521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 322
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a0d4b1ad45513b0800000000000000
+      internalID: -5542430470671889803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_4
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 336
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c6d292dc0ff2c10800000000000000
+      internalID: 2031106720917187741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_5
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 393
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4180bc42054c240800000000000000
+      internalID: 4811058420893881578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_6
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 349
+        width: 84
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7072e13e0e6d260800000000000000
+      internalID: 7122127126801090476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_7
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 399
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62fb8b1ad082ff90800000000000000
+      internalID: -6921328003061648789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_8
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 358
+        width: 90
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebdd3710ef7a3150800000000000000
+      internalID: 5853131266160712673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_9
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 355
+        width: 104
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af83a390d967503e0800000000000000
+      internalID: -2088132435379603206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_10
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 343
+        width: 103
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698949d833bfe3df0800000000000000
+      internalID: -198445134720493418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_11
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 328
+        width: 106
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98aca4523379ad210800000000000000
+      internalID: 1358564483530410633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_12
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 316
+        width: 107
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eeaac16de88a4600800000000000000
+      internalID: 453325265633455845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 57
+        width: 109
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5e0fcacd4a5ec80800000000000000
+      internalID: -8294041871031671316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_14
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 58
+        width: 113
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690eb195252e42980800000000000000
+      internalID: -8564471748041645930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_15
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 61
+        width: 112
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaca84bbd9453b10800000000000000
+      internalID: 1960554420765379304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_16
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 64
+        width: 109
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a864fdf5e164f20800000000000000
+      internalID: 3406443565269027367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_17
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 70
+        width: 104
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6b4e7b0ab2940d0800000000000000
+      internalID: -3438168871240681738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_18
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 72
+        width: 102
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c60eb14ce14ed120800000000000000
+      internalID: 2440460531052447424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_19
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 70
+        width: 103
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d4e5cedf4e64a90800000000000000
+      internalID: -7329919564255441592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_20
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 66
+        width: 102
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f9db38987a8ac20800000000000000
+      internalID: 3218006142818819989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_21
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 61
+        width: 103
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080ec061787f25600800000000000000
+      internalID: 455698671880429696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_22
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 57
+        width: 103
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0be4a033c609bfd0800000000000000
+      internalID: -2325820297155646706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Shadow_225_23
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 57
+        width: 102
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ee7ea41707b4560800000000000000
+      internalID: 7299051252974349950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Down_Shadow_225_0: 2563336780510190638
+      Down_Shadow_225_1: 2216455077595798503
+      Down_Shadow_225_10: -198445134720493418
+      Down_Shadow_225_11: 1358564483530410633
+      Down_Shadow_225_12: 453325265633455845
+      Down_Shadow_225_13: -8294041871031671316
+      Down_Shadow_225_14: -8564471748041645930
+      Down_Shadow_225_15: 1960554420765379304
+      Down_Shadow_225_16: 3406443565269027367
+      Down_Shadow_225_17: -3438168871240681738
+      Down_Shadow_225_18: 2440460531052447424
+      Down_Shadow_225_19: -7329919564255441592
+      Down_Shadow_225_2: -213394849575663521
+      Down_Shadow_225_20: 3218006142818819989
+      Down_Shadow_225_21: 455698671880429696
+      Down_Shadow_225_22: -2325820297155646706
+      Down_Shadow_225_23: 7299051252974349950
+      Down_Shadow_225_3: -5542430470671889803
+      Down_Shadow_225_4: 2031106720917187741
+      Down_Shadow_225_5: 4811058420893881578
+      Down_Shadow_225_6: 7122127126801090476
+      Down_Shadow_225_7: -6921328003061648789
+      Down_Shadow_225_8: 5853131266160712673
+      Down_Shadow_225_9: -2088132435379603206
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
