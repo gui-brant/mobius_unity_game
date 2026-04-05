@@ -6,9 +6,12 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Character targetCharacter;
 
     private Transform _targetTransform;
+
+    // offset height of character so Michael is always centered
+    [SerializeField] private float yOffset = 0.4f;
     
-    // ensures quick movement to follow the main character
-    [SerializeField] private float smoothSpeed = 5f;
+    // ensures quick and smooth movement to follow the main character
+    [SerializeField] private float smoothSpeed = 20f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,7 +38,7 @@ public class CameraFollow : MonoBehaviour
         // setting desired position as target's position
         Vector3 desiredPosition = new  Vector3(
             _targetTransform.position.x,
-            _targetTransform.position.y,
+            _targetTransform.position.y + yOffset,
             transform.position.z);
         
         // Using .lerp for smooth movement - essentially moves halfway each time
