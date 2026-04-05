@@ -98,12 +98,23 @@ public class PierceBoss : Character, ITargetable, ITeamMember
         if (!isDead)
         {
             Vector2 randomDir = Random.insideUnitCircle.normalized;
-            Vector2 destination = (Vector2)transform.position + randomDir * dashDistance;
+            Vector2 start = (Vector2)transform.position;
 
-            if (rb != null)
-                rb.position = destination;
-            else
-                transform.position = (Vector3)destination;
+            float radius = 0.3f;
+            Collider2D col = GetComponent<Collider2D>();
+            if (col is CircleCollider2D cc) radius = cc.radius * transform.localScale.x;
+
+            LayerMask wallMask = LayerMask.GetMask("Wall");
+
+            RaycastHit2D hit = Physics2D.CircleCast(start, radius, randomDir, dashDistance, wallMask);
+
+            float safeDistance = hit.collider != null ? Mathf.Max(0f, hit.distance - 0.05f) : dashDistance;
+
+            if (safeDistance > 0.05f) 
+            {
+                Vector2 destination = start + randomDir * safeDistance;
+                yield return StartCoroutine(DashTo(destination));
+            }
         }
 
         if (!isDead)
@@ -166,5 +177,25 @@ public class PierceBoss : Character, ITargetable, ITeamMember
 
         if (deathTimer <= 0f)
             Destroy(gameObject);
+    }
+    private IEnumerator DashTo(Vector2 destination)
+    {
+        float dashDuration = 0.008f; 
+        float elapsed = 0f;
+        Vector2 start = rb != null ? rb.position : (Vector2)transform.position;
+
+        while (elapsed < dashDuration)
+        {
+            elapsed += Time.deltaTime;
+            Vector2 next = Vector2.Lerp(start, destination, elapsed / dashDuration);
+
+            if (rb != null) rb.MovePosition(next);
+            else transform.position = next;
+
+            yield return null; 
+        }
+
+        if (rb != null) rb.position = destination;
+        else transform.position = destination;
     }
 }
