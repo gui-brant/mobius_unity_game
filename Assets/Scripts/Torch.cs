@@ -16,6 +16,7 @@ public class Torch : MonoBehaviour, IInteractable
     
     public void Interact(GameObject interactor)
     {
+        manager = GetComponentInParent<TorchManager>();
         if (_isActive) return;
         
         // assigned private variable for attack
@@ -27,8 +28,8 @@ public class Torch : MonoBehaviour, IInteractable
         // one-time animation change if real
         if (IsReal)
         {
-            Debug.Log("animation change triggered");
             _anim.SetTrigger("isLit");
+            if (manager != null) manager.OnTorchActivated(this);
         }
         else
         {
@@ -66,6 +67,11 @@ public class Torch : MonoBehaviour, IInteractable
         {
             spirit.Setup(_target);
         }
+    }
+    public void StopAttacking()
+    {
+        CancelInvoke(nameof(SpawnSpirit));
+        _anim.SetTrigger("isLit");
     }
 
 }

@@ -1,8 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SpiritProjectile : MonoBehaviour, IAttacker
 {
+    // A global list of all spirits currently in the air
+    public static List<SpiritProjectile> ActiveSpirits = new List<SpiritProjectile>();
 
+    void OnEnable() => ActiveSpirits.Add(this);
+    void OnDisable() => ActiveSpirits.Remove(this);
+    
     public int AttackDamage { get; private set; } = 20;
     
     [SerializeField] private float speed = 1.8f;
@@ -29,13 +35,10 @@ public class SpiritProjectile : MonoBehaviour, IAttacker
     {
         if (_target == null) return;
 
-        // We get the renderer from Michael to find his visual middle point
-        Vector3 targetCenter = _target.GetComponent<Renderer>().bounds.center;
-        
         // Simple Homing Logic
         transform.position = Vector3.MoveTowards(
             transform.position, 
-            targetCenter, 
+            _target.transform.position, 
             speed * Time.deltaTime
         );
     }
