@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: db35c82be7f590a4db162d4d7bdbbd40
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6511234775250500728
+    second: Attack_Punch_Body_270_0
+  - first:
+      213: -1193002708289073548
+    second: Attack_Punch_Body_270_1
+  - first:
+      213: -8004199230044632830
+    second: Attack_Punch_Body_270_2
+  - first:
+      213: -5051955033995282314
+    second: Attack_Punch_Body_270_3
+  - first:
+      213: -8295880736845397654
+    second: Attack_Punch_Body_270_4
+  - first:
+      213: -3917729023456918285
+    second: Attack_Punch_Body_270_5
+  - first:
+      213: 6287594612994881509
+    second: Attack_Punch_Body_270_6
+  - first:
+      213: 3344577583317060193
+    second: Attack_Punch_Body_270_7
+  - first:
+      213: 5418545735637007882
+    second: Attack_Punch_Body_270_8
+  - first:
+      213: 3104886679691199999
+    second: Attack_Punch_Body_270_9
+  - first:
+      213: 36208034305438962
+    second: Attack_Punch_Body_270_10
+  - first:
+      213: -3261607162265329319
+    second: Attack_Punch_Body_270_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 396
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883060c487273a5a0800000000000000
+      internalID: -6511234775250500728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 397
+        width: 54
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ec95c8b5a917fe0800000000000000
+      internalID: -1193002708289073548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 396
+        width: 52
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2090cb5553f5be090800000000000000
+      internalID: -8004199230044632830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_3
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 397
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678f679b9a9d3e9b0800000000000000
+      internalID: -5051955033995282314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 219
+        width: 62
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61035d5c6c1fdc80800000000000000
+      internalID: -8295880736845397654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 215
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4cc9ec53e61a9c0800000000000000
+      internalID: -3917729023456918285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_6
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 213
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e73837ccf5024750800000000000000
+      internalID: 6287594612994881509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_7
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 212
+        width: 71
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a095977935a6e20800000000000000
+      internalID: 3344577583317060193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 36
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ef9db43aa823b40800000000000000
+      internalID: 5418545735637007882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 37
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff506da1cf5c61b20800000000000000
+      internalID: 3104886679691199999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_10
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 34
+        width: 58
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f47acee303a08000800000000000000
+      internalID: 36208034305438962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Punch_Body_270_11
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 36
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9512e4011917cb2d0800000000000000
+      internalID: -3261607162265329319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack_Punch_Body_270_0: -6511234775250500728
+      Attack_Punch_Body_270_1: -1193002708289073548
+      Attack_Punch_Body_270_10: 36208034305438962
+      Attack_Punch_Body_270_11: -3261607162265329319
+      Attack_Punch_Body_270_2: -8004199230044632830
+      Attack_Punch_Body_270_3: -5051955033995282314
+      Attack_Punch_Body_270_4: -8295880736845397654
+      Attack_Punch_Body_270_5: -3917729023456918285
+      Attack_Punch_Body_270_6: 6287594612994881509
+      Attack_Punch_Body_270_7: 3344577583317060193
+      Attack_Punch_Body_270_8: 5418545735637007882
+      Attack_Punch_Body_270_9: 3104886679691199999
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 79cacac36676df64087e05d4452c63dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8341317056064153493
+    second: Attack_Jump_Body_045_0
+  - first:
+      213: -2147797903831810470
+    second: Attack_Jump_Body_045_1
+  - first:
+      213: 1126574847022297864
+    second: Attack_Jump_Body_045_2
+  - first:
+      213: -8666418061652775432
+    second: Attack_Jump_Body_045_3
+  - first:
+      213: -5487097820859036937
+    second: Attack_Jump_Body_045_4
+  - first:
+      213: 4714000376379638080
+    second: Attack_Jump_Body_045_5
+  - first:
+      213: 1996006012624662357
+    second: Attack_Jump_Body_045_6
+  - first:
+      213: 5045830745266947051
+    second: Attack_Jump_Body_045_7
+  - first:
+      213: 5466344686315626697
+    second: Attack_Jump_Body_045_8
+  - first:
+      213: 6073468805405708321
+    second: Attack_Jump_Body_045_9
+  - first:
+      213: 4365860122325086703
+    second: Attack_Jump_Body_045_10
+  - first:
+      213: -8371336907025167092
+    second: Attack_Jump_Body_045_11
+  - first:
+      213: 3648755699214486565
+    second: Attack_Jump_Body_045_12
+  - first:
+      213: 111203619511427652
+    second: Attack_Jump_Body_045_13
+  - first:
+      213: -5310266757715604125
+    second: Attack_Jump_Body_045_14
+  - first:
+      213: -1457663205941885111
+    second: Attack_Jump_Body_045_15
+  - first:
+      213: -3120326705318173745
+    second: Attack_Jump_Body_045_16
+  - first:
+      213: -4833202688386277289
+    second: Attack_Jump_Body_045_17
+  - first:
+      213: 112065112247110794
+    second: Attack_Jump_Body_045_18
+  - first:
+      213: 727555696091630529
+    second: Attack_Jump_Body_045_19
+  - first:
+      213: 2828781393966935590
+    second: Attack_Jump_Body_045_20
+  - first:
+      213: 3593072948188394751
+    second: Attack_Jump_Body_045_21
+  - first:
+      213: 1299349838541636205
+    second: Attack_Jump_Body_045_22
+  - first:
+      213: 7594621670694428626
+    second: Attack_Jump_Body_045_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 574
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5976c951baf42c370800000000000000
+      internalID: 8341317056064153493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 574
+        width: 75
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eb6cc9f2d7132e0800000000000000
+      internalID: -2147797903831810470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 591
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80377a1cad562af00800000000000000
+      internalID: 1126574847022297864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_3
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 585
+        width: 75
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd282880b2bab780800000000000000
+      internalID: -8666418061652775432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 556
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa80e39a99e9d3b0800000000000000
+      internalID: -5487097820859036937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_5
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 554
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0418a21dd5e7b6140800000000000000
+      internalID: 4714000376379638080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 371
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f6908a4ec33bb10800000000000000
+      internalID: 1996006012624662357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_7
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 365
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be381603454660640800000000000000
+      internalID: 5045830745266947051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 366
+        width: 75
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0efafb78b5cdb40800000000000000
+      internalID: 5466344686315626697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_9
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 379
+        width: 73
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1209f9c23bb494450800000000000000
+      internalID: 6073468805405708321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_10
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 415
+        width: 93
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1fa3266a6a69c30800000000000000
+      internalID: 4365860122325086703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_11
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 415
+        width: 92
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dc5a1bf6903db80800000000000000
+      internalID: -8371336907025167092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 234
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c8cdbf9fbf2a230800000000000000
+      internalID: 3648755699214486565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 234
+        width: 85
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44267be4a131b8100800000000000000
+      internalID: 111203619511427652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_14
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 236
+        width: 87
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dcbc3d4842e46b0800000000000000
+      internalID: -5310266757715604125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_15
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 234
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9474da7890755cbe0800000000000000
+      internalID: -1457663205941885111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_16
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 225
+        width: 79
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3685ac46f52b4d0800000000000000
+      internalID: -3120326705318173745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_17
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 217
+        width: 77
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750e54723c30decb0800000000000000
+      internalID: -4833202688386277289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 36
+        width: 73
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c043730a22e8100800000000000000
+      internalID: 112065112247110794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_19
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 43
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb8ad30d0cc81a00800000000000000
+      internalID: 727555696091630529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_20
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 43
+        width: 70
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e22a6b0b9d14720800000000000000
+      internalID: 2828781393966935590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_21
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 43
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4b5d83fc82dd130800000000000000
+      internalID: 3593072948188394751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_22
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 43
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d624c3d3bc7380210800000000000000
+      internalID: 1299349838541636205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Jump_Body_045_23
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 43
+        width: 67
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df9935eb24856960800000000000000
+      internalID: 7594621670694428626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack_Jump_Body_045_0: 8341317056064153493
+      Attack_Jump_Body_045_1: -2147797903831810470
+      Attack_Jump_Body_045_10: 4365860122325086703
+      Attack_Jump_Body_045_11: -8371336907025167092
+      Attack_Jump_Body_045_12: 3648755699214486565
+      Attack_Jump_Body_045_13: 111203619511427652
+      Attack_Jump_Body_045_14: -5310266757715604125
+      Attack_Jump_Body_045_15: -1457663205941885111
+      Attack_Jump_Body_045_16: -3120326705318173745
+      Attack_Jump_Body_045_17: -4833202688386277289
+      Attack_Jump_Body_045_18: 112065112247110794
+      Attack_Jump_Body_045_19: 727555696091630529
+      Attack_Jump_Body_045_2: 1126574847022297864
+      Attack_Jump_Body_045_20: 2828781393966935590
+      Attack_Jump_Body_045_21: 3593072948188394751
+      Attack_Jump_Body_045_22: 1299349838541636205
+      Attack_Jump_Body_045_23: 7594621670694428626
+      Attack_Jump_Body_045_3: -8666418061652775432
+      Attack_Jump_Body_045_4: -5487097820859036937
+      Attack_Jump_Body_045_5: 4714000376379638080
+      Attack_Jump_Body_045_6: 1996006012624662357
+      Attack_Jump_Body_045_7: 5045830745266947051
+      Attack_Jump_Body_045_8: 5466344686315626697
+      Attack_Jump_Body_045_9: 6073468805405708321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

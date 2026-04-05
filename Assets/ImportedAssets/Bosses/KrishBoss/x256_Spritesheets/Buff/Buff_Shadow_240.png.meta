@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: f3d386d97bf7ed646a328e6885d49102
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2061005508322553041
+    second: Buff_Shadow_240_0
+  - first:
+      213: 1792692118179468721
+    second: Buff_Shadow_240_1
+  - first:
+      213: 262255784527373614
+    second: Buff_Shadow_240_2
+  - first:
+      213: -3098764425779381470
+    second: Buff_Shadow_240_3
+  - first:
+      213: 9082224250757839490
+    second: Buff_Shadow_240_4
+  - first:
+      213: 9027786821923694110
+    second: Buff_Shadow_240_5
+  - first:
+      213: -6331630162308465079
+    second: Buff_Shadow_240_6
+  - first:
+      213: -942935436630504252
+    second: Buff_Shadow_240_7
+  - first:
+      213: 6988292981975785127
+    second: Buff_Shadow_240_8
+  - first:
+      213: -5006878756278741156
+    second: Buff_Shadow_240_9
+  - first:
+      213: 2946334617114185938
+    second: Buff_Shadow_240_10
+  - first:
+      213: 6306900375254203762
+    second: Buff_Shadow_240_11
+  - first:
+      213: -3855271275549962318
+    second: Buff_Shadow_240_12
+  - first:
+      213: -3226325373722591311
+    second: Buff_Shadow_240_13
+  - first:
+      213: 6258365154971393143
+    second: Buff_Shadow_240_14
+  - first:
+      213: 6599189600826589183
+    second: Buff_Shadow_240_15
+  - first:
+      213: -6734781491491262839
+    second: Buff_Shadow_240_16
+  - first:
+      213: 7140846733918287722
+    second: Buff_Shadow_240_17
+  - first:
+      213: -6490786638557252592
+    second: Buff_Shadow_240_18
+  - first:
+      213: 4426925322548269294
+    second: Buff_Shadow_240_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Buff_Shadow_240_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 823
+        width: 116
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f239f4ce866d563e0800000000000000
+      internalID: -2061005508322553041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 824
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5dabfbbfbe0e810800000000000000
+      internalID: 1792692118179468721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 829
+        width: 111
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25ab0d1f38b3a300800000000000000
+      internalID: 262255784527373614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_3
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 832
+        width: 104
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b7dc63c2afef4d0800000000000000
+      internalID: -3098764425779381470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_4
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 834
+        width: 92
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28afbdc16da8a0e70800000000000000
+      internalID: 9082224250757839490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 578
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16e6b48844294d70800000000000000
+      internalID: 9027786821923694110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 578
+        width: 95
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e747ee9e78128a0800000000000000
+      internalID: -6331630162308465079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_7
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 579
+        width: 100
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccc28d57350ae2f0800000000000000
+      internalID: -942935436630504252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_8
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 579
+        width: 100
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae950901776bf060800000000000000
+      internalID: 6988292981975785127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_9
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 579
+        width: 100
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c575e8a7c4ef38ab0800000000000000
+      internalID: -5006878756278741156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 322
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0178259bb73e820800000000000000
+      internalID: 2946334617114185938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 322
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dfdc4d97c968750800000000000000
+      internalID: 6306900375254203762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_12
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 307
+        width: 124
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfc31473335f7ac0800000000000000
+      internalID: -3855271275549962318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_13
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 315
+        width: 114
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf7f699a2ac933d0800000000000000
+      internalID: -3226325373722591311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_14
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 321
+        width: 125
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c90c043fd2ad650800000000000000
+      internalID: 6258365154971393143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_15
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 66
+        width: 135
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff78ba5af7059b50800000000000000
+      internalID: 6599189600826589183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_16
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 64
+        width: 133
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ea9c77aef3982a0800000000000000
+      internalID: -6734781491491262839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_17
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 55
+        width: 129
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6735ba4542691360800000000000000
+      internalID: 7140846733918287722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_18
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 49
+        width: 118
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01471ff11f71ce5a0800000000000000
+      internalID: -6490786638557252592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Shadow_240_19
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 55
+        width: 116
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0dba140299f6d30800000000000000
+      internalID: 4426925322548269294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Buff_Shadow_240_0: -2061005508322553041
+      Buff_Shadow_240_1: 1792692118179468721
+      Buff_Shadow_240_10: 2946334617114185938
+      Buff_Shadow_240_11: 6306900375254203762
+      Buff_Shadow_240_12: -3855271275549962318
+      Buff_Shadow_240_13: -3226325373722591311
+      Buff_Shadow_240_14: 6258365154971393143
+      Buff_Shadow_240_15: 6599189600826589183
+      Buff_Shadow_240_16: -6734781491491262839
+      Buff_Shadow_240_17: 7140846733918287722
+      Buff_Shadow_240_18: -6490786638557252592
+      Buff_Shadow_240_19: 4426925322548269294
+      Buff_Shadow_240_2: 262255784527373614
+      Buff_Shadow_240_3: -3098764425779381470
+      Buff_Shadow_240_4: 9082224250757839490
+      Buff_Shadow_240_5: 9027786821923694110
+      Buff_Shadow_240_6: -6331630162308465079
+      Buff_Shadow_240_7: -942935436630504252
+      Buff_Shadow_240_8: 6988292981975785127
+      Buff_Shadow_240_9: -5006878756278741156
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
