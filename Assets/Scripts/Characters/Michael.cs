@@ -72,7 +72,7 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("E is pressed");
-            float interactRadius = 0.3f; 
+            float interactRadius = 0.8f; 
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
 
             
@@ -82,9 +82,9 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
                 IInteractable interactable = col.gameObject.GetComponent<IInteractable>();
 
                 
+                // Only representing Torch interactions for now
                 if (interactable != null && interactable is Torch)
                 {
-                    Debug.Log(interactable + "Interactable found");
                     interactable.Interact(this.gameObject);
                     break; // Stop after interacting with the first valid object
                     // Ensuring only one interaction at a time
