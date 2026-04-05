@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MenuToggle : MonoBehaviour
 {
+    public static MenuToggle instance;
+
     public GameObject menuPanel;
     public GameObject mainMenuPanel;
     public GameObject skillTreePanel;
@@ -10,14 +12,27 @@ public class MenuToggle : MonoBehaviour
 
     private bool isOpen = false;
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        menuPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
-        skillTreePanel.SetActive(false);
+        if (menuPanel != null) menuPanel.SetActive(false);
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
+        if (skillTreePanel != null) skillTreePanel.SetActive(false);
 
-        backButton.SetActive(false);
-        pointsTextObject.SetActive(false);
+        if (backButton != null) backButton.SetActive(false);
+        if (pointsTextObject != null) pointsTextObject.SetActive(false);
     }
 
     void Update()
@@ -25,10 +40,18 @@ public class MenuToggle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             isOpen = !isOpen;
-            menuPanel.SetActive(isOpen);
+
+            if (menuPanel != null)
+                menuPanel.SetActive(isOpen);
 
             if (isOpen)
             {
+                if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
+                if (skillTreePanel != null) skillTreePanel.SetActive(false);
+
+                if (backButton != null) backButton.SetActive(false);
+                if (pointsTextObject != null) pointsTextObject.SetActive(false);
+
                 Time.timeScale = 0f;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -38,12 +61,12 @@ public class MenuToggle : MonoBehaviour
                 Time.timeScale = 1f;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                
-                mainMenuPanel.SetActive(true);
-                skillTreePanel.SetActive(false);
 
-                backButton.SetActive(false);
-                pointsTextObject.SetActive(false);
+                if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
+                if (skillTreePanel != null) skillTreePanel.SetActive(false);
+
+                if (backButton != null) backButton.SetActive(false);
+                if (pointsTextObject != null) pointsTextObject.SetActive(false);
             }
         }
     }
@@ -52,38 +75,40 @@ public class MenuToggle : MonoBehaviour
     {
         Debug.Log("Opening Skill Tree");
 
-        mainMenuPanel.SetActive(false);
-        skillTreePanel.SetActive(true);
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
+        if (skillTreePanel != null) skillTreePanel.SetActive(true);
 
-        backButton.SetActive(true);
-        pointsTextObject.SetActive(true); // 🔥 SHOW HERE
+        if (backButton != null) backButton.SetActive(true);
+        if (pointsTextObject != null) pointsTextObject.SetActive(true);
     }
 
     public void CloseSkillTree()
     {
         Debug.Log("Closing Skill Tree");
 
-        skillTreePanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
+        if (skillTreePanel != null) skillTreePanel.SetActive(false);
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
 
-        backButton.SetActive(false);
-        pointsTextObject.SetActive(false);
+        if (backButton != null) backButton.SetActive(false);
+        if (pointsTextObject != null) pointsTextObject.SetActive(false);
     }
 
     public void ResumeGame()
     {
         isOpen = false;
-        menuPanel.SetActive(false);
+
+        if (menuPanel != null)
+            menuPanel.SetActive(false);
 
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        mainMenuPanel.SetActive(true);
-        skillTreePanel.SetActive(false);
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
+        if (skillTreePanel != null) skillTreePanel.SetActive(false);
 
-        backButton.SetActive(false);
-        pointsTextObject.SetActive(false);
+        if (backButton != null) backButton.SetActive(false);
+        if (pointsTextObject != null) pointsTextObject.SetActive(false);
     }
 
     public void QuitGame()
