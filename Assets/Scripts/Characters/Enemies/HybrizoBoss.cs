@@ -9,10 +9,18 @@ public class HybrizoBoss : Boss
         WeakWindow = 1
     }
 
+    private enum AnimationMode
+    {
+        RelocatingRun = 0,
+        StationaryShooting = 1,
+        Dead = 2
+    }
+
     [Header("References")]
     [SerializeField] private ProjectileSpawner projectileSpawner;
     [SerializeField] private Transform projectileOrigin;
     [SerializeField] private HybrizoProjectile bossProjectilePrefab;
+    [SerializeField] [Min(0f)] private float projectileSpawnForwardOffset = 0.35f;
 
     [Header("Relocation")]
     [SerializeField] [Min(0.1f)] private float relocationIntervalSeconds = 5f;
@@ -26,12 +34,14 @@ public class HybrizoBoss : Boss
     [SerializeField] [Min(0f)] private float relocationSettleRadius = 0.15f;
     [SerializeField] [Min(0.1f)] private float relocationStuckGraceSeconds = 0.45f;
     [SerializeField] [Min(0.0001f)] private float relocationProgressEpsilon = 0.02f;
+    [SerializeField] [Min(0f)] private float relocationArrivalLockSeconds = 0.12f;
 
     [Header("Debug")]
     [SerializeField] private bool enableAimDebug;
     [SerializeField] [Min(0.05f)] private float aimDebugDurationSeconds = 0.2f;
     [SerializeField] [Min(0.01f)] private float runAnimationSpeed = 1f;
     [SerializeField] [Min(0f)] private float shootCycleToleranceSeconds = 0.1f;
+    [SerializeField] private bool invertDirectionalAnimation = true;
 
     [Header("Projectile Stats - Puzzle Active")]
     [SerializeField] [Min(0.01f)] private float puzzleActiveFireInterval = 0.75f;
@@ -54,7 +64,12 @@ public class HybrizoBoss : Boss
     private float relocationTravelTimer;
     private float relocationStuckTimer;
     private float lastRelocationDistance;
+    private float previousRelocationDistance;
+    private float relocationInitialDistance;
+    private Vector2 relocationStartPosition;
+    private Vector2 relocationTravelDirection;
     private bool usedNearTargetExtension;
+    private float relocationArrivalLockTimer;
     private bool warnedMissingProjectilePrefab;
     private bool warnedMissingProjectileOrigin;
     private bool warnedMissingRelocationPoints;
@@ -62,6 +77,7 @@ public class HybrizoBoss : Boss
     private bool warnedRetargetedMichael;
     private bool warnedMissingAnimator;
     private bool warnedMissingController;
+    private bool warnedInvalidAnimatorLayer;
     private readonly HashSet<string> warnedMissingAnimationStates = new HashSet<string>();
     private readonly Dictionary<string, float> clipLengthLookup = new Dictionary<string, float>();
 
@@ -73,6 +89,28 @@ public class HybrizoBoss : Boss
     private float queuedProjectileSpeed;
     private Vector2 queuedShotDirection = Vector2.right;
     private int lastFacingDirectionIndex;
+    private int animatorLayerIndex = -2;
+    private string lastRequestedAnimationState;
+    private string lastResolvedAnimationState;
+    private float lastKnownRelocationDistance;
+    private AnimationMode currentAnimationMode = AnimationMode.StationaryShooting;
+    private int currentAnimationDirectionIndex;
+    private float currentRunTravelDuration;
+    private float currentRunAnimationSpeed = 1f;
+    private float currentShootAnimationSpeed = 1f;
+
+    public bool DebugIsRelocating => isRelocating;
+    public float DebugRemainingDistance => lastKnownRelocationDistance;
+    public Vector2 DebugRelocationDestination => relocationDestination;
+    public string DebugRequestedAnimationState => lastRequestedAnimationState;
+    public string DebugResolvedAnimationState => lastResolvedAnimationState;
+    public string DebugAnimationMode => currentAnimationMode.ToString();
+    public int DebugDirectionIndex => currentAnimationDirectionIndex;
+    public float DebugRunTravelDuration => currentRunTravelDuration;
+    public float DebugRunAnimationSpeed => currentRunAnimationSpeed;
+    public float DebugShootCycleDuration => shootCycleDuration;
+    public float DebugShootCycleElapsed => shootCycleElapsed;
+    public float DebugShootAnimationSpeed => currentShootAnimationSpeed;
 
     public bool IsWeakWindowActive => currentState == BossState.WeakWindow;
 
@@ -157,6 +195,7 @@ public class HybrizoBoss : Boss
         currentState = BossState.PuzzleActive;
         weakWindowTimer = 0f;
         fireTimer = 0f;
+        relocationArrivalLockTimer = 0f;
         ResetShootCycleState();
         relocationTimer = Mathf.Max(0.1f, relocationIntervalSeconds);
         pendingWeakStateAfterRelocation = false;
@@ -169,8 +208,12 @@ public class HybrizoBoss : Boss
 
         relocationTimer -= Time.deltaTime;
         fireTimer -= Time.deltaTime;
+        if (relocationArrivalLockTimer > 0f)
+        {
+            relocationArrivalLockTimer -= Time.deltaTime;
+        }
 
-        if (relocationTimer <= 0f)
+        if (relocationTimer <= 0f && relocationArrivalLockTimer <= 0f)
         {
             TryStartRelocation(forceRelocation: false);
         }
@@ -208,6 +251,7 @@ public class HybrizoBoss : Boss
         currentState = BossState.WeakWindow;
         weakWindowTimer = Mathf.Max(0f, durationSeconds);
         fireTimer = 0f;
+        relocationArrivalLockTimer = 0f;
         relocationTimer = Mathf.Max(0.1f, relocationIntervalSeconds);
         ResetShootCycleState();
         SetMovement(Vector2.zero);
@@ -222,29 +266,42 @@ public class HybrizoBoss : Boss
 
         if (IsDead)
         {
+            currentAnimationMode = AnimationMode.Dead;
+            currentAnimationDirectionIndex = lastFacingDirectionIndex;
             animator.speed = 1f;
-            TryPlayAnimationState("die");
+            currentRunAnimationSpeed = 1f;
+            currentShootAnimationSpeed = 1f;
+            TryPlayAnimationState("die", "die");
             return;
         }
 
         if (isRelocating)
         {
+            currentAnimationMode = AnimationMode.RelocatingRun;
             Vector2 runDirection = relocationDestination - (Vector2)transform.position;
             int runDirectionIndex = ResolveDirectionIndex(runDirection, lastFacingDirectionIndex);
             lastFacingDirectionIndex = runDirectionIndex;
-            animator.speed = Mathf.Max(0.01f, runAnimationSpeed);
-            TryPlayAnimationState(GetRunStateName(runDirectionIndex));
+            currentAnimationDirectionIndex = runDirectionIndex;
+            string runStateName = GetRunStateName(runDirectionIndex);
+            currentRunAnimationSpeed = GetRunAnimationSpeed(runStateName);
+            animator.speed = currentRunAnimationSpeed;
+            currentShootAnimationSpeed = 1f;
+            TryPlayAnimationState(runStateName, "run0_right");
             return;
         }
 
+        currentAnimationMode = AnimationMode.StationaryShooting;
         int shootDirectionIndex = ResolveShootDirectionIndex();
         lastFacingDirectionIndex = shootDirectionIndex;
+        currentAnimationDirectionIndex = shootDirectionIndex;
         string shootState = GetShootStateName(shootDirectionIndex);
         float shootInterval = isShootCycleActive
             ? Mathf.Max(0.01f, shootCycleDuration)
             : Mathf.Max(0.01f, GetCurrentFireInterval());
-        animator.speed = GetAnimationSpeedForDuration(shootState, shootInterval);
-        TryPlayAnimationState(shootState);
+        currentShootAnimationSpeed = GetAnimationSpeedForDuration(shootState, shootInterval);
+        animator.speed = currentShootAnimationSpeed;
+        currentRunAnimationSpeed = 1f;
+        TryPlayAnimationState(shootState, "shooting0_right");
     }
 
     private void ProcessShootingCycle(int projectileDamage, float projectileSpeed, float fireInterval)
@@ -319,13 +376,16 @@ public class HybrizoBoss : Boss
         }
 
         FaceShootDirection(queuedShotDirection);
+        Vector2 spawnPosition = (Vector2)shootOrigin.position
+            + (queuedShotDirection * Mathf.Max(0f, projectileSpawnForwardOffset));
         Projectile spawned = spawner.SpawnProjectile(
             bossProjectilePrefab.gameObject,
             shootOrigin,
             gameObject,
             Team,
             queuedProjectileDamage,
-            queuedShotDirection);
+            queuedShotDirection,
+            spawnPosition);
 
         if (spawned != null)
         {
@@ -361,12 +421,7 @@ public class HybrizoBoss : Boss
         relocationDestination = destination;
         isRelocating = true;
         speed = Mathf.Max(0f, relocationSpeed);
-        float distanceToDestination = Vector2.Distance(transform.position, relocationDestination);
-        float expectedTravelTime = distanceToDestination / Mathf.Max(0.01f, relocationSpeed);
-        relocationTravelTimer = Mathf.Max(0.05f, expectedTravelTime + Mathf.Max(0f, relocationGraceSeconds));
-        relocationStuckTimer = 0f;
-        lastRelocationDistance = distanceToDestination;
-        usedNearTargetExtension = false;
+        BeginRelocationLeg();
         ResetShootCycleState();
 
         Vector2 movementDirection = (relocationDestination - (Vector2)transform.position).normalized;
@@ -379,17 +434,16 @@ public class HybrizoBoss : Boss
         Vector2 current = transform.position;
         Vector2 toDestination = relocationDestination - current;
         float remainingDistance = toDestination.magnitude;
+        lastKnownRelocationDistance = remainingDistance;
         relocationTravelTimer -= Time.deltaTime;
 
-        if (remainingDistance <= Mathf.Max(0.01f, relocationSettleRadius))
+        if (ShouldFinishRelocation(current, toDestination, remainingDistance, out bool shouldSnapToDestination))
         {
-            transform.position = relocationDestination;
-            FinishRelocation();
-            return;
-        }
+            if (shouldSnapToDestination)
+            {
+                transform.position = relocationDestination;
+            }
 
-        if (remainingDistance <= Mathf.Max(0.01f, relocationStopDistance))
-        {
             FinishRelocation();
             return;
         }
@@ -405,25 +459,20 @@ public class HybrizoBoss : Boss
             relocationStuckTimer += Time.deltaTime;
         }
 
-        if (relocationTravelTimer <= 0f || relocationStuckTimer >= Mathf.Max(0.1f, relocationStuckGraceSeconds))
+        bool timedOut = relocationTravelTimer <= 0f;
+        bool isStuck = relocationStuckTimer >= Mathf.Max(0.1f, relocationStuckGraceSeconds);
+        if (timedOut || isStuck)
         {
-            if (!usedNearTargetExtension && remainingDistance <= Mathf.Max(0f, nearTargetRadius))
+            if (TryApplyNearTargetExtension(remainingDistance))
             {
-                usedNearTargetExtension = true;
-                relocationTravelTimer = Mathf.Max(0.01f, nearTargetExtensionSeconds);
-                relocationStuckTimer = 0f;
+                // Extended once near destination; keep current target.
             }
             else
             {
                 if (TrySelectRelocationDestination(out Vector2 rerolledDestination))
                 {
                     relocationDestination = rerolledDestination;
-                    float rerolledDistance = Vector2.Distance(transform.position, relocationDestination);
-                    float expectedTravelTime = rerolledDistance / Mathf.Max(0.01f, relocationSpeed);
-                    relocationTravelTimer = Mathf.Max(0.05f, expectedTravelTime + Mathf.Max(0f, relocationGraceSeconds));
-                    relocationStuckTimer = 0f;
-                    lastRelocationDistance = rerolledDistance;
-                    usedNearTargetExtension = false;
+                    BeginRelocationLeg();
                 }
                 else
                 {
@@ -436,6 +485,7 @@ public class HybrizoBoss : Boss
         Vector2 movementDirection = (relocationDestination - (Vector2)transform.position).normalized;
         FaceMoveDirection(movementDirection);
         SetMovement(movementDirection);
+        previousRelocationDistance = remainingDistance;
     }
 
     private bool TrySelectRelocationDestination(out Vector2 destination)
@@ -485,6 +535,23 @@ public class HybrizoBoss : Boss
 
         destination = validCandidates[Random.Range(0, validCandidates.Count)];
         return true;
+    }
+
+    private void BeginRelocationLeg()
+    {
+        relocationStartPosition = transform.position;
+        float legDistance = Vector2.Distance(transform.position, relocationDestination);
+        relocationInitialDistance = legDistance;
+        currentRunTravelDuration = Mathf.Max(0.01f, legDistance / Mathf.Max(0.01f, relocationSpeed));
+        float expectedTravelTime = legDistance / Mathf.Max(0.01f, relocationSpeed);
+        relocationTravelTimer = Mathf.Max(0.05f, expectedTravelTime + Mathf.Max(0f, relocationGraceSeconds));
+        relocationStuckTimer = 0f;
+        lastRelocationDistance = legDistance;
+        previousRelocationDistance = legDistance;
+        lastKnownRelocationDistance = legDistance;
+        usedNearTargetExtension = false;
+        Vector2 legDirection = (relocationDestination - (Vector2)transform.position).normalized;
+        relocationTravelDirection = legDirection.sqrMagnitude <= Mathf.Epsilon ? Vector2.right : legDirection;
     }
 
     private void ResolveLiveTargetMichael()
@@ -565,8 +632,20 @@ public class HybrizoBoss : Boss
         relocationTravelTimer = 0f;
         relocationStuckTimer = 0f;
         lastRelocationDistance = 0f;
+        previousRelocationDistance = 0f;
+        relocationInitialDistance = 0f;
+        currentRunTravelDuration = 0f;
+        currentRunAnimationSpeed = 1f;
+        relocationStartPosition = transform.position;
+        relocationTravelDirection = Vector2.zero;
+        lastKnownRelocationDistance = 0f;
         usedNearTargetExtension = false;
+        relocationArrivalLockTimer = Mathf.Max(0f, relocationArrivalLockSeconds);
         SetMovement(Vector2.zero);
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
         relocationTimer = Mathf.Max(0.1f, relocationIntervalSeconds);
 
         if (pendingWeakStateAfterRelocation)
@@ -666,6 +745,7 @@ public class HybrizoBoss : Boss
 
     private string GetShootStateName(int direction)
     {
+        direction = ResolveVisualDirectionIndex(direction);
         return direction switch
         {
             0 => "shooting0_right",
@@ -682,9 +762,10 @@ public class HybrizoBoss : Boss
 
     private string GetRunStateName(int direction)
     {
+        direction = ResolveVisualDirectionIndex(direction);
         return direction switch
         {
-            0 => HasAnimationClip("run0_right") ? "run0_right" : "running0_right",
+            0 => "run0_right",
             1 => "run1_up_right",
             2 => "run2_up",
             3 => "run3_up_left",
@@ -692,7 +773,7 @@ public class HybrizoBoss : Boss
             5 => "run5_down_left",
             6 => "run6_down",
             7 => "run7_down_right",
-            _ => HasAnimationClip("run0_right") ? "run0_right" : "running0_right"
+            _ => "run0_right"
         };
     }
 
@@ -712,6 +793,42 @@ public class HybrizoBoss : Boss
         }
 
         return Mathf.Max(0.01f, clipLength / Mathf.Max(0.01f, desiredDuration));
+    }
+
+    private float GetRunAnimationSpeed(string runStateName)
+    {
+        float clipLength = GetClipLength(runStateName);
+        if (clipLength <= Mathf.Epsilon)
+        {
+            return Mathf.Max(0.01f, runAnimationSpeed);
+        }
+
+        float expectedTravelDuration = Mathf.Max(0.01f, currentRunTravelDuration);
+
+        float baseSpeed = clipLength / expectedTravelDuration;
+        return Mathf.Max(0.01f, baseSpeed * Mathf.Max(0.01f, runAnimationSpeed));
+    }
+
+    private bool HasCrossedRelocationDestination(Vector2 currentPosition, Vector2 toDestination)
+    {
+        if (relocationTravelDirection.sqrMagnitude <= Mathf.Epsilon)
+        {
+            return false;
+        }
+
+        Vector2 toCurrent = currentPosition - relocationStartPosition;
+        float traveledAlongPath = Vector2.Dot(toCurrent, relocationTravelDirection);
+        float pathLength = Vector2.Distance(relocationStartPosition, relocationDestination);
+        if (traveledAlongPath >= pathLength)
+        {
+            return true;
+        }
+
+        // Guard against edge jitter: if distance starts increasing very near target, treat as crossed.
+        bool distanceGrowing = previousRelocationDistance > 0f
+            && (toDestination.magnitude - previousRelocationDistance) > Mathf.Max(0.0001f, relocationProgressEpsilon);
+        bool nearTarget = toDestination.magnitude <= Mathf.Max(relocationSettleRadius, nearTargetRadius);
+        return distanceGrowing && nearTarget;
     }
 
     private void CacheAnimationClipDurations()
@@ -738,20 +855,41 @@ public class HybrizoBoss : Boss
 
     private float GetClipLength(string clipName)
     {
-        if (!clipLengthLookup.TryGetValue(clipName, out float clipLength))
+        if (clipLengthLookup.TryGetValue(clipName, out float clipLength))
         {
-            return 0f;
+            return clipLength;
         }
 
-        return clipLength;
+        // Canonical state names are shooting*, but clips may still be named shoot*.
+        if (clipName.StartsWith("shooting"))
+        {
+            string legacyShootName = "shoot" + clipName.Substring("shooting".Length);
+            if (clipLengthLookup.TryGetValue(legacyShootName, out clipLength))
+            {
+                return clipLength;
+            }
+        }
+
+        return 0f;
     }
 
-    private bool HasAnimationClip(string clipName)
+    private bool CanPlayState(string stateName)
     {
-        return clipLengthLookup.ContainsKey(clipName);
+        if (string.IsNullOrWhiteSpace(stateName) || animator == null || animator.runtimeAnimatorController == null)
+        {
+            return false;
+        }
+
+        int layerIndex = ResolveAnimatorLayerIndex();
+        if (layerIndex < 0)
+        {
+            return false;
+        }
+
+        return animator.HasState(layerIndex, Animator.StringToHash(stateName));
     }
 
-    private void TryPlayAnimationState(string stateName)
+    private void TryPlayAnimationState(string stateName, string preferredFallbackState)
     {
         if (animator == null)
         {
@@ -775,18 +913,147 @@ public class HybrizoBoss : Boss
             return;
         }
 
-        int stateHash = Animator.StringToHash(stateName);
-        if (!animator.HasState(0, stateHash))
+        int layerIndex = ResolveAnimatorLayerIndex();
+        if (layerIndex < 0)
         {
-            if (!warnedMissingAnimationStates.Contains(stateName))
-            {
-                Debug.LogWarning($"{nameof(HybrizoBoss)} is missing Animator state '{stateName}'.", this);
-                warnedMissingAnimationStates.Add(stateName);
-            }
-
             return;
         }
 
-        PlayAnimation(stateName);
+        lastRequestedAnimationState = stateName;
+        string resolvedStateName = stateName;
+        if (!CanPlayState(resolvedStateName))
+        {
+            if (!warnedMissingAnimationStates.Contains(resolvedStateName))
+            {
+                Debug.LogWarning($"{nameof(HybrizoBoss)} is missing Animator state '{resolvedStateName}'.", this);
+                warnedMissingAnimationStates.Add(resolvedStateName);
+            }
+
+            string fallbackState = ResolveSafeFallbackState(resolvedStateName, preferredFallbackState);
+            if (!CanPlayState(fallbackState))
+            {
+                return;
+            }
+
+            resolvedStateName = fallbackState;
+        }
+
+        lastResolvedAnimationState = resolvedStateName;
+        int stateHash = Animator.StringToHash(resolvedStateName);
+        if (animator.GetCurrentAnimatorStateInfo(layerIndex).shortNameHash == stateHash)
+        {
+            return;
+        }
+
+        animator.Play(stateHash, layerIndex, 0f);
+    }
+
+    private int ResolveAnimatorLayerIndex()
+    {
+        if (animatorLayerIndex != -2)
+        {
+            return animatorLayerIndex;
+        }
+
+        if (animator == null || animator.runtimeAnimatorController == null)
+        {
+            animatorLayerIndex = -1;
+            return animatorLayerIndex;
+        }
+
+        if (animator.layerCount <= 0)
+        {
+            if (!warnedInvalidAnimatorLayer)
+            {
+                Debug.LogWarning($"{nameof(HybrizoBoss)} on '{name}' has an Animator with no valid layers.", this);
+                warnedInvalidAnimatorLayer = true;
+            }
+
+            animatorLayerIndex = -1;
+            return animatorLayerIndex;
+        }
+
+        animatorLayerIndex = 0;
+        return animatorLayerIndex;
+    }
+
+    private string ResolveSafeFallbackState(string requestedState, string preferredFallbackState)
+    {
+        if (CanPlayState(preferredFallbackState))
+        {
+            return preferredFallbackState;
+        }
+
+        if (requestedState.StartsWith("run"))
+        {
+            if (CanPlayState("run0_right"))
+            {
+                return "run0_right";
+            }
+        }
+
+        if (requestedState.StartsWith("shoot"))
+        {
+            if (CanPlayState("shooting0_right"))
+            {
+                return "shooting0_right";
+            }
+        }
+
+        if (CanPlayState("die"))
+        {
+            return "die";
+        }
+
+        return requestedState;
+    }
+
+    private bool ShouldFinishRelocation(Vector2 currentPosition, Vector2 toDestination, float remainingDistance, out bool shouldSnapToDestination)
+    {
+        shouldSnapToDestination = false;
+
+        if (remainingDistance <= Mathf.Max(0.01f, relocationSettleRadius))
+        {
+            shouldSnapToDestination = true;
+            return true;
+        }
+
+        if (remainingDistance <= Mathf.Max(0.01f, relocationStopDistance))
+        {
+            return true;
+        }
+
+        if (HasCrossedRelocationDestination(currentPosition, toDestination))
+        {
+            shouldSnapToDestination = true;
+            return true;
+        }
+
+        return false;
+    }
+
+    private bool TryApplyNearTargetExtension(float remainingDistance)
+    {
+        if (usedNearTargetExtension || remainingDistance > Mathf.Max(0f, nearTargetRadius))
+        {
+            return false;
+        }
+
+        usedNearTargetExtension = true;
+        relocationTravelTimer = Mathf.Max(0.01f, nearTargetExtensionSeconds);
+        relocationStuckTimer = 0f;
+        return true;
+    }
+
+    private int ResolveVisualDirectionIndex(int worldDirectionIndex)
+    {
+        int normalized = ((worldDirectionIndex % 8) + 8) % 8;
+        if (!invertDirectionalAnimation)
+        {
+            return normalized;
+        }
+
+        // 180 degree visual remap for sprite sets authored with opposite facing semantics.
+        return (normalized + 4) % 8;
     }
 }

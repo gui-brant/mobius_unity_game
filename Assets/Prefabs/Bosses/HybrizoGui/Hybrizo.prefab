@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1914426200133706580}
   - component: {fileID: 2563131047948959940}
   - component: {fileID: 4037071382697028191}
-  - component: {fileID: 3547977649114109916}
   - component: {fileID: 4218308060340189704}
+  - component: {fileID: 4292803360668018133}
+  - component: {fileID: 6756558351709208065}
   m_Layer: 0
   m_Name: Hybrizo
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 689897882815051621}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.99, y: 4.42, z: 0}
+  m_LocalPosition: {x: -0.951292, y: 3.9743252, z: 0}
   m_LocalScale: {x: 1.4465982, y: 1.3956001, z: 1.4465982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110,7 +111,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -194,7 +195,41 @@ PolygonCollider2D:
       - {x: 0.074999996, y: -0.16}
       - {x: 0.114999995, y: -0.19}
   m_UseDelaunayMesh: 1
---- !u!114 &3547977649114109916
+--- !u!114 &4218308060340189704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689897882815051621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c51395c40073467abfaeb8a50efea32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileSpawner
+--- !u!95 &4292803360668018133
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689897882815051621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb4750d04ca7a4032bf9d51e2f6af67a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6756558351709208065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,9 +243,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HybrizoBoss
   health: 100
   speed: 3
-  targetMichael: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+  targetMichael: {fileID: 0}
   aggroOnSpawn: 1
-  attackDamage: 1
+  attackDamage: 10
   attackRange: 1.25
   attackCooldown: 2
   attackDuration: 1.09
@@ -221,6 +256,7 @@ MonoBehaviour:
   projectileSpawner: {fileID: 4218308060340189704}
   projectileOrigin: {fileID: 3818507652560862118}
   bossProjectilePrefab: {fileID: 7048228716837271774, guid: d9577c664657f462fb83355a232dbf15, type: 3}
+  projectileSpawnForwardOffset: 0.35
   relocationIntervalSeconds: 5
   relocationSpeed: 8
   relocationStopDistance: 0.1
@@ -234,23 +270,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  relocationFallbackRadius: 6
-  relocationFallbackAttempts: 24
+  relocationGraceSeconds: 0.2
+  nearTargetRadius: 0.35
+  nearTargetExtensionSeconds: 0.2
+  relocationSettleRadius: 0.15
+  relocationStuckGraceSeconds: 0.45
+  relocationProgressEpsilon: 0.02
+  relocationArrivalLockSeconds: 0.12
+  enableAimDebug: 0
+  aimDebugDurationSeconds: 0.2
+  runAnimationSpeed: 1
+  shootCycleToleranceSeconds: 0.1
   puzzleActiveFireInterval: 0.75
   puzzleActiveProjectileSpeed: 12
   puzzleActiveProjectileDamage: 12
   weakWindowFireInterval: 1.25
-  weakWindowProjectileSpeed: 0.15
+  weakWindowProjectileSpeed: 8
   weakWindowProjectileDamage: 6
---- !u!114 &4218308060340189704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689897882815051621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c51395c40073467abfaeb8a50efea32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ProjectileSpawner

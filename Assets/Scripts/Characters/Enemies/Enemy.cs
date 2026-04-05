@@ -10,7 +10,7 @@ public class Enemy : Character, ITargetable, ITeamMember
 {
     //[SerializeField] allows for you to keep variables private while still being visible on the inspector.
     [Header("Targeting")]
-    [SerializeField] private Michael targetMichael;
+    [SerializeField] protected Michael targetMichael;
     [SerializeField] private bool aggroOnSpawn = true;
 
     [Header("Combat")]
@@ -37,6 +37,12 @@ public class Enemy : Character, ITargetable, ITeamMember
     public CombatTeam Team => CombatTeam.Enemy;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
+
+    public virtual void SetTargetMichael(Michael michael)
+    {
+        targetMichael = michael;
+        isAggroed = aggroOnSpawn && targetMichael != null;
+    }
 
     protected override void Awake()
     {
