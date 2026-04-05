@@ -52,6 +52,21 @@ public class Projectile : MonoBehaviour, IMovementController
         movementDirection = direction.normalized;
     }
 
+    protected Vector2 GetTravelDirection()
+    {
+        return movementDirection;
+    }
+
+    protected void SetRuntimeSpeed(float runtimeSpeed)
+    {
+        speed = Mathf.Max(0f, runtimeSpeed);
+    }
+
+    protected void SetRuntimeDamageOverride(int? runtimeDamage)
+    {
+        damageOverride = runtimeDamage;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!isInitialized || other == null)
@@ -77,17 +92,24 @@ public class Projectile : MonoBehaviour, IMovementController
             return;
         }
 
-        IDamageable damageable = GetDamageableFromObject(targetObject);
-        if (damageable != null)
-        {
-            int finalDamage = damageOverride ?? baseDamage;
-            if (finalDamage > 0)
-            {
-                damageable.TakeDamage(finalDamage);
-            }
-        }
+        HandleTargetHit(targetObject);
 
         Destroy(gameObject);
+    }
+
+    protected virtual void HandleTargetHit(GameObject targetObject)
+    {
+        IDamageable damageable = GetDamageableFromObject(targetObject);
+        if (damageable == null)
+        {
+            return;
+        }
+
+        int finalDamage = damageOverride ?? baseDamage;
+        if (finalDamage > 0)
+        {
+            damageable.TakeDamage(finalDamage);
+        }
     }
 
     private GameObject ResolveTargetObject(Collider2D collider2D)
@@ -187,7 +209,7 @@ public class Projectile : MonoBehaviour, IMovementController
         return null;
     }
 
-    private T GetInterfaceFromBehaviours<T>(MonoBehaviour[] behaviours) where T : class
+    protected static T GetInterfaceFromBehaviours<T>(MonoBehaviour[] behaviours) where T : class
     {
         if (behaviours == null)
         {
