@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 4251fe296e13f8042b8b279abc958d11
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5138739586052110412
+    second: Block_Shadow_240_0
+  - first:
+      213: 6158110516272260048
+    second: Block_Shadow_240_1
+  - first:
+      213: 5472677953779590615
+    second: Block_Shadow_240_2
+  - first:
+      213: 4634849997993490038
+    second: Block_Shadow_240_3
+  - first:
+      213: -7044500331479392199
+    second: Block_Shadow_240_4
+  - first:
+      213: 1447300637144213544
+    second: Block_Shadow_240_5
+  - first:
+      213: -2794933278040607665
+    second: Block_Shadow_240_6
+  - first:
+      213: -8144757281473130832
+    second: Block_Shadow_240_7
+  - first:
+      213: -3622807872243859088
+    second: Block_Shadow_240_8
+  - first:
+      213: -8605010222360090073
+    second: Block_Shadow_240_9
+  - first:
+      213: 4111967805218218400
+    second: Block_Shadow_240_10
+  - first:
+      213: -360350382633622749
+    second: Block_Shadow_240_11
+  - first:
+      213: 6322755238766433619
+    second: Block_Shadow_240_12
+  - first:
+      213: -1112961466592288437
+    second: Block_Shadow_240_13
+  - first:
+      213: 2821503771033250804
+    second: Block_Shadow_240_14
+  - first:
+      213: 7436061714241682267
+    second: Block_Shadow_240_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Block_Shadow_240_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 823
+        width: 116
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48bfd36d68705740800000000000000
+      internalID: 5138739586052110412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_1
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 826
+        width: 107
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3610233e0067550800000000000000
+      internalID: 6158110516272260048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 832
+        width: 101
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5e42d7a9bd2fb40800000000000000
+      internalID: 5472677953779590615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_3
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 834
+        width: 98
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6763f95448b425040800000000000000
+      internalID: 4634849997993490038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 578
+        width: 98
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930ac0a9548ec3e90800000000000000
+      internalID: -7044500331479392199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 579
+        width: 101
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8286d28e248d51410800000000000000
+      internalID: 1447300637144213544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 579
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44b877edf66639d0800000000000000
+      internalID: -2794933278040607665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_7
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 579
+        width: 108
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be8400c76208fe80800000000000000
+      internalID: -8144757281473130832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 323
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0718a654f6339bdc0800000000000000
+      internalID: -3622807872243859088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 322
+        width: 108
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a2f974bccd49880800000000000000
+      internalID: -8605010222360090073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_10
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 322
+        width: 109
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1efd5cee4a01930800000000000000
+      internalID: 4111967805218218400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_11
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 322
+        width: 110
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32362787c37cffaf0800000000000000
+      internalID: -360350382633622749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 66
+        width: 111
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355d968e360feb750800000000000000
+      internalID: 6322755238766433619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_13
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 60
+        width: 106
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41a11f5177fd80f0800000000000000
+      internalID: -1112961466592288437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_14
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 57
+        width: 111
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbacd41bbef72720800000000000000
+      internalID: 2821503771033250804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Shadow_240_15
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 55
+        width: 116
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bf14d2bb2323760800000000000000
+      internalID: 7436061714241682267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Block_Shadow_240_0: 5138739586052110412
+      Block_Shadow_240_1: 6158110516272260048
+      Block_Shadow_240_10: 4111967805218218400
+      Block_Shadow_240_11: -360350382633622749
+      Block_Shadow_240_12: 6322755238766433619
+      Block_Shadow_240_13: -1112961466592288437
+      Block_Shadow_240_14: 2821503771033250804
+      Block_Shadow_240_15: 7436061714241682267
+      Block_Shadow_240_2: 5472677953779590615
+      Block_Shadow_240_3: 4634849997993490038
+      Block_Shadow_240_4: -7044500331479392199
+      Block_Shadow_240_5: 1447300637144213544
+      Block_Shadow_240_6: -2794933278040607665
+      Block_Shadow_240_7: -8144757281473130832
+      Block_Shadow_240_8: -3622807872243859088
+      Block_Shadow_240_9: -8605010222360090073
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

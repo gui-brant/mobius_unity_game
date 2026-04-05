@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 1063d59d6648a9040a2d4668490787a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7322072966812452041
+    second: Talk_Shadow_060_0
+  - first:
+      213: 6786158255051366163
+    second: Talk_Shadow_060_1
+  - first:
+      213: 9112383187778044360
+    second: Talk_Shadow_060_2
+  - first:
+      213: 1696639053389416994
+    second: Talk_Shadow_060_3
+  - first:
+      213: -2619464532003141006
+    second: Talk_Shadow_060_4
+  - first:
+      213: 5278091771878229714
+    second: Talk_Shadow_060_5
+  - first:
+      213: -3803447687172671212
+    second: Talk_Shadow_060_6
+  - first:
+      213: -3183007716191276284
+    second: Talk_Shadow_060_7
+  - first:
+      213: 3669334725362102538
+    second: Talk_Shadow_060_8
+  - first:
+      213: 1964856378603064851
+    second: Talk_Shadow_060_9
+  - first:
+      213: -6161570541943235636
+    second: Talk_Shadow_060_10
+  - first:
+      213: 4103808739148922526
+    second: Talk_Shadow_060_11
+  - first:
+      213: -2648284619603375181
+    second: Talk_Shadow_060_12
+  - first:
+      213: 1822667417612255651
+    second: Talk_Shadow_060_13
+  - first:
+      213: -106092360273520866
+    second: Talk_Shadow_060_14
+  - first:
+      213: -8517652330667986616
+    second: Talk_Shadow_060_15
+  - first:
+      213: 6203678329884162131
+    second: Talk_Shadow_060_16
+  - first:
+      213: -8000495367784057020
+    second: Talk_Shadow_060_17
+  - first:
+      213: 9132106312562928493
+    second: Talk_Shadow_060_18
+  - first:
+      213: 2729817018445468415
+    second: Talk_Shadow_060_19
+  - first:
+      213: -3015929400036244572
+    second: Talk_Shadow_060_20
+  - first:
+      213: -5673199907239859171
+    second: Talk_Shadow_060_21
+  - first:
+      213: 7495262431617870534
+    second: Talk_Shadow_060_22
+  - first:
+      213: 3489009362438544326
+    second: Talk_Shadow_060_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Talk_Shadow_060_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 585
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4c85eb19a3d9560800000000000000
+      internalID: 7322072966812452041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 584
+        width: 78
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fdbe57af64d2e50800000000000000
+      internalID: 6786158255051366163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 584
+        width: 75
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c180c4da30b57e70800000000000000
+      internalID: 9112383187778044360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_3
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 583
+        width: 79
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ac459da3cab8710800000000000000
+      internalID: 1696639053389416994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_4
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 582
+        width: 80
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ac73cf2eac5abd0800000000000000
+      internalID: -2619464532003141006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_5
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 581
+        width: 81
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6c6b2808c8f3940800000000000000
+      internalID: 5278091771878229714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_6
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 581
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419ba44ea70773bc0800000000000000
+      internalID: -3803447687172671212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_7
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 581
+        width: 81
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403771fa85fa3d3d0800000000000000
+      internalID: -3183007716191276284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 325
+        width: 81
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01b633ed781ce230800000000000000
+      internalID: 3669334725362102538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_9
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 325
+        width: 80
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ecb415772944b10800000000000000
+      internalID: 1964856378603064851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_10
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 326
+        width: 79
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb56fccc34bd7aa0800000000000000
+      internalID: -6161570541943235636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_11
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 327
+        width: 78
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e7d1b2e48a3f830800000000000000
+      internalID: 4103808739148922526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_12
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 328
+        width: 78
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb09607b276f3bd0800000000000000
+      internalID: -2648284619603375181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_13
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 328
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a105720c5a6b4910800000000000000
+      internalID: 1822667417612255651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_14
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 329
+        width: 83
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1793887f85178ef0800000000000000
+      internalID: -106092360273520866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_15
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 329
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841b14e65583bc980800000000000000
+      internalID: -8517652330667986616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 73
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358b8819294e71650800000000000000
+      internalID: 6203678329884162131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_17
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 73
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447b218f9d788f090800000000000000
+      internalID: -8000495367784057020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 73
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b6a6bae42cbbe70800000000000000
+      internalID: 9132106312562928493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 73
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff212467d1242e520800000000000000
+      internalID: 2729817018445468415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_20
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 73
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3ce2390344526d0800000000000000
+      internalID: -3015929400036244572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_21
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 73
+        width: 83
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c60350ebeb441b0800000000000000
+      internalID: -5673199907239859171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_22
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 73
+        width: 80
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cae9ee4875840860800000000000000
+      internalID: 7495262431617870534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Shadow_060_23
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 73
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb592297837b6030800000000000000
+      internalID: 3489009362438544326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Talk_Shadow_060_0: 7322072966812452041
+      Talk_Shadow_060_1: 6786158255051366163
+      Talk_Shadow_060_10: -6161570541943235636
+      Talk_Shadow_060_11: 4103808739148922526
+      Talk_Shadow_060_12: -2648284619603375181
+      Talk_Shadow_060_13: 1822667417612255651
+      Talk_Shadow_060_14: -106092360273520866
+      Talk_Shadow_060_15: -8517652330667986616
+      Talk_Shadow_060_16: 6203678329884162131
+      Talk_Shadow_060_17: -8000495367784057020
+      Talk_Shadow_060_18: 9132106312562928493
+      Talk_Shadow_060_19: 2729817018445468415
+      Talk_Shadow_060_2: 9112383187778044360
+      Talk_Shadow_060_20: -3015929400036244572
+      Talk_Shadow_060_21: -5673199907239859171
+      Talk_Shadow_060_22: 7495262431617870534
+      Talk_Shadow_060_23: 3489009362438544326
+      Talk_Shadow_060_3: 1696639053389416994
+      Talk_Shadow_060_4: -2619464532003141006
+      Talk_Shadow_060_5: 5278091771878229714
+      Talk_Shadow_060_6: -3803447687172671212
+      Talk_Shadow_060_7: -3183007716191276284
+      Talk_Shadow_060_8: 3669334725362102538
+      Talk_Shadow_060_9: 1964856378603064851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

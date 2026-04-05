@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 2207cd8ef9ea0104ab505be0ff380c8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3656250891007225783
+    second: Idle_Shadow_210_0
+  - first:
+      213: 3589536547700164762
+    second: Idle_Shadow_210_1
+  - first:
+      213: 4495378247335196202
+    second: Idle_Shadow_210_2
+  - first:
+      213: -4971067109017661111
+    second: Idle_Shadow_210_3
+  - first:
+      213: -8772193358110251582
+    second: Idle_Shadow_210_4
+  - first:
+      213: 7746202016470621074
+    second: Idle_Shadow_210_5
+  - first:
+      213: 1199995953838087563
+    second: Idle_Shadow_210_6
+  - first:
+      213: 5546270552689900357
+    second: Idle_Shadow_210_7
+  - first:
+      213: -7121300217649546435
+    second: Idle_Shadow_210_8
+  - first:
+      213: -1643173899799644924
+    second: Idle_Shadow_210_9
+  - first:
+      213: 7217512582009380284
+    second: Idle_Shadow_210_10
+  - first:
+      213: 3996901997616971856
+    second: Idle_Shadow_210_11
+  - first:
+      213: -3790744893901674191
+    second: Idle_Shadow_210_12
+  - first:
+      213: -8198299502055122515
+    second: Idle_Shadow_210_13
+  - first:
+      213: 5767516447479165300
+    second: Idle_Shadow_210_14
+  - first:
+      213: 4703784005031527453
+    second: Idle_Shadow_210_15
+  - first:
+      213: 5970182215725601989
+    second: Idle_Shadow_210_16
+  - first:
+      213: 528778420936288567
+    second: Idle_Shadow_210_17
+  - first:
+      213: 3255005119024961335
+    second: Idle_Shadow_210_18
+  - first:
+      213: 1222749204770660047
+    second: Idle_Shadow_210_19
+  - first:
+      213: -5383701624167419990
+    second: Idle_Shadow_210_20
+  - first:
+      213: -4149056905780404961
+    second: Idle_Shadow_210_21
+  - first:
+      213: -4149813325978602258
+    second: Idle_Shadow_210_22
+  - first:
+      213: -3252977068886928989
+    second: Idle_Shadow_210_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_Shadow_210_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 604
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9401fcfaf23624dc0800000000000000
+      internalID: -3656250891007225783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 604
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9843f1d87890d130800000000000000
+      internalID: 3589536547700164762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_2
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 604
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26be6bc2bac26e30800000000000000
+      internalID: 4495378247335196202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_3
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 603
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941df5c5dc8330bb0800000000000000
+      internalID: -4971067109017661111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_4
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 602
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c52ccc2e98e24680800000000000000
+      internalID: -8772193358110251582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_5
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 602
+        width: 62
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b552e51b9008b60800000000000000
+      internalID: 7746202016470621074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_6
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 601
+        width: 62
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ddc6056fd37a010800000000000000
+      internalID: 1199995953838087563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_7
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 600
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b7a49aeaf48fc40800000000000000
+      internalID: 5546270552689900357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 344
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b361cae2f0c2d90800000000000000
+      internalID: -7121300217649546435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_9
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 344
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405bf364b064239e0800000000000000
+      internalID: -1643173899799644924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_10
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 344
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdd49c0471c92460800000000000000
+      internalID: 7217512582009380284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_11
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 344
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050420ab039d77730800000000000000
+      internalID: 3996901997616971856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_12
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 344
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1396ddc6a91946bc0800000000000000
+      internalID: -3790744893901674191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_13
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 344
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da91eb11a0ac93e80800000000000000
+      internalID: -8198299502055122515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_14
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 344
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471f730c6a55a0050800000000000000
+      internalID: 5767516447479165300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_15
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 345
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14811081a2374140800000000000000
+      internalID: 4703784005031527453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 89
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4dda408195ad250800000000000000
+      internalID: 5970182215725601989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_17
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 89
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739acc81c29965700800000000000000
+      internalID: 528778420936288567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_18
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 90
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7379f85f8e91c2d20800000000000000
+      internalID: 3255005119024961335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_19
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 91
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce1fbf5ce318f010800000000000000
+      internalID: 1222749204770660047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_20
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 92
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafaeca95ef3945b0800000000000000
+      internalID: -5383701624167419990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_21
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 92
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1dd3121ab69b66c0800000000000000
+      internalID: -4149056905780404961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_22
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 92
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4fcd444c6e866c0800000000000000
+      internalID: -4149813325978602258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Shadow_210_23
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 92
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1d082479a1bd2d0800000000000000
+      internalID: -3252977068886928989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idle_Shadow_210_0: -3656250891007225783
+      Idle_Shadow_210_1: 3589536547700164762
+      Idle_Shadow_210_10: 7217512582009380284
+      Idle_Shadow_210_11: 3996901997616971856
+      Idle_Shadow_210_12: -3790744893901674191
+      Idle_Shadow_210_13: -8198299502055122515
+      Idle_Shadow_210_14: 5767516447479165300
+      Idle_Shadow_210_15: 4703784005031527453
+      Idle_Shadow_210_16: 5970182215725601989
+      Idle_Shadow_210_17: 528778420936288567
+      Idle_Shadow_210_18: 3255005119024961335
+      Idle_Shadow_210_19: 1222749204770660047
+      Idle_Shadow_210_2: 4495378247335196202
+      Idle_Shadow_210_20: -5383701624167419990
+      Idle_Shadow_210_21: -4149056905780404961
+      Idle_Shadow_210_22: -4149813325978602258
+      Idle_Shadow_210_23: -3252977068886928989
+      Idle_Shadow_210_3: -4971067109017661111
+      Idle_Shadow_210_4: -8772193358110251582
+      Idle_Shadow_210_5: 7746202016470621074
+      Idle_Shadow_210_6: 1199995953838087563
+      Idle_Shadow_210_7: 5546270552689900357
+      Idle_Shadow_210_8: -7121300217649546435
+      Idle_Shadow_210_9: -1643173899799644924
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
