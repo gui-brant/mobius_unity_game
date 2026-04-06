@@ -8,7 +8,7 @@ public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
     //Default variables
     //These are the specifications of ow to create the dungeon
     [SerializeField]
-    private int iterations = 10;
+    public int iterations = 10;
     [SerializeField]
     public int walkLength = 10;
     //AKA: can you start from a previous walk(true) -> or do you have to start at origin (0,0) -> (false)?

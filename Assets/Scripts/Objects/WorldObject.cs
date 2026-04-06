@@ -73,7 +73,7 @@ public class WorldObject : MonoBehaviour, IDamageable, IKillable, IInteractable,
         Destroy(gameObject);
     }
 
-    private void SpawnObjectiveDrop()
+    public void SpawnObjectiveDrop()
     {
         if (objectiveItemPrefab == null) return;
 
