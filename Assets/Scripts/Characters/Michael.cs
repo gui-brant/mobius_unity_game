@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IKnockBack
+public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IKnockBack, ISlowable
 {
     private enum WeaponMode
     {
@@ -46,6 +46,9 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
     private int bonusAttackDamage;
     private float bonusAttackRange;
 
+    private float slowEndTime = -1f;
+    private float baseSpeed = 3f;
+
     public int AttackDamage => Mathf.Max(0, GetActiveBaseDamage() + bonusAttackDamage);
     public float AttackRange => Mathf.Max(0.1f, meleeBaseRange + bonusAttackRange);
     public int Armor => armor;
@@ -66,6 +69,12 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
         if (IsDead) return;
 
         if (Input.GetKeyDown(KeyCode.X)) TakeDamage(9999); // kys button
+
+        if (slowEndTime > 0f && Time.time >= slowEndTime)
+        {
+            speed = baseSpeed;
+            slowEndTime = -1f;
+        }
 
         UpdateCrowdControlTimers();
         HandleInput();
@@ -385,6 +394,12 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
         isKnockedBack = true;
         isAttacking = false;
         SetMovement(Vector2.zero);
+    }
+    
+    public void ApplySlow(float multiplier, float duration)
+    {
+        speed = baseSpeed * multiplier;
+        slowEndTime = Time.time + duration;
     }
 
     // override animation so attack takes priority
