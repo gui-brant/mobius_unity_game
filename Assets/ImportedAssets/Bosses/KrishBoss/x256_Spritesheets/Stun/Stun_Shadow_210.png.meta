@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 5fc944e83c1466448881ee12e131131b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5973239059957716797
+    second: Stun_Shadow_210_0
+  - first:
+      213: -2462952928002763136
+    second: Stun_Shadow_210_1
+  - first:
+      213: 3482484782978249786
+    second: Stun_Shadow_210_2
+  - first:
+      213: 1275504608834060672
+    second: Stun_Shadow_210_3
+  - first:
+      213: 5627234712250473660
+    second: Stun_Shadow_210_4
+  - first:
+      213: -9193066846372310366
+    second: Stun_Shadow_210_5
+  - first:
+      213: 9222925267176268223
+    second: Stun_Shadow_210_6
+  - first:
+      213: 6096057578783298429
+    second: Stun_Shadow_210_7
+  - first:
+      213: -4399114998576421827
+    second: Stun_Shadow_210_8
+  - first:
+      213: -7470006900015309594
+    second: Stun_Shadow_210_9
+  - first:
+      213: 420669568073822170
+    second: Stun_Shadow_210_10
+  - first:
+      213: 3483331920613170217
+    second: Stun_Shadow_210_11
+  - first:
+      213: 2409161509879095426
+    second: Stun_Shadow_210_12
+  - first:
+      213: 6018449664540610540
+    second: Stun_Shadow_210_13
+  - first:
+      213: 1615489496200216067
+    second: Stun_Shadow_210_14
+  - first:
+      213: 6325272792053843182
+    second: Stun_Shadow_210_15
+  - first:
+      213: 3927336815139803940
+    second: Stun_Shadow_210_16
+  - first:
+      213: -4702963700904983445
+    second: Stun_Shadow_210_17
+  - first:
+      213: -6045175248695292940
+    second: Stun_Shadow_210_18
+  - first:
+      213: 2137559413814114428
+    second: Stun_Shadow_210_19
+  - first:
+      213: -3192648738185455051
+    second: Stun_Shadow_210_20
+  - first:
+      213: 5664007599530344920
+    second: Stun_Shadow_210_21
+  - first:
+      213: 981198804206334902
+    second: Stun_Shadow_210_22
+  - first:
+      213: 6072703992009667830
+    second: Stun_Shadow_210_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stun_Shadow_210_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 572
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c86bb8f8baca1da0800000000000000
+      internalID: -5973239059957716797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 572
+        width: 89
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08613eb7c55d1ddd0800000000000000
+      internalID: -2462952928002763136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_2
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 572
+        width: 84
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a343f198575445030800000000000000
+      internalID: 3482484782978249786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_3
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 572
+        width: 81
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0818dee0fa083b110800000000000000
+      internalID: 1275504608834060672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_4
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 572
+        width: 79
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcdf6b0824f71e40800000000000000
+      internalID: 5627234712250473660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_5
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 572
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2de81096aab6080800000000000000
+      internalID: -9193066846372310366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_6
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 572
+        width: 75
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb124045aa96eff70800000000000000
+      internalID: 9222925267176268223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_7
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 572
+        width: 74
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73d4b1d11c899450800000000000000
+      internalID: 6096057578783298429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 316
+        width: 74
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3462cf573433f2c0800000000000000
+      internalID: -4399114998576421827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_9
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 316
+        width: 73
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecdede5d44355890800000000000000
+      internalID: -7470006900015309594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_10
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 316
+        width: 73
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf6bdc4eb486d500800000000000000
+      internalID: 420669568073822170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_11
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 316
+        width: 74
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c5de22de7475030800000000000000
+      internalID: 3483331920613170217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_12
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 316
+        width: 73
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28023e201af0f6120800000000000000
+      internalID: 2409161509879095426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_13
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 316
+        width: 73
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef03813514d58350800000000000000
+      internalID: 6018449664540610540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_14
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 316
+        width: 74
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e7367332f5b6610800000000000000
+      internalID: 1615489496200216067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_15
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 316
+        width: 74
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee400d57712e7c750800000000000000
+      internalID: 6325272792053843182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_16
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 60
+        width: 75
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423d8b38604b08630800000000000000
+      internalID: 3927336815139803940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_17
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 60
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6480007e67bbbeb0800000000000000
+      internalID: -4702963700904983445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_18
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 60
+        width: 79
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb8888d3293b1ca0800000000000000
+      internalID: -6045175248695292940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_19
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 60
+        width: 80
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78beaa26f22aad10800000000000000
+      internalID: 2137559413814114428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_20
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 60
+        width: 83
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a5bd353ee61b3d0800000000000000
+      internalID: -3192648738185455051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_21
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 60
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d18e1f07e89a9e40800000000000000
+      internalID: 5664007599530344920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_22
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 60
+        width: 92
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3b1c22d1bed9d00800000000000000
+      internalID: 981198804206334902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Shadow_210_23
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 60
+        width: 95
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f435dd2b14964450800000000000000
+      internalID: 6072703992009667830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stun_Shadow_210_0: -5973239059957716797
+      Stun_Shadow_210_1: -2462952928002763136
+      Stun_Shadow_210_10: 420669568073822170
+      Stun_Shadow_210_11: 3483331920613170217
+      Stun_Shadow_210_12: 2409161509879095426
+      Stun_Shadow_210_13: 6018449664540610540
+      Stun_Shadow_210_14: 1615489496200216067
+      Stun_Shadow_210_15: 6325272792053843182
+      Stun_Shadow_210_16: 3927336815139803940
+      Stun_Shadow_210_17: -4702963700904983445
+      Stun_Shadow_210_18: -6045175248695292940
+      Stun_Shadow_210_19: 2137559413814114428
+      Stun_Shadow_210_2: 3482484782978249786
+      Stun_Shadow_210_20: -3192648738185455051
+      Stun_Shadow_210_21: 5664007599530344920
+      Stun_Shadow_210_22: 981198804206334902
+      Stun_Shadow_210_23: 6072703992009667830
+      Stun_Shadow_210_3: 1275504608834060672
+      Stun_Shadow_210_4: 5627234712250473660
+      Stun_Shadow_210_5: -9193066846372310366
+      Stun_Shadow_210_6: 9222925267176268223
+      Stun_Shadow_210_7: 6096057578783298429
+      Stun_Shadow_210_8: -4399114998576421827
+      Stun_Shadow_210_9: -7470006900015309594
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

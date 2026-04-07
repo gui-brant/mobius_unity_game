@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: abc4f2958c9137c45860db360fd34c29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -74384550378279722
+    second: Down_Body_300_0
+  - first:
+      213: -1243302639227296907
+    second: Down_Body_300_1
+  - first:
+      213: 1970454847028820481
+    second: Down_Body_300_2
+  - first:
+      213: 259085742097081079
+    second: Down_Body_300_3
+  - first:
+      213: -7527364504379612674
+    second: Down_Body_300_4
+  - first:
+      213: -8607308646905441783
+    second: Down_Body_300_5
+  - first:
+      213: -6732900770670818860
+    second: Down_Body_300_6
+  - first:
+      213: 6692186194900638123
+    second: Down_Body_300_7
+  - first:
+      213: -1950837768315356589
+    second: Down_Body_300_8
+  - first:
+      213: -2191265578070016380
+    second: Down_Body_300_9
+  - first:
+      213: -2164052512554695661
+    second: Down_Body_300_10
+  - first:
+      213: -8007909803400677581
+    second: Down_Body_300_11
+  - first:
+      213: -8732106051917013904
+    second: Down_Body_300_12
+  - first:
+      213: 5391487584537423528
+    second: Down_Body_300_13
+  - first:
+      213: -845186175369662513
+    second: Down_Body_300_14
+  - first:
+      213: -5352137753776685562
+    second: Down_Body_300_15
+  - first:
+      213: -4792835220837085725
+    second: Down_Body_300_16
+  - first:
+      213: -8381757997174057759
+    second: Down_Body_300_17
+  - first:
+      213: 2728705770848917422
+    second: Down_Body_300_18
+  - first:
+      213: 1272782476907820111
+    second: Down_Body_300_19
+  - first:
+      213: -1366024519570137187
+    second: Down_Body_300_20
+  - first:
+      213: 4666105613234236628
+    second: Down_Body_300_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Down_Body_300_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 320
+        width: 144
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcece145abb7fef0800000000000000
+      internalID: -74384550378279722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 329
+        width: 145
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5732d8046d6eebee0800000000000000
+      internalID: -1243302639227296907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 346
+        width: 133
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a79135e36785b10800000000000000
+      internalID: 1970454847028820481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_3
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 367
+        width: 119
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2a0181c15789300800000000000000
+      internalID: 259085742097081079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_4
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 385
+        width: 103
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1a19d6ddd698790800000000000000
+      internalID: -7527364504379612674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_5
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 394
+        width: 106
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9029d0d9362bc8880800000000000000
+      internalID: -8607308646905441783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_6
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 399
+        width: 111
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d94638eb6eef82a0800000000000000
+      internalID: -6732900770670818860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_7
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 394
+        width: 116
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba953d533eb6fdc50800000000000000
+      internalID: 6692186194900638123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_8
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 378
+        width: 122
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ab52db26b3de4e0800000000000000
+      internalID: -1950837768315356589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_9
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 360
+        width: 125
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e789a019f0791e0800000000000000
+      internalID: -2191265578070016380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_10
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 344
+        width: 127
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314c2e994bdb7f1e0800000000000000
+      internalID: -2164052512554695661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 82
+        width: 120
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3373fe626703ed090800000000000000
+      internalID: -8007909803400677581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_12
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 68
+        width: 112
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c927a7fc351d680800000000000000
+      internalID: -8732106051917013904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_13
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 79
+        width: 113
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae284f846962da40800000000000000
+      internalID: 5391487584537423528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_14
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 84
+        width: 113
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf2508c6ab4544f0800000000000000
+      internalID: -845186175369662513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_15
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 87
+        width: 112
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60efe2dd11369b5b0800000000000000
+      internalID: -5352137753776685562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_16
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 91
+        width: 111
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed460b92cd6c7db0800000000000000
+      internalID: -4792835220837085725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_17
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 88
+        width: 110
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4962192830eab80800000000000000
+      internalID: -8381757997174057759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_18
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 86
+        width: 113
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea71208f07f4ed520800000000000000
+      internalID: 2728705770848917422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_19
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 81
+        width: 116
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44be645be4d9a110800000000000000
+      internalID: 1272782476907820111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_20
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 76
+        width: 116
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f5c8cdfe7ea0de0800000000000000
+      internalID: -1366024519570137187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Body_300_21
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 71
+        width: 115
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc6849455651c040800000000000000
+      internalID: 4666105613234236628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Down_Body_300_0: -74384550378279722
+      Down_Body_300_1: -1243302639227296907
+      Down_Body_300_10: -2164052512554695661
+      Down_Body_300_11: -8007909803400677581
+      Down_Body_300_12: -8732106051917013904
+      Down_Body_300_13: 5391487584537423528
+      Down_Body_300_14: -845186175369662513
+      Down_Body_300_15: -5352137753776685562
+      Down_Body_300_16: -4792835220837085725
+      Down_Body_300_17: -8381757997174057759
+      Down_Body_300_18: 2728705770848917422
+      Down_Body_300_19: 1272782476907820111
+      Down_Body_300_2: 1970454847028820481
+      Down_Body_300_20: -1366024519570137187
+      Down_Body_300_21: 4666105613234236628
+      Down_Body_300_3: 259085742097081079
+      Down_Body_300_4: -7527364504379612674
+      Down_Body_300_5: -8607308646905441783
+      Down_Body_300_6: -6732900770670818860
+      Down_Body_300_7: 6692186194900638123
+      Down_Body_300_8: -1950837768315356589
+      Down_Body_300_9: -2191265578070016380
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

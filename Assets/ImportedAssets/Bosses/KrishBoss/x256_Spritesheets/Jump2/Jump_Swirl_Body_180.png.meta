@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 3fe15be36599e2d49a801728feeb1234
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1416643709970328176
+    second: Jump_Swirl_Body_180_0
+  - first:
+      213: 3687857059931792690
+    second: Jump_Swirl_Body_180_1
+  - first:
+      213: 6360611679727554857
+    second: Jump_Swirl_Body_180_2
+  - first:
+      213: 8593670401375897274
+    second: Jump_Swirl_Body_180_3
+  - first:
+      213: 3949186152221338963
+    second: Jump_Swirl_Body_180_4
+  - first:
+      213: 4247100557238147921
+    second: Jump_Swirl_Body_180_5
+  - first:
+      213: -829448811271497720
+    second: Jump_Swirl_Body_180_6
+  - first:
+      213: -546911085583504219
+    second: Jump_Swirl_Body_180_7
+  - first:
+      213: 5941442031242404576
+    second: Jump_Swirl_Body_180_8
+  - first:
+      213: -7085682127596488622
+    second: Jump_Swirl_Body_180_9
+  - first:
+      213: -6970708487360859755
+    second: Jump_Swirl_Body_180_10
+  - first:
+      213: -9153839184000989914
+    second: Jump_Swirl_Body_180_11
+  - first:
+      213: -4532454595291223082
+    second: Jump_Swirl_Body_180_12
+  - first:
+      213: -5594364920512775095
+    second: Jump_Swirl_Body_180_13
+  - first:
+      213: 6931587118798422115
+    second: Jump_Swirl_Body_180_14
+  - first:
+      213: 3557721613148120153
+    second: Jump_Swirl_Body_180_15
+  - first:
+      213: -7233403356660486556
+    second: Jump_Swirl_Body_180_16
+  - first:
+      213: -2079192322722232467
+    second: Jump_Swirl_Body_180_17
+  - first:
+      213: -2096452307415065565
+    second: Jump_Swirl_Body_180_18
+  - first:
+      213: -2091763787645302574
+    second: Jump_Swirl_Body_180_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 831
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07aa212d2fde8a310800000000000000
+      internalID: 1416643709970328176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 834
+        width: 85
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235a6a7f476ed2330800000000000000
+      internalID: 3687857059931792690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_2
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 836
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9219c5c6f9e654850800000000000000
+      internalID: 6360611679727554857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_3
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 838
+        width: 77
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab68cc6e2b9d24770800000000000000
+      internalID: 8593670401375897274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_4
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 840
+        width: 71
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d6b0bb1e35ec630800000000000000
+      internalID: 3949186152221338963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 582
+        width: 113
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b1b87647bb0fa30800000000000000
+      internalID: 4247100557238147921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 584
+        width: 137
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808dac463b43d74f0800000000000000
+      internalID: -829448811271497720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_7
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 588
+        width: 88
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac621ce34bf868f0800000000000000
+      internalID: -546911085583504219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_8
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 583
+        width: 150
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e267cd5c0e347250800000000000000
+      internalID: 5941442031242404576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_9
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 594
+        width: 119
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258f64185a99aad90800000000000000
+      internalID: -7085682127596488622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 345
+        width: 164
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5913e0a2091134f90800000000000000
+      internalID: -6970708487360859755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_11
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 310
+        width: 93
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625c192e2c707f080800000000000000
+      internalID: -9153839184000989914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_12
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 316
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db641f3f8c7911c0800000000000000
+      internalID: -4532454595291223082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_13
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 316
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cfde8beb2dc52b0800000000000000
+      internalID: -5594364920512775095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 316
+        width: 89
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36047a962c1f13060800000000000000
+      internalID: 6931587118798422115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 61
+        width: 79
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9546c6125f09f5130800000000000000
+      internalID: 3557721613148120153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_16
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 62
+        width: 78
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e2229a8f9cd9b90800000000000000
+      internalID: -7233403356660486556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 66
+        width: 64
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d670c6839993523e0800000000000000
+      internalID: -2079192322722232467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_18
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 64
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c1affdbb7e7e2e0800000000000000
+      internalID: -2096452307415065565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Swirl_Body_180_19
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 64
+        width: 85
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d84063faef88f2e0800000000000000
+      internalID: -2091763787645302574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jump_Swirl_Body_180_0: 1416643709970328176
+      Jump_Swirl_Body_180_1: 3687857059931792690
+      Jump_Swirl_Body_180_10: -6970708487360859755
+      Jump_Swirl_Body_180_11: -9153839184000989914
+      Jump_Swirl_Body_180_12: -4532454595291223082
+      Jump_Swirl_Body_180_13: -5594364920512775095
+      Jump_Swirl_Body_180_14: 6931587118798422115
+      Jump_Swirl_Body_180_15: 3557721613148120153
+      Jump_Swirl_Body_180_16: -7233403356660486556
+      Jump_Swirl_Body_180_17: -2079192322722232467
+      Jump_Swirl_Body_180_18: -2096452307415065565
+      Jump_Swirl_Body_180_19: -2091763787645302574
+      Jump_Swirl_Body_180_2: 6360611679727554857
+      Jump_Swirl_Body_180_3: 8593670401375897274
+      Jump_Swirl_Body_180_4: 3949186152221338963
+      Jump_Swirl_Body_180_5: 4247100557238147921
+      Jump_Swirl_Body_180_6: -829448811271497720
+      Jump_Swirl_Body_180_7: -546911085583504219
+      Jump_Swirl_Body_180_8: 5941442031242404576
+      Jump_Swirl_Body_180_9: -7085682127596488622
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

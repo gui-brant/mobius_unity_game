@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 4345d00b9c28c644dbaa86000991c8f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8065685527182012334
+    second: Dash_Body_0_0
+  - first:
+      213: -5412401426429137182
+    second: Dash_Body_0_1
+  - first:
+      213: 4006977145373859472
+    second: Dash_Body_0_2
+  - first:
+      213: 6882061075737917445
+    second: Dash_Body_0_3
+  - first:
+      213: -7854246878402672989
+    second: Dash_Body_0_4
+  - first:
+      213: 6758794226622252641
+    second: Dash_Body_0_5
+  - first:
+      213: -6423194780000710394
+    second: Dash_Body_0_6
+  - first:
+      213: 8458620515894417515
+    second: Dash_Body_0_7
+  - first:
+      213: 6560112085157120560
+    second: Dash_Body_0_8
+  - first:
+      213: 4396090483157459501
+    second: Dash_Body_0_9
+  - first:
+      213: -814974153068969355
+    second: Dash_Body_0_10
+  - first:
+      213: -3702451668838706204
+    second: Dash_Body_0_11
+  - first:
+      213: 2778131181230378457
+    second: Dash_Body_0_12
+  - first:
+      213: -5333449702374661645
+    second: Dash_Body_0_13
+  - first:
+      213: 5517129108533666766
+    second: Dash_Body_0_14
+  - first:
+      213: -8825651281184766091
+    second: Dash_Body_0_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dash_Body_0_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 815
+        width: 78
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf61bdc0421fef60800000000000000
+      internalID: 8065685527182012334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 819
+        width: 111
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eeafdb249943e4b0800000000000000
+      internalID: -5412401426429137182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 827
+        width: 107
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e1e1ddb74ab9730800000000000000
+      internalID: 4006977145373859472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_3
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 832
+        width: 90
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508b6ede51ef18f50800000000000000
+      internalID: 6882061075737917445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 575
+        width: 87
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a68692e31c100390800000000000000
+      internalID: -7854246878402672989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 574
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166c7cb1a8f0ccd50800000000000000
+      internalID: 6758794226622252641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 575
+        width: 82
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6011aee016a3cd6a0800000000000000
+      internalID: -6423194780000710394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_7
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 576
+        width: 80
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68d7b32b8e036570800000000000000
+      internalID: 8458620515894417515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 322
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a898a3f233a0b50800000000000000
+      internalID: 6560112085157120560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 324
+        width: 88
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d226311c00d020d30800000000000000
+      internalID: 4396090483157459501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_10
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 314
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57203316351a0b4f0800000000000000
+      internalID: -814974153068969355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_11
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 307
+        width: 102
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e311d8d2df3e9cc0800000000000000
+      internalID: -3702451668838706204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_12
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 48
+        width: 107
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd4ca41797ed8620800000000000000
+      internalID: 2778131181230378457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 46
+        width: 104
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1ab86e0c7cbf5b0800000000000000
+      internalID: -5333449702374661645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_14
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 46
+        width: 94
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3ed1671b7c09c40800000000000000
+      internalID: 5517129108533666766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Body_0_15
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 47
+        width: 78
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577c2898becf48580800000000000000
+      internalID: -8825651281184766091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dash_Body_0_0: 8065685527182012334
+      Dash_Body_0_1: -5412401426429137182
+      Dash_Body_0_10: -814974153068969355
+      Dash_Body_0_11: -3702451668838706204
+      Dash_Body_0_12: 2778131181230378457
+      Dash_Body_0_13: -5333449702374661645
+      Dash_Body_0_14: 5517129108533666766
+      Dash_Body_0_15: -8825651281184766091
+      Dash_Body_0_2: 4006977145373859472
+      Dash_Body_0_3: 6882061075737917445
+      Dash_Body_0_4: -7854246878402672989
+      Dash_Body_0_5: 6758794226622252641
+      Dash_Body_0_6: -6423194780000710394
+      Dash_Body_0_7: 8458620515894417515
+      Dash_Body_0_8: 6560112085157120560
+      Dash_Body_0_9: 4396090483157459501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

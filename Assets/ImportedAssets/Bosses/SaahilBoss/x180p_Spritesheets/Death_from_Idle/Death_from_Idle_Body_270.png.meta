@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: c0fe513000f10c34fa69b11309bcb8bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5868647546108555486
+    second: Death_from_Idle_Body_270_0
+  - first:
+      213: 8869145364743060946
+    second: Death_from_Idle_Body_270_1
+  - first:
+      213: -7997084634773815875
+    second: Death_from_Idle_Body_270_2
+  - first:
+      213: 7839860383419780071
+    second: Death_from_Idle_Body_270_3
+  - first:
+      213: -7323816296250987096
+    second: Death_from_Idle_Body_270_4
+  - first:
+      213: 4816256359820391201
+    second: Death_from_Idle_Body_270_5
+  - first:
+      213: 8407258727408956320
+    second: Death_from_Idle_Body_270_6
+  - first:
+      213: -4434303832035828237
+    second: Death_from_Idle_Body_270_7
+  - first:
+      213: -3934454162574783577
+    second: Death_from_Idle_Body_270_8
+  - first:
+      213: 9142011445032114353
+    second: Death_from_Idle_Body_270_9
+  - first:
+      213: 8403813382631042806
+    second: Death_from_Idle_Body_270_10
+  - first:
+      213: -5021784995215156929
+    second: Death_from_Idle_Body_270_11
+  - first:
+      213: -1483584666419809501
+    second: Death_from_Idle_Body_270_12
+  - first:
+      213: 4804852873924144008
+    second: Death_from_Idle_Body_270_13
+  - first:
+      213: -2058276519762014927
+    second: Death_from_Idle_Body_270_14
+  - first:
+      213: 1670439058123865764
+    second: Death_from_Idle_Body_270_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 587
+        width: 45
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0b4c989df917150800000000000000
+      internalID: 5868647546108555486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 587
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddffcee7b8851b70800000000000000
+      internalID: 8869145364743060946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 587
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd729125e5a40190800000000000000
+      internalID: -7997084634773815875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_3
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 587
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebc46a3b77cccc60800000000000000
+      internalID: 7839860383419780071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 407
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad2ebdb1e39c5a90800000000000000
+      internalID: -7323816296250987096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 407
+        width: 45
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1237f4244a7c6d240800000000000000
+      internalID: 4816256359820391201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 407
+        width: 48
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3730ed4459ca470800000000000000
+      internalID: 8407258727408956320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_7
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 409
+        width: 57
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdd951a8203672c0800000000000000
+      internalID: -4434303832035828237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 230
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab4ca6e8c20669c0800000000000000
+      internalID: -3934454162574783577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_9
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 230
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8d1b909f2fede70800000000000000
+      internalID: 9142011445032114353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 230
+        width: 84
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fea5660fb750a470800000000000000
+      internalID: 8403813382631042806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_11
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 221
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3950d547290f4ab0800000000000000
+      internalID: -5021784995215156929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_12
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 46
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323b4d33b9f396be0800000000000000
+      internalID: -1483584666419809501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_13
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 49
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b634c4b344ea240800000000000000
+      internalID: 4804852873924144008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_14
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 45
+        width: 87
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dce0619688f63e0800000000000000
+      internalID: -2058276519762014927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_from_Idle_Body_270_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 43
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae396619779e2710800000000000000
+      internalID: 1670439058123865764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Death_from_Idle_Body_270_0: 5868647546108555486
+      Death_from_Idle_Body_270_1: 8869145364743060946
+      Death_from_Idle_Body_270_10: 8403813382631042806
+      Death_from_Idle_Body_270_11: -5021784995215156929
+      Death_from_Idle_Body_270_12: -1483584666419809501
+      Death_from_Idle_Body_270_13: 4804852873924144008
+      Death_from_Idle_Body_270_14: -2058276519762014927
+      Death_from_Idle_Body_270_15: 1670439058123865764
+      Death_from_Idle_Body_270_2: -7997084634773815875
+      Death_from_Idle_Body_270_3: 7839860383419780071
+      Death_from_Idle_Body_270_4: -7323816296250987096
+      Death_from_Idle_Body_270_5: 4816256359820391201
+      Death_from_Idle_Body_270_6: 8407258727408956320
+      Death_from_Idle_Body_270_7: -4434303832035828237
+      Death_from_Idle_Body_270_8: -3934454162574783577
+      Death_from_Idle_Body_270_9: 9142011445032114353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

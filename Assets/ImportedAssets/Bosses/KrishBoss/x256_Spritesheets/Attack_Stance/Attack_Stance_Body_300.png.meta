@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: e9f183bd3347fb54a8d2c970761d84ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1687240667915726241
+    second: Attack_Stance_Body_300_0
+  - first:
+      213: -5149986672825540376
+    second: Attack_Stance_Body_300_1
+  - first:
+      213: 440945536910666414
+    second: Attack_Stance_Body_300_2
+  - first:
+      213: 3556452061915697391
+    second: Attack_Stance_Body_300_3
+  - first:
+      213: -5793436894013740170
+    second: Attack_Stance_Body_300_4
+  - first:
+      213: -3243773736498757884
+    second: Attack_Stance_Body_300_5
+  - first:
+      213: 8144447988495423800
+    second: Attack_Stance_Body_300_6
+  - first:
+      213: -8178690565778864300
+    second: Attack_Stance_Body_300_7
+  - first:
+      213: 4479903149794362036
+    second: Attack_Stance_Body_300_8
+  - first:
+      213: 623327377668226012
+    second: Attack_Stance_Body_300_9
+  - first:
+      213: 3836027926997003819
+    second: Attack_Stance_Body_300_10
+  - first:
+      213: -5255044495931701023
+    second: Attack_Stance_Body_300_11
+  - first:
+      213: -1774372517865174485
+    second: Attack_Stance_Body_300_12
+  - first:
+      213: 7403081482239738256
+    second: Attack_Stance_Body_300_13
+  - first:
+      213: 8134649403650989166
+    second: Attack_Stance_Body_300_14
+  - first:
+      213: -864804245219256232
+    second: Attack_Stance_Body_300_15
+  - first:
+      213: 4346663772525987128
+    second: Attack_Stance_Body_300_16
+  - first:
+      213: -5124542301255413888
+    second: Attack_Stance_Body_300_17
+  - first:
+      213: -1343824669473071215
+    second: Attack_Stance_Body_300_18
+  - first:
+      213: 4117654518295117154
+    second: Attack_Stance_Body_300_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1098
+        width: 148
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f525a4a4d87b598e0800000000000000
+      internalID: -1687240667915726241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1094
+        width: 146
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0ec3828629788b0800000000000000
+      internalID: -5149986672825540376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_2
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1091
+        width: 145
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaaadc21ad8e1600800000000000000
+      internalID: 440945536910666414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1089
+        width: 144
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0d033be4e0b5130800000000000000
+      internalID: 3556452061915697391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 830
+        width: 144
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b2baff6d3999fa0800000000000000
+      internalID: -5793436894013740170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 828
+        width: 143
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fff3019fccbf2d0800000000000000
+      internalID: -3243773736498757884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_6
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 825
+        width: 142
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8391aed5b44e60170800000000000000
+      internalID: 8144447988495423800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_7
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 820
+        width: 141
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45789e253447f7e80800000000000000
+      internalID: -8178690565778864300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 561
+        width: 140
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b285afdd20db2e30800000000000000
+      internalID: 4479903149794362036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_9
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 559
+        width: 139
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbb0bc82f086a800800000000000000
+      internalID: 623327377668226012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_10
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 561
+        width: 139
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e6221531f4c3530800000000000000
+      internalID: 3836027926997003819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 563
+        width: 140
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e88e159fd45217b0800000000000000
+      internalID: -5255044495931701023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 311
+        width: 141
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a4e6598992067e0800000000000000
+      internalID: -1774372517865174485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_13
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 316
+        width: 142
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0910c2882670db660800000000000000
+      internalID: 7403081482239738256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_14
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 321
+        width: 143
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cd5fc888414e070800000000000000
+      internalID: 8134649403650989166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_15
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 323
+        width: 145
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858d473fe199ff3f0800000000000000
+      internalID: -864804245219256232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_16
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 69
+        width: 148
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8358877eba3725c30800000000000000
+      internalID: 4346663772525987128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_17
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 71
+        width: 148
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f45319de7f1e8b0800000000000000
+      internalID: -5124542301255413888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_18
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 73
+        width: 149
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f96af3596c95de0800000000000000
+      internalID: -1343824669473071215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Stance_Body_300_19
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 75
+        width: 150
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d33c6d7f8d42930800000000000000
+      internalID: 4117654518295117154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack_Stance_Body_300_0: -1687240667915726241
+      Attack_Stance_Body_300_1: -5149986672825540376
+      Attack_Stance_Body_300_10: 3836027926997003819
+      Attack_Stance_Body_300_11: -5255044495931701023
+      Attack_Stance_Body_300_12: -1774372517865174485
+      Attack_Stance_Body_300_13: 7403081482239738256
+      Attack_Stance_Body_300_14: 8134649403650989166
+      Attack_Stance_Body_300_15: -864804245219256232
+      Attack_Stance_Body_300_16: 4346663772525987128
+      Attack_Stance_Body_300_17: -5124542301255413888
+      Attack_Stance_Body_300_18: -1343824669473071215
+      Attack_Stance_Body_300_19: 4117654518295117154
+      Attack_Stance_Body_300_2: 440945536910666414
+      Attack_Stance_Body_300_3: 3556452061915697391
+      Attack_Stance_Body_300_4: -5793436894013740170
+      Attack_Stance_Body_300_5: -3243773736498757884
+      Attack_Stance_Body_300_6: 8144447988495423800
+      Attack_Stance_Body_300_7: -8178690565778864300
+      Attack_Stance_Body_300_8: 4479903149794362036
+      Attack_Stance_Body_300_9: 623327377668226012
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

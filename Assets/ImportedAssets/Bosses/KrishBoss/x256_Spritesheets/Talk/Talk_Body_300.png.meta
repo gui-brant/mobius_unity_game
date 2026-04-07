@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 31f38c5e38dfb764cb3a37c2e69889b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 34658613052445289
+    second: Talk_Body_300_0
+  - first:
+      213: 1797978828986761860
+    second: Talk_Body_300_1
+  - first:
+      213: -4860085212194882712
+    second: Talk_Body_300_2
+  - first:
+      213: -3343659419372694793
+    second: Talk_Body_300_3
+  - first:
+      213: -8725667636302434787
+    second: Talk_Body_300_4
+  - first:
+      213: 2671075723750180835
+    second: Talk_Body_300_5
+  - first:
+      213: -5511311851273063683
+    second: Talk_Body_300_6
+  - first:
+      213: -9217540390272053876
+    second: Talk_Body_300_7
+  - first:
+      213: -7721788891395836161
+    second: Talk_Body_300_8
+  - first:
+      213: -1442341862338954918
+    second: Talk_Body_300_9
+  - first:
+      213: 9013832589830078374
+    second: Talk_Body_300_10
+  - first:
+      213: 8544085307766228318
+    second: Talk_Body_300_11
+  - first:
+      213: -6126257638945862935
+    second: Talk_Body_300_12
+  - first:
+      213: 3286818033042376019
+    second: Talk_Body_300_13
+  - first:
+      213: 6561811582749668135
+    second: Talk_Body_300_14
+  - first:
+      213: -4286378296022805471
+    second: Talk_Body_300_15
+  - first:
+      213: 845550107855938503
+    second: Talk_Body_300_16
+  - first:
+      213: 3459904124358162807
+    second: Talk_Body_300_17
+  - first:
+      213: 46733728884564787
+    second: Talk_Body_300_18
+  - first:
+      213: 6132281460328896739
+    second: Talk_Body_300_19
+  - first:
+      213: -18528524535198433
+    second: Talk_Body_300_20
+  - first:
+      213: -1725559449424563615
+    second: Talk_Body_300_21
+  - first:
+      213: 578728358235396976
+    second: Talk_Body_300_22
+  - first:
+      213: 4373134236176063729
+    second: Talk_Body_300_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Talk_Body_300_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 593
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962166f23d12b7000800000000000000
+      internalID: 34658613052445289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 593
+        width: 79
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482cd670834b3f810800000000000000
+      internalID: 1797978828986761860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_2
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 593
+        width: 83
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bbef4df328d8cb0800000000000000
+      internalID: -4860085212194882712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_3
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 593
+        width: 88
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2d66a397fe891d0800000000000000
+      internalID: -3343659419372694793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_4
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 592
+        width: 90
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e221ee38338e680800000000000000
+      internalID: -8725667636302434787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 592
+        width: 89
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e78c420831911520800000000000000
+      internalID: 2671075723750180835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_6
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 592
+        width: 88
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2f77a4213e383b0800000000000000
+      internalID: -5511311851273063683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_7
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 592
+        width: 88
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dc4070ad7b41080800000000000000
+      internalID: -9217540390272053876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 336
+        width: 89
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff63bc14ae1b6d490800000000000000
+      internalID: -7721788891395836161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 336
+        width: 87
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a597c92d7b5cbfbe0800000000000000
+      internalID: -1442341862338954918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_10
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 336
+        width: 87
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af39adabf0971d70800000000000000
+      internalID: 9013832589830078374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_11
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 336
+        width: 86
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e554a04a150b29670800000000000000
+      internalID: 8544085307766228318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_12
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 336
+        width: 86
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eacb1cb2292bfaa0800000000000000
+      internalID: -6126257638945862935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_13
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 337
+        width: 85
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355c6d4369f1d9d20800000000000000
+      internalID: 3286818033042376019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_14
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 337
+        width: 85
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72376d85edc301b50800000000000000
+      internalID: 6561811582749668135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_15
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 337
+        width: 85
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124dd9466a9b384c0800000000000000
+      internalID: -4286378296022805471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 81
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3eb8ad75ffbbb00800000000000000
+      internalID: 845550107855938503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 81
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779f641487c040030800000000000000
+      internalID: 3459904124358162807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_18
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 81
+        width: 86
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333a13d241806a000800000000000000
+      internalID: 46733728884564787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_19
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 81
+        width: 86
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e81e997f7d3a1550800000000000000
+      internalID: 6132281460328896739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_20
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 81
+        width: 87
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d0ed4b76c2ebff0800000000000000
+      internalID: -18528524535198433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_21
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 81
+        width: 82
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162fa3ab2d49d08e0800000000000000
+      internalID: -1725559449424563615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_22
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 81
+        width: 79
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bd016206e080800800000000000000
+      internalID: 578728358235396976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talk_Body_300_23
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 81
+        width: 79
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc9f5efa6e70bc30800000000000000
+      internalID: 4373134236176063729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Talk_Body_300_0: 34658613052445289
+      Talk_Body_300_1: 1797978828986761860
+      Talk_Body_300_10: 9013832589830078374
+      Talk_Body_300_11: 8544085307766228318
+      Talk_Body_300_12: -6126257638945862935
+      Talk_Body_300_13: 3286818033042376019
+      Talk_Body_300_14: 6561811582749668135
+      Talk_Body_300_15: -4286378296022805471
+      Talk_Body_300_16: 845550107855938503
+      Talk_Body_300_17: 3459904124358162807
+      Talk_Body_300_18: 46733728884564787
+      Talk_Body_300_19: 6132281460328896739
+      Talk_Body_300_2: -4860085212194882712
+      Talk_Body_300_20: -18528524535198433
+      Talk_Body_300_21: -1725559449424563615
+      Talk_Body_300_22: 578728358235396976
+      Talk_Body_300_23: 4373134236176063729
+      Talk_Body_300_3: -3343659419372694793
+      Talk_Body_300_4: -8725667636302434787
+      Talk_Body_300_5: 2671075723750180835
+      Talk_Body_300_6: -5511311851273063683
+      Talk_Body_300_7: -9217540390272053876
+      Talk_Body_300_8: -7721788891395836161
+      Talk_Body_300_9: -1442341862338954918
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
