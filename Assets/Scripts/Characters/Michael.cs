@@ -60,7 +60,7 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
     [SerializeField] private float debugKnockBackTimer;
 
     private SkullNPC interactableSkullNPC;
-    
+
     protected override void Update()
     {
         if (IsDead) return;
@@ -71,19 +71,53 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
         HandleInput();
         HandleAttack();
         base.Update();
-
+        
+        HandleInteract();
+        
         if (interactableSkullNPC != null && Input.GetKeyDown(KeyCode.E))
         {
             interactableSkullNPC.Interact();
         }
     }
 
+    private void HandleInteract()
+    {
+        // only check if E is pressed
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("E is pressed");
+            float interactRadius = 0.8f; 
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
+
+            
+            foreach (var col in colliders)
+            {
+                // Look for the component (Interface)
+                IInteractable interactable = col.gameObject.GetComponent<IInteractable>();
+
+                
+                // Only representing Torch interactions for now
+                if (interactable != null && interactable is Torch)
+                {
+                    interactable.Interact(this.gameObject);
+                    break; // Stop after interacting with the first valid object
+                    // Ensuring only one interaction at a time
+                }
+            }
+
+        }
+    }
+
     // movement 
+    private Vector2 lastEnqueuedInput = Vector2.zero;
+    private Queue<(Vector2 input, float enqueueTime)> inputQueue = new Queue<(Vector2, float)>();
+
     private void HandleInput()
     {
         if (isAttacking || isStunned || isKnockedBack)
         {
             SetMovement(Vector2.zero);
+            inputQueue.Clear();
             return;
         }
 
@@ -92,9 +126,20 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
             Input.GetAxisRaw("Vertical")
         );
 
-        SetMovement(input);
+        // only enqueue when input changes
+        if (input != lastEnqueuedInput)
+        {
+            inputQueue.Enqueue((input, Time.time));
+            lastEnqueuedInput = input;
+        }
+
+        // apply oldest input if its delay has passed, using current inputDelay value
+        if (inputQueue.Count > 0 && Time.time >= inputQueue.Peek().enqueueTime + inputDelay)
+        {
+            SetMovement(inputQueue.Dequeue().input);
+        }
     }
-    
+
     // interacting with skull npc
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -137,7 +182,7 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
             isAttacking = false;
         }
     }
-    
+
 
     private void StartAttack()
     {
