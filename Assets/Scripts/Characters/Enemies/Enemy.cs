@@ -10,7 +10,7 @@ public class Enemy : Character, ITargetable, ITeamMember
 {
     //[SerializeField] allows for you to keep variables private while still being visible on the inspector.
     [Header("Targeting")]
-    [SerializeField] private Michael targetMichael;
+    [SerializeField] protected Michael targetMichael;
     [SerializeField] private bool aggroOnSpawn = true;
 
     [Header("Combat")]
@@ -25,8 +25,8 @@ public class Enemy : Character, ITargetable, ITeamMember
     [SerializeField] private float deathAnimationDuration = 0.8f;
 
     private bool isAggroed;
-    private bool isAttacking;
-    private bool isHurt;
+    protected bool isAttacking;
+    protected bool isHurt;
 
     private float attackCooldownTimer;
     private float attackTimer;
@@ -37,6 +37,12 @@ public class Enemy : Character, ITargetable, ITeamMember
     public CombatTeam Team => CombatTeam.Enemy;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
+
+    public virtual void SetTargetMichael(Michael michael)
+    {
+        targetMichael = michael;
+        isAggroed = aggroOnSpawn && targetMichael != null;
+    }
 
     protected override void Awake()
     {
@@ -93,7 +99,6 @@ public class Enemy : Character, ITargetable, ITeamMember
             return;
         }
 
-        // Check if Michael is within attack range. If so, then attack or move towards him.
         Vector2 toTarget = targetMichael.transform.position - transform.position;
         float distanceToTarget = toTarget.magnitude;
 
@@ -109,10 +114,6 @@ public class Enemy : Character, ITargetable, ITeamMember
         UpdateAnimator();
     }
 
-    /*
-    If the enemy is dead, hurt, or attacking, it should not move. 
-    This ensures that the enemy is not sliding around during animation. 
-    */
     protected override void FixedUpdate()
     {
         if (isDead || isHurt || isAttacking)
@@ -126,8 +127,6 @@ public class Enemy : Character, ITargetable, ITeamMember
         }
 
         base.FixedUpdate();
-        //base. allows you to run the original code from the parent class (Character) on top of the new code written here.
-        //The basic behaviour allows the Character to move on base update. This means that if the enemy is not in a state, then it may move like any Character.
     }
 
     public override void TakeDamage(int amount)
@@ -155,7 +154,6 @@ public class Enemy : Character, ITargetable, ITeamMember
         isAttacking = false;
         attackTimer = 0f;
         SetMovement(Vector2.zero);
-        //The above line sets the movement intent to zero on the frame (within Update()) so that when it is called in the next in-game time tick (on FixedUpdate()), the move() function will be set to zero.
     }
 
     public override void Die()
@@ -168,6 +166,11 @@ public class Enemy : Character, ITargetable, ITeamMember
         5. Disable enemy's hitbox.
         */
         if (isDead) return;
+
+        if (SkillTreeManager.instance != null)
+        {
+            SkillTreeManager.instance.AddPoints(20);
+        }
 
         isDead = true;
         isAggroed = false;
@@ -187,9 +190,6 @@ public class Enemy : Character, ITargetable, ITeamMember
         {
             hitbox.enabled = false;
         }
-
-        // Enemy death should not halt the whole game.
-        // TODO: Add enemy-specific death VFX/SFX hooks here.
     }
 
     protected override void UpdateAnimator()
@@ -226,29 +226,22 @@ public class Enemy : Character, ITargetable, ITeamMember
         base.UpdateAnimator();
     }
 
-/*
-Below, you will find the helper funcitons that allow for start attacking, handling mid-attack behaviour
-, handling mid-hurt behaviour, and handling mid-death behaviour.
-*/
     private void StartAttack()
     {
         isAttacking = true;
-        attackTimer = attackDuration; // This locks the state for 1.09s
+        attackTimer = attackDuration;
         attackCooldownTimer = attackCooldown;
         SetMovement(Vector2.zero);
 
-        // Trigger the delayed hit calculation
         StartCoroutine(DelayedEnemyHit());
     }
 
     private IEnumerator DelayedEnemyHit()
     {
-        yield return new WaitForSeconds(hitDelay); // Wait 0.35s
+        yield return new WaitForSeconds(hitDelay);
 
-        // Only deal damage if the enemy didn't die or get interrupted during the wind-up
         if (!isDead && !isHurt && targetMichael != null)
         {
-            // Optional: Check distance again to see if Michael moved away during the 0.35s
             float dist = Vector2.Distance(transform.position, targetMichael.transform.position);
             if (dist <= attackRange)
             {

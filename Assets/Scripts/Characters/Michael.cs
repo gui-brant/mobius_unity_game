@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Michael : Character, ITargetable, ITeamMember, IAttacker
+public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IKnockBack
 {
     private enum WeaponMode
     {
@@ -25,8 +25,15 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
 
     [Header("Defense")]
     [SerializeField] private int armor = 0;
+    [SerializeField][Min(0f)] private float stunReapplyLockoutSeconds = 0.2f;
 
     private bool isAttacking = false;
+    private bool isStunned = false;
+    private float stunTimer = 0f;
+    private float stunReapplyLockoutTimer = 0f;
+    private bool isKnockedBack = false;
+    private float knockBackTimer = 0f;
+    private Vector2 knockBackVelocity = Vector2.zero;
     private readonly HashSet<string> objectiveItems = new HashSet<string>();
 
     private WeaponMode currentWeaponMode = WeaponMode.Melee;
@@ -46,14 +53,21 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
 
+    [Header("Crowd Control Debug")]
+    [SerializeField] private bool debugIsStunned;
+    [SerializeField] private float debugStunTimer;
+    [SerializeField] private bool debugIsKnockedBack;
+    [SerializeField] private float debugKnockBackTimer;
+    [SerializeField] private float inputDelay = 0.1f; // seconds of delay, adjust to taste
     private SkullNPC interactableSkullNPC;
-    
+
     protected override void Update()
     {
         if (IsDead) return;
 
         if (Input.GetKeyDown(KeyCode.X)) TakeDamage(9999); // kys button
 
+        UpdateCrowdControlTimers();
         HandleInput();
         HandleAttack();
         base.Update();
@@ -65,11 +79,15 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
     }
 
     // movement 
+    private Vector2 lastEnqueuedInput = Vector2.zero;
+    private Queue<(Vector2 input, float enqueueTime)> inputQueue = new Queue<(Vector2, float)>();
+
     private void HandleInput()
     {
-        if (isAttacking)
+        if (isAttacking || isStunned || isKnockedBack)
         {
             SetMovement(Vector2.zero);
+            inputQueue.Clear();
             return;
         }
 
@@ -78,9 +96,20 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
             Input.GetAxisRaw("Vertical")
         );
 
-        SetMovement(input);
+        // only enqueue when input changes
+        if (input != lastEnqueuedInput)
+        {
+            inputQueue.Enqueue((input, Time.time));
+            lastEnqueuedInput = input;
+        }
+
+        // apply oldest input if its delay has passed, using current inputDelay value
+        if (inputQueue.Count > 0 && Time.time >= inputQueue.Peek().enqueueTime + inputDelay)
+        {
+            SetMovement(inputQueue.Dequeue().input);
+        }
     }
-    
+
     // interacting with skull npc
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -101,6 +130,12 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
     //attack system
     private void HandleAttack()
     {
+        if (isStunned || isKnockedBack)
+        {
+            isAttacking = false;
+            return;
+        }
+
         bool holding = Input.GetKey(KeyCode.Space);
 
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
@@ -117,10 +152,15 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
             isAttacking = false;
         }
     }
-    
+
 
     private void StartAttack()
     {
+        if (isStunned || isKnockedBack)
+        {
+            return;
+        }
+
         isAttacking = true;
         int direction = GetDirection();
         if (direction == -1) direction = GetLastDirection();
@@ -322,6 +362,46 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
         return objectiveItems.Contains(objectiveId);
     }
 
+    public void ApplyStun(float durationSeconds)
+    {
+        float finalDuration = Mathf.Max(0f, durationSeconds);
+        if (finalDuration <= 0f)
+        {
+            return;
+        }
+
+        if (isStunned && stunReapplyLockoutTimer > 0f)
+        {
+            return;
+        }
+
+        isStunned = true;
+        stunTimer = Mathf.Max(stunTimer, finalDuration);
+        stunReapplyLockoutTimer = Mathf.Max(0f, stunReapplyLockoutSeconds);
+        isAttacking = false;
+        SetMovement(Vector2.zero);
+    }
+
+    public void ApplyKnockBack(Vector2 projectileDirection, float distanceUnits, float durationSeconds)
+    {
+        float distance = Mathf.Max(0f, distanceUnits);
+        if (distance <= 0f)
+        {
+            return;
+        }
+
+        Vector2 direction = projectileDirection.sqrMagnitude <= Mathf.Epsilon
+            ? Vector2.right
+            : projectileDirection.normalized;
+
+        float duration = Mathf.Max(0.01f, durationSeconds);
+        knockBackVelocity = direction * (distance / duration);
+        knockBackTimer = duration;
+        isKnockedBack = true;
+        isAttacking = false;
+        SetMovement(Vector2.zero);
+    }
+
     // override animation so attack takes priority
     protected override void UpdateAnimator()
     {
@@ -346,6 +426,21 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
         EquipMeleeWeapon(defaultMeleeDamage, defaultMeleeRange, defaultMeleeHitRadius);
     }
 
+    protected override void FixedUpdate()
+    {
+        if (isKnockedBack && !IsDead)
+        {
+            if (rb != null)
+            {
+                rb.linearVelocity = knockBackVelocity;
+            }
+
+            return;
+        }
+
+        base.FixedUpdate();
+    }
+
     private int GetActiveBaseDamage()
     {
         return currentWeaponMode == WeaponMode.Ranged ? rangedBaseDamage : meleeBaseDamage;
@@ -366,5 +461,44 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker
 
         projectileSpawner = gameObject.AddComponent<ProjectileSpawner>();
         return projectileSpawner;
+    }
+
+    private void UpdateCrowdControlTimers()
+    {
+        if (isStunned)
+        {
+            stunTimer -= Time.deltaTime;
+            stunReapplyLockoutTimer = Mathf.Max(0f, stunReapplyLockoutTimer - Time.deltaTime);
+            if (stunTimer <= 0f)
+            {
+                stunTimer = 0f;
+                isStunned = false;
+                stunReapplyLockoutTimer = 0f;
+            }
+        }
+        else
+        {
+            stunReapplyLockoutTimer = 0f;
+        }
+
+        if (isKnockedBack)
+        {
+            knockBackTimer -= Time.deltaTime;
+            if (knockBackTimer <= 0f)
+            {
+                knockBackTimer = 0f;
+                isKnockedBack = false;
+                knockBackVelocity = Vector2.zero;
+                if (rb != null)
+                {
+                    rb.linearVelocity = Vector2.zero;
+                }
+            }
+        }
+
+        debugIsStunned = isStunned;
+        debugStunTimer = stunTimer;
+        debugIsKnockedBack = isKnockedBack;
+        debugKnockBackTimer = knockBackTimer;
     }
 }

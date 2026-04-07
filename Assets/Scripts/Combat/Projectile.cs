@@ -15,7 +15,8 @@ public class Projectile : MonoBehaviour, IMovementController
 
     private void Awake()
     {
-        EnsureProjectilePhysics();
+       //EnsureProjectilePhysics();
+       // we dont need this garbage
     }
 
     public void Initialize(
@@ -39,6 +40,11 @@ public class Projectile : MonoBehaviour, IMovementController
         }
 
         transform.position += (Vector3)(movementDirection * speed * Time.deltaTime);
+
+        if (Mathf.Abs(transform.position.x) > 15f || Mathf.Abs(transform.position.y) > 15f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetMovement(Vector2 direction)
@@ -50,6 +56,21 @@ public class Projectile : MonoBehaviour, IMovementController
         }
 
         movementDirection = direction.normalized;
+    }
+
+    protected Vector2 GetTravelDirection()
+    {
+        return movementDirection;
+    }
+
+    protected void SetRuntimeSpeed(float runtimeSpeed)
+    {
+        speed = Mathf.Max(0f, runtimeSpeed);
+    }
+
+    protected void SetRuntimeDamageOverride(int? runtimeDamage)
+    {
+        damageOverride = runtimeDamage;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -71,23 +92,38 @@ public class Projectile : MonoBehaviour, IMovementController
             return;
         }
 
-        if (IsSameTeam(targetObject))
+        if (sourceTeam == CombatTeam.Projectile)
+        {
+            ITeamMember targetTeamMember = GetTeamMemberFromObject(targetObject);
+            if (targetTeamMember == null || targetTeamMember.Team != CombatTeam.Player)
+            {
+                return; // ignore everything except Player
+            }
+        }
+        else if (IsSameTeam(targetObject))
         {
             Destroy(gameObject);
             return;
         }
 
-        IDamageable damageable = GetDamageableFromObject(targetObject);
-        if (damageable != null)
-        {
-            int finalDamage = damageOverride ?? baseDamage;
-            if (finalDamage > 0)
-            {
-                damageable.TakeDamage(finalDamage);
-            }
-        }
+        HandleTargetHit(targetObject);
 
         Destroy(gameObject);
+    }
+
+    protected virtual void HandleTargetHit(GameObject targetObject)
+    {
+        IDamageable damageable = GetDamageableFromObject(targetObject);
+        if (damageable == null)
+        {
+            return;
+        }
+
+        int finalDamage = damageOverride ?? baseDamage;
+        if (finalDamage > 0)
+        {
+            damageable.TakeDamage(finalDamage);
+        }
     }
 
     private GameObject ResolveTargetObject(Collider2D collider2D)
@@ -187,7 +223,7 @@ public class Projectile : MonoBehaviour, IMovementController
         return null;
     }
 
-    private T GetInterfaceFromBehaviours<T>(MonoBehaviour[] behaviours) where T : class
+    protected static T GetInterfaceFromBehaviours<T>(MonoBehaviour[] behaviours) where T : class
     {
         if (behaviours == null)
         {
