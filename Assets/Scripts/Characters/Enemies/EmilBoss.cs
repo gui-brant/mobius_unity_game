@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.Processors;
 
 public class EmilBoss : Enemy
 {
@@ -26,17 +27,19 @@ public class EmilBoss : Enemy
 
     [Header("Lightning")]
     [SerializeField] private DiamondSpawner lightningSpawner;
-    [SerializeField] private int lightningCount = 10;
+    [SerializeField] private float lightningSpawnInterval = 0.5f; // was hardcoded
+    [SerializeField] private int lightningsPerBurst = 3;          // N per tick
 
     [Header("Phase Timing")]
     [SerializeField] private float shieldWindowSeconds = 5f;
     [SerializeField] private float actionWindowSeconds = 5f;
 
-    [Header("Thresholds (% of max HP damage during shield window)")]
-    [SerializeField][Range(0f, 1f)] private float mirrorsThreshold = 0.20f;
-    [SerializeField][Range(0f, 1f)] private float lightningThreshold = 0.40f;
-    [SerializeField][Range(0f, 1f)] private float speedThreshold = 0.80f;
-
+    [Header("Thresholds (hits during shield window)")]
+    
+    [SerializeField] private int mirrorsHitThreshold = 3;
+    [SerializeField] private int lightningHitThreshold = 6;
+    [SerializeField] private int speedHitThreshold = 10;
+    [SerializeField] private int savedHits = 0;
     [Header("Speed")]
     [SerializeField] private float boostedSpeed = 3f;
     [SerializeField] private float defaultSpeed = 0f; // requested revert value
@@ -56,7 +59,9 @@ public class EmilBoss : Enemy
     private int maxHealthAtStart;
     private float throwTimer = 0f;
     private Coroutine phaseRoutine;
-
+    private MoveScene moveScene;
+    private bool pgrTriggeredOnDeath = false;
+    
     protected override void Awake()
     {
         base.Awake();
@@ -69,6 +74,7 @@ public class EmilBoss : Enemy
 
     protected override void Update()
     {
+        if (health <= 0) { Die(); }
         if (isDead) return;
 
         // "until not attacked -> nothing"
@@ -96,18 +102,17 @@ public class EmilBoss : Enemy
     {
         if (isDead || amount <= 0) return;
 
-        // First hit starts encounter + shield window immediately
         if (!encounterStarted)
         {
             encounterStarted = true;
             StartShieldWindow();
-            savedDamage += amount; // first hit counts into shield damage window
+            savedHits++; // first hit counts
             return;
         }
 
         if (isInvincible)
         {
-            savedDamage += amount;
+            savedHits++; // each successful hit while shields are up
             return;
         }
 
@@ -116,6 +121,7 @@ public class EmilBoss : Enemy
 
     private void StartShieldWindow()
     {
+        savedHits = 0;
         currentPhase = BossPhase.ShieldWindow;
         isInvincible = true;
         mirrorsEnabledThisAction = false;
@@ -135,12 +141,9 @@ public class EmilBoss : Enemy
         savedDamage = 0;
         yield return new WaitForSeconds(shieldWindowSeconds);
 
-        float damageRatio = (float)savedDamage / maxHealthAtStart;
-
-        bool enableMirrors = damageRatio >= mirrorsThreshold;
-        bool doLightning = damageRatio >= lightningThreshold;
-        bool doSpeed = damageRatio >= speedThreshold;
-
+        bool enableMirrors = savedHits >= mirrorsHitThreshold;
+        bool doLightning = savedHits >= lightningHitThreshold;
+        bool doSpeed = savedHits >= speedHitThreshold;
         StartActionWindow(enableMirrors, doLightning, doSpeed);
     }
 
@@ -153,27 +156,54 @@ public class EmilBoss : Enemy
 
         RemoveOrbs();
 
-        if (doLightning)
-        {
-            SummonLightnings();
-        }
-
         speed = doSpeed ? boostedSpeed : defaultSpeed;
 
         if (phaseRoutine != null) StopCoroutine(phaseRoutine);
-        phaseRoutine = StartCoroutine(ActionWindowRoutine());
+        phaseRoutine = StartCoroutine(ActionWindowRoutine(doLightning)); // pass flag
     }
 
-    private IEnumerator ActionWindowRoutine()
+    private IEnumerator ActionWindowRoutine(bool doLightning)
     {
-        yield return new WaitForSeconds(actionWindowSeconds);
+        float elapsed = 0f;
+        float lightningTimer = 0f;
 
-        // after next 5 seconds revert to default state with shields. speed -> 0
+        while (elapsed < actionWindowSeconds)
+        {
+            float dt = Time.deltaTime;
+            elapsed += dt;
+
+            if (doLightning)
+            {
+                lightningTimer += dt;
+                while (lightningTimer >= lightningSpawnInterval)
+                {
+                    lightningTimer -= lightningSpawnInterval;
+                    SummonLightningBurst();
+                }
+            }
+
+            yield return null;
+        }
+
         speed = defaultSpeed;
         StartShieldWindow();
         isThrowing = false;
     }
+    private void SummonLightningBurst()
+    {
+        if (lightningSpawner == null) ResolveLightningSpawner();
+        if (lightningSpawner == null)
+        {
+            Debug.LogWarning("EmilBoss: lightningSpawner is null, cannot summon lightning.");
+            return;
+        }
 
+        int count = Mathf.Max(1, lightningsPerBurst);
+        for (int i = 0; i < count; i++)
+        {
+            lightningSpawner.SpawnOneInDiamond();
+        }
+    }
     private void SpawnOrbs()
     {
         RemoveOrbs();
@@ -226,21 +256,7 @@ public class EmilBoss : Enemy
         }
     }
 
-    private void SummonLightnings()
-    {
-        if (lightningSpawner == null) ResolveLightningSpawner();
-
-        if (lightningSpawner == null)
-        {
-            Debug.LogWarning("EmilBoss: lightningSpawner is null, cannot summon lightning.");
-            return;
-        }
-
-        for (int i = 0; i < lightningCount; i++)
-        {
-            lightningSpawner.SpawnOneInDiamond();
-        }
-    }
+    
 
     protected override void UpdateAnimator()
     {
@@ -329,5 +345,40 @@ public class EmilBoss : Enemy
         float angle = Mathf.Atan2(toPlayer.y, toPlayer.x) * Mathf.Rad2Deg;
         if (angle < 0f) angle += 360f;
         return (Mathf.RoundToInt(angle / 45f)) % 8;
+    }
+    public override void Die()
+    {
+        // Step 1: Avoid double death
+        if (isDead) return;
+
+        // Step 2: Call base death logic (damage, animation, etc.)
+        base.Die();
+        isDead = true;
+
+        // Step 3: Prevent multiple scene triggers
+        if (pgrTriggeredOnDeath) return;
+        pgrTriggeredOnDeath = true;
+
+        // Step 4: Find MoveScene instance if we don't already have it
+        if (moveScene == null)
+            moveScene = FindFirstObjectByType<MoveScene>();
+
+        // Step 5: Trigger scene transition if MoveScene exists and is active
+        if (moveScene != null && moveScene.gameObject.activeInHierarchy)
+        {
+            moveScene.StartCoroutine(
+                moveScene.TransitionProcess("(PGR) Procedurally generated rooms")
+            );
+        }
+        else
+        {
+            Debug.LogWarning("EmilBoss died, but no active MoveScene instance was found.");
+        }
+
+        // Step 6: Destroy the boss so it doesn't linger in the old scene
+        Destroy(gameObject);
+
+        // Optional: log for debugging
+        Debug.Log("EmilBoss died and scene transition triggered.");
     }
 }

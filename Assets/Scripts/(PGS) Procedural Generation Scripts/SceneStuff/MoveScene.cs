@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -23,6 +24,8 @@ public class MoveScene : MonoBehaviour
 
     private bool isTransitioning = false;
     public int BossSceneForTransition;
+    public bool once;
+    public EmilBoss EmilBoss;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -71,7 +74,24 @@ public class MoveScene : MonoBehaviour
             }
             
         }
-        
+        EmilBoss[] enemies = FindObjectsByType<EmilBoss>(FindObjectsSortMode.None);
+        foreach (EmilBoss enemy in enemies)
+        {
+            Debug.Log("1");
+            if (enemy.gameObject.name == "BossTemp")
+            {
+                Debug.Log("2");
+                if (enemy.isDead&& !once)
+                {
+                    once = true;
+                    Debug.Log("3");
+                    StartCoroutine(TransitionProcess("(PGR) Procedurally generated rooms"));
+
+                }
+            }
+        }
+
+
     }
 
     private void FollowActivePlayerWithCamera(Vector3 playerPosition)
@@ -130,7 +150,7 @@ public class MoveScene : MonoBehaviour
         return prefabInstance != null && michaelScript != null;
     }
 
-    IEnumerator MoveToPGR()
+    public IEnumerator MoveToPGR()
     {
         Debug.Log("<color=yellow>Entering PGR...</color>");
         yield return StartCoroutine(TransitionProcess(pgrSceneName));
@@ -153,7 +173,7 @@ public class MoveScene : MonoBehaviour
         isTransitioning = false;
     }
 
-    IEnumerator TransitionProcess(string toScene)
+    public IEnumerator  TransitionProcess(string toScene)
     {
         Scene destinationScene = SceneManager.GetSceneByName(toScene);
         if (!destinationScene.isLoaded)
@@ -214,7 +234,7 @@ public class MoveScene : MonoBehaviour
         }
     }
 
-    private IEnumerator UnloadNonTargetGameplayScenes(string targetSceneName)
+    public IEnumerator UnloadNonTargetGameplayScenes(string targetSceneName)
     {
         for (int i = SceneManager.sceneCount - 1; i >= 0; i--)
         {
@@ -222,7 +242,7 @@ public class MoveScene : MonoBehaviour
             if (!scene.IsValid() || !scene.isLoaded) continue;
             if (scene.name == targetSceneName) continue;
 
-            bool isGameplayScene = scene.name == sampleSceneName || scene.name == pgrSceneName;
+            bool isGameplayScene = scene.name == sampleSceneName || scene.name == pgrSceneName || scene.name  == "EmilBoss";
             if (!isGameplayScene) continue;
 
             AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(scene);
