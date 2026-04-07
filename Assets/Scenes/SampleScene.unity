@@ -4035,18 +4035,12 @@ MonoBehaviour:
   damage1: {fileID: 1006189139}
   damage2: {fileID: 160000546}
   damage3: {fileID: 1278811346}
-  damage4: {fileID: 472509812}
-  damage5: {fileID: 1297893938}
   speed1: {fileID: 417145326}
   speed2: {fileID: 2073547078}
   speed3: {fileID: 741758622}
-  speed4: {fileID: 1998197153}
-  speed5: {fileID: 1827875427}
   health1: {fileID: 745662174}
   health2: {fileID: 1827180698}
   health3: {fileID: 40476070}
-  health4: {fileID: 538317270}
-  health5: {fileID: 1771426737}
 --- !u!4 &403238165
 Transform:
   m_ObjectHideFlags: 0
@@ -15185,11 +15179,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveScene
   pgrSceneName: (PGR) Procedurally generated rooms
   ListOfAllBossScenes:
-  - SecondBoss
   - EmilBoss
+  - FearLevel
+  - HybrizoRoom
+  - PierceBoss
   sampleSceneName: SampleScene
   cameraOffset: {x: 0, y: 0, z: -10}
   BossSceneForTransition: 0
+  once: 0
+  EmilBoss: {fileID: 0}
 --- !u!4 &1515212206
 Transform:
   m_ObjectHideFlags: 0
@@ -22428,6 +22426,10 @@ PrefabInstance:
     - target: {fileID: 3367867620678197763, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: m_Name
       value: Michael
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: inputDelay
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: attackDamage

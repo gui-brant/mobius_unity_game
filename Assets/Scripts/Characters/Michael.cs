@@ -58,6 +58,7 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
     [SerializeField] private float debugStunTimer;
     [SerializeField] private bool debugIsKnockedBack;
     [SerializeField] private float debugKnockBackTimer;
+    [SerializeField] private float inputDelay;
 
     private SkullNPC interactableSkullNPC;
 

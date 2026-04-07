@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -16,13 +17,15 @@ public class MoveScene : MonoBehaviour
     [Header("Scene Names")]
     public string pgrSceneName = "(PGR) Procedurally generated rooms";
     [Header("Scene Names")]
-    public List<String> ListOfAllBossScenes = new List<String> { "SecondBoss", "EmilBoss" };
+    public List<String> ListOfAllBossScenes = new List<String> { "EmilBoss" };
     [Header("Scene Names")]
     public string sampleSceneName = "SampleScene";
     public Vector3 cameraOffset = new Vector3(-5f, 0f, 0f);
 
     private bool isTransitioning = false;
     public int BossSceneForTransition;
+    public bool once;
+    public EmilBoss EmilBoss;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -72,6 +75,7 @@ public class MoveScene : MonoBehaviour
             
         }
         
+
     }
 
     private void FollowActivePlayerWithCamera(Vector3 playerPosition)
@@ -130,7 +134,7 @@ public class MoveScene : MonoBehaviour
         return prefabInstance != null && michaelScript != null;
     }
 
-    IEnumerator MoveToPGR()
+    public IEnumerator MoveToPGR()
     {
         Debug.Log("<color=yellow>Entering PGR...</color>");
         yield return StartCoroutine(TransitionProcess(pgrSceneName));
@@ -145,15 +149,16 @@ public class MoveScene : MonoBehaviour
     }
     public IEnumerator MoveToRandomBossRoom()
     {
-        BossSceneForTransition = Random.Range(0,1);
+        BossSceneForTransition = Random.Range(0, ListOfAllBossScenes.Count);
 
         Debug.Log("<color=cyan>Entering random boss room...</color>");
         Debug.Log(ListOfAllBossScenes[BossSceneForTransition]);
         yield return StartCoroutine(TransitionProcess(ListOfAllBossScenes[BossSceneForTransition]));
+        ListOfAllBossScenes.RemoveAt(BossSceneForTransition);
         isTransitioning = false;
     }
 
-    IEnumerator TransitionProcess(string toScene)
+    public IEnumerator  TransitionProcess(string toScene)
     {
         Scene destinationScene = SceneManager.GetSceneByName(toScene);
         if (!destinationScene.isLoaded)
@@ -214,16 +219,13 @@ public class MoveScene : MonoBehaviour
         }
     }
 
-    private IEnumerator UnloadNonTargetGameplayScenes(string targetSceneName)
+    public IEnumerator UnloadNonTargetGameplayScenes(string targetSceneName)
     {
         for (int i = SceneManager.sceneCount - 1; i >= 0; i--)
         {
             Scene scene = SceneManager.GetSceneAt(i);
             if (!scene.IsValid() || !scene.isLoaded) continue;
             if (scene.name == targetSceneName) continue;
-
-            bool isGameplayScene = scene.name == sampleSceneName || scene.name == pgrSceneName;
-            if (!isGameplayScene) continue;
 
             AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(scene);
             if (unloadOp != null)
