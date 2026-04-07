@@ -15,8 +15,8 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
     protected Animator animator;
 
     private int currentDirection = -1;
-    private int lastDirection = 0;
-    private string currentAnimation = "";
+    protected int lastDirection = 0;
+    protected string currentAnimation = "";
     public bool isDead = false;
 
     public bool IsDead => isDead;
@@ -130,10 +130,12 @@ public class Character : MonoBehaviour, IDamageable, IKillable, IInteractable, I
         int direction = GetDirection();
         if (direction != -1) lastDirection = direction;
 
-        string animName = (movement == Vector2.zero) 
-            ? "Idle" + lastDirection 
-            : "Run" + direction;
-
+        string animName;
+        if (movement == Vector2.zero)
+        {animName = "Idle" + lastDirection;}
+        else
+        {animName = "Run" + direction;}
+        
         PlayAnimation(animName);
     }
 
