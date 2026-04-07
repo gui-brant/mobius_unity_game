@@ -25,8 +25,8 @@ public class Enemy : Character, ITargetable, ITeamMember
     [SerializeField] private float deathAnimationDuration = 0.8f;
 
     private bool isAggroed;
-    private bool isAttacking;
-    private bool isHurt;
+    protected bool isAttacking;
+    protected bool isHurt;
 
     private float attackCooldownTimer;
     private float attackTimer;

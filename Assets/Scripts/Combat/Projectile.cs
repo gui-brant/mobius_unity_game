@@ -15,7 +15,8 @@ public class Projectile : MonoBehaviour, IMovementController
 
     private void Awake()
     {
-        EnsureProjectilePhysics();
+       //EnsureProjectilePhysics();
+       // we dont need this garbage
     }
 
     public void Initialize(
@@ -39,6 +40,11 @@ public class Projectile : MonoBehaviour, IMovementController
         }
 
         transform.position += (Vector3)(movementDirection * speed * Time.deltaTime);
+
+        if (Mathf.Abs(transform.position.x) > 15f || Mathf.Abs(transform.position.y) > 15f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetMovement(Vector2 direction)
@@ -86,7 +92,15 @@ public class Projectile : MonoBehaviour, IMovementController
             return;
         }
 
-        if (IsSameTeam(targetObject))
+        if (sourceTeam == CombatTeam.Projectile)
+        {
+            ITeamMember targetTeamMember = GetTeamMemberFromObject(targetObject);
+            if (targetTeamMember == null || targetTeamMember.Team != CombatTeam.Player)
+            {
+                return; // ignore everything except Player
+            }
+        }
+        else if (IsSameTeam(targetObject))
         {
             Destroy(gameObject);
             return;
