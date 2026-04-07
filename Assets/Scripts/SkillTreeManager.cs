@@ -112,23 +112,80 @@ public class SkillTreeManager : MonoBehaviour
         if (h5) player.health += 75;
     }
 
-    public void Damage1() { Buy(ref d1, 10); }
-    public void Damage2() { Buy(ref d2, 30); }
-    public void Damage3() { Buy(ref d3, 50); }
-    public void Damage4() { Buy(ref d4, 70); }
-    public void Damage5() { Buy(ref d5, 100); }
+    public void Damage1()
+    {
+        Buy(ref d1, 10);
+    }
 
-    public void Speed1() { Buy(ref s1, 10); }
-    public void Speed2() { Buy(ref s2, 30); }
-    public void Speed3() { Buy(ref s3, 50); }
-    public void Speed4() { Buy(ref s4, 70); }
-    public void Speed5() { Buy(ref s5, 100); }
+    public void Damage2()
+    {
+        Buy(ref d2, 30);
+    }
 
-    public void Health1() { Buy(ref h1, 10); }
-    public void Health2() { Buy(ref h2, 30); }
-    public void Health3() { Buy(ref h3, 50); }
-    public void Health4() { Buy(ref h4, 70); }
-    public void Health5() { Buy(ref h5, 100); }
+    public void Damage3()
+    {
+        Buy(ref d3, 50);
+    }
+
+    public void Damage4()
+    {
+        Buy(ref d4, 70);
+    }
+
+    public void Damage5()
+    {
+        Buy(ref d5, 100);
+    }
+
+    public void Speed1()
+    {
+        Buy(ref s1, 10);
+    }
+
+    public void Speed2()
+    {
+        Buy(ref s2, 30);
+    }
+
+    public void Speed3()
+    {
+        Buy(ref s3, 50);
+    }
+
+    public void Speed4()
+    {
+        Buy(ref s4, 70);
+    }
+
+    public void Speed5()
+    {
+        Buy(ref s5, 100);
+    }
+
+    public void Health1()
+    {
+        Buy(ref h1, 10);
+    }
+
+    public void Health2()
+    {
+        Buy(ref h2, 30);
+    }
+
+    public void Health3()
+    {
+        Buy(ref h3, 50);
+    }
+
+    public void Health4()
+    {
+        Buy(ref h4, 70);
+    }
+
+    public void Health5()
+    {
+        Buy(ref h5, 100);
+    }
 
     void Buy(ref bool flag, int cost)
     {

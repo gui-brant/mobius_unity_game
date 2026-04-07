@@ -135,6 +135,15 @@ public class SkullNPC : Character
         if (nextIndex == colourPickerChoiceIndex)
         {
             EndDialogue();
+            if (ColourPickerUI.Instance == null)
+            {
+                Debug.LogError("ColourPickerUI.Instance is null");
+            }
+
+            if (playerRenderer == null)
+            {
+                Debug.LogError("PlayerRenderer is null");
+            }
             ColourPickerUI.Instance.OpenColourPicker(playerRenderer);
             return;
         }
