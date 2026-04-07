@@ -149,11 +149,12 @@ public class MoveScene : MonoBehaviour
     }
     public IEnumerator MoveToRandomBossRoom()
     {
-        BossSceneForTransition = Random.Range(0,1);
+        BossSceneForTransition = Random.Range(0, ListOfAllBossScenes.Count);
 
         Debug.Log("<color=cyan>Entering random boss room...</color>");
         Debug.Log(ListOfAllBossScenes[BossSceneForTransition]);
         yield return StartCoroutine(TransitionProcess(ListOfAllBossScenes[BossSceneForTransition]));
+        ListOfAllBossScenes.RemoveAt(BossSceneForTransition);
         isTransitioning = false;
     }
 
