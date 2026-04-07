@@ -17,7 +17,7 @@ public class MoveScene : MonoBehaviour
     [Header("Scene Names")]
     public string pgrSceneName = "(PGR) Procedurally generated rooms";
     [Header("Scene Names")]
-    public List<String> ListOfAllBossScenes = new List<String> { "SecondBoss", "EmilBoss" };
+    public List<String> ListOfAllBossScenes = new List<String> { "EmilBoss" };
     [Header("Scene Names")]
     public string sampleSceneName = "SampleScene";
     public Vector3 cameraOffset = new Vector3(-5f, 0f, 0f);
@@ -74,23 +74,7 @@ public class MoveScene : MonoBehaviour
             }
             
         }
-        EmilBoss[] enemies = FindObjectsByType<EmilBoss>(FindObjectsSortMode.None);
-        foreach (EmilBoss enemy in enemies)
-        {
-            Debug.Log("1");
-            if (enemy.gameObject.name == "BossTemp")
-            {
-                Debug.Log("2");
-                if (enemy.isDead&& !once)
-                {
-                    once = true;
-                    Debug.Log("3");
-                    StartCoroutine(TransitionProcess("(PGR) Procedurally generated rooms"));
-
-                }
-            }
-        }
-
+        
 
     }
 
@@ -241,9 +225,6 @@ public class MoveScene : MonoBehaviour
             Scene scene = SceneManager.GetSceneAt(i);
             if (!scene.IsValid() || !scene.isLoaded) continue;
             if (scene.name == targetSceneName) continue;
-
-            bool isGameplayScene = scene.name == sampleSceneName || scene.name == pgrSceneName || scene.name  == "EmilBoss";
-            if (!isGameplayScene) continue;
 
             AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(scene);
             if (unloadOp != null)
