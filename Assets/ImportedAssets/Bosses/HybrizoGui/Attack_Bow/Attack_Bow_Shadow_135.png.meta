@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: f52950a92c6064b39ae4bb1865272a81
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5175524198226863003
+    second: Attack_Bow_Shadow_135_0
+  - first:
+      213: 6194258815690136308
+    second: Attack_Bow_Shadow_135_1
+  - first:
+      213: -3951275712109370386
+    second: Attack_Bow_Shadow_135_2
+  - first:
+      213: -5824776600587896930
+    second: Attack_Bow_Shadow_135_3
+  - first:
+      213: 5746245761523293991
+    second: Attack_Bow_Shadow_135_4
+  - first:
+      213: 4188724277920367243
+    second: Attack_Bow_Shadow_135_5
+  - first:
+      213: -4635941400003156056
+    second: Attack_Bow_Shadow_135_6
+  - first:
+      213: -8620506956747554082
+    second: Attack_Bow_Shadow_135_7
+  - first:
+      213: 2411465680094810396
+    second: Attack_Bow_Shadow_135_8
+  - first:
+      213: 3311371321820610954
+    second: Attack_Bow_Shadow_135_9
+  - first:
+      213: -4207402700640409884
+    second: Attack_Bow_Shadow_135_10
+  - first:
+      213: 8757600997871672759
+    second: Attack_Bow_Shadow_135_11
+  - first:
+      213: -598362364396867906
+    second: Attack_Bow_Shadow_135_12
+  - first:
+      213: 6764777153716156703
+    second: Attack_Bow_Shadow_135_13
+  - first:
+      213: 5213435937307233178
+    second: Attack_Bow_Shadow_135_14
+  - first:
+      213: 2274424765830690759
+    second: Attack_Bow_Shadow_135_15
+  - first:
+      213: 2766776540559290186
+    second: Attack_Bow_Shadow_135_16
+  - first:
+      213: 7931963345018745397
+    second: Attack_Bow_Shadow_135_17
+  - first:
+      213: 926949959898430167
+    second: Attack_Bow_Shadow_135_18
+  - first:
+      213: -4252539545959002006
+    second: Attack_Bow_Shadow_135_19
+  - first:
+      213: 6786852197437523526
+    second: Attack_Bow_Shadow_135_20
+  - first:
+      213: 7163183815993119475
+    second: Attack_Bow_Shadow_135_21
+  - first:
+      213: -1000108137001516839
+    second: Attack_Bow_Shadow_135_22
+  - first:
+      213: -7533619236267393116
+    second: Attack_Bow_Shadow_135_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 556
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9320c156d723d740800000000000000
+      internalID: 5175524198226863003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 558
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fada04039d66f550800000000000000
+      internalID: 6194258815690136308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 559
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3a712bcaf3a29c0800000000000000
+      internalID: -3951275712109370386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_3
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 559
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9773f1fa8c3a2fa0800000000000000
+      internalID: -5824776600587896930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_4
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 560
+        width: 63
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f90bf3314cebf40800000000000000
+      internalID: 5746245761523293991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 562
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b828f77b986512a30800000000000000
+      internalID: 4188724277920367243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 380
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7e845ebd3d9afb0800000000000000
+      internalID: -4635941400003156056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 383
+        width: 64
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed24743a89ecd5880800000000000000
+      internalID: -8620506956747554082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_8
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 381
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11d812724f377120800000000000000
+      internalID: 2411465680094810396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_9
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 380
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81888c3caa54fd20800000000000000
+      internalID: 3311371321820610954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_10
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 380
+        width: 63
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e62f49198d4c95c0800000000000000
+      internalID: -4207402700640409884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_11
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 380
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd5fb235bf398970800000000000000
+      internalID: 8757600997871672759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_12
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 200
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe692f899032b7f0800000000000000
+      internalID: -598362364396867906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 201
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19fdefdaf051ed50800000000000000
+      internalID: 6764777153716156703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 200
+        width: 69
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b047eec58d95840800000000000000
+      internalID: 5213435937307233178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_15
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 199
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c770bb2641609f10800000000000000
+      internalID: 2274424765830690759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 197
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fabe8ca90956620800000000000000
+      internalID: 2766776540559290186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_17
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 195
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532f24f03aef31e60800000000000000
+      internalID: 7931963345018745397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 11
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dafe4cc3103ddc00800000000000000
+      internalID: 926949959898430167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_19
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 11
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6010d950d1fbf4c0800000000000000
+      internalID: -4252539545959002006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_20
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 12
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646c7538d1ebf2e50800000000000000
+      internalID: 6786852197437523526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_21
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 14
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2d81d7abdb86360800000000000000
+      internalID: 7163183815993119475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_22
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 15
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d00c0db2f6ee12f0800000000000000
+      internalID: -1000108137001516839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Bow_Shadow_135_23
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 16
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af7b3d2835337790800000000000000
+      internalID: -7533619236267393116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack_Bow_Shadow_135_0: 5175524198226863003
+      Attack_Bow_Shadow_135_1: 6194258815690136308
+      Attack_Bow_Shadow_135_10: -4207402700640409884
+      Attack_Bow_Shadow_135_11: 8757600997871672759
+      Attack_Bow_Shadow_135_12: -598362364396867906
+      Attack_Bow_Shadow_135_13: 6764777153716156703
+      Attack_Bow_Shadow_135_14: 5213435937307233178
+      Attack_Bow_Shadow_135_15: 2274424765830690759
+      Attack_Bow_Shadow_135_16: 2766776540559290186
+      Attack_Bow_Shadow_135_17: 7931963345018745397
+      Attack_Bow_Shadow_135_18: 926949959898430167
+      Attack_Bow_Shadow_135_19: -4252539545959002006
+      Attack_Bow_Shadow_135_2: -3951275712109370386
+      Attack_Bow_Shadow_135_20: 6786852197437523526
+      Attack_Bow_Shadow_135_21: 7163183815993119475
+      Attack_Bow_Shadow_135_22: -1000108137001516839
+      Attack_Bow_Shadow_135_23: -7533619236267393116
+      Attack_Bow_Shadow_135_3: -5824776600587896930
+      Attack_Bow_Shadow_135_4: 5746245761523293991
+      Attack_Bow_Shadow_135_5: 4188724277920367243
+      Attack_Bow_Shadow_135_6: -4635941400003156056
+      Attack_Bow_Shadow_135_7: -8620506956747554082
+      Attack_Bow_Shadow_135_8: 2411465680094810396
+      Attack_Bow_Shadow_135_9: 3311371321820610954
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
