@@ -158,7 +158,7 @@ public class MoveScene : MonoBehaviour
         isTransitioning = false;
     }
 
-    public IEnumerator  TransitionProcess(string toScene)
+    public IEnumerator TransitionProcess(string toScene)
     {
         Scene destinationScene = SceneManager.GetSceneByName(toScene);
         if (!destinationScene.isLoaded)
