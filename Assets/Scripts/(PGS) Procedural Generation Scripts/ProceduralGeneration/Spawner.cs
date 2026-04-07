@@ -265,7 +265,6 @@ public class Spawner : MonoBehaviour
             return;
         }
 
-        List<GameObject> weaponPrefabs = prefabsToSpawn.Where(IsWeaponPrefab).ToList();
         List<GameObject> healingPrefabs = prefabsToSpawn.Where(IsHealingItemPrefab).ToList();
         List<GameObject> armorPrefabs = prefabsToSpawn.Where(IsArmorItemPrefab).ToList();
         List<GameObject> worldObjectPrefabs = prefabsToSpawn.Where(IsWorldObjectPrefab).ToList();
@@ -279,7 +278,6 @@ public class Spawner : MonoBehaviour
             !IsEnemyPrefab(p)
         ).ToList();
 
-        remainingCapacity = TrySpawnOneFromPool(weaponPrefabs, floorList, blockedPositions, remainingCapacity);
         remainingCapacity = TrySpawnOneFromPool(healingPrefabs, floorList, blockedPositions, remainingCapacity);
         remainingCapacity = TrySpawnOneFromPool(armorPrefabs, floorList, blockedPositions, remainingCapacity);
 
@@ -541,8 +539,8 @@ public class Spawner : MonoBehaviour
             maxWorldObjectSpawns = minWorldObjectSpawns;
         }
 
-        // Room cap must support: 1 weapon + 1 healing + 1 armor + at least 5 world objects + at least 1 enemy.
-        minRoomSpawnCap = Mathf.Max(9, minRoomSpawnCap);
+        // Room cap must support: 1 healing + 1 armor + at least 5 world objects + at least 1 enemy.
+        minRoomSpawnCap = Mathf.Max(8, minRoomSpawnCap);
         maxRoomSpawnCap = Mathf.Max(minRoomSpawnCap, maxRoomSpawnCap);
         roomsBeforeReturningToHub = Mathf.Max(1, roomsBeforeReturningToHub);
     }

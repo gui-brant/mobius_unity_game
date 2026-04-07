@@ -1,20 +1,20 @@
 using UnityEngine;
 
-public class Weapon : Item, IEquipable
+public abstract class Weapon : Item
 {
-    [SerializeField] private int damageBonus = 5;
-    [SerializeField] private float attackRangeBonus = 0.25f;
-
-    protected override void ApplyTo(Michael michael)
+    public override void Collect(GameObject collector)
     {
-        Equip(michael);
+        if (!collector.TryGetComponent<Michael>(out Michael michael))
+        {
+            return;
+        }
+
+        // Weapons are persistent pickups: they swap Michael's active mode/profile,
+        // but do not get consumed or destroyed.
+        ApplyWeaponProfile(michael);
     }
 
-    public void Equip(Michael michael)
-    {
-        if (michael == null) return;
+    protected sealed override void ApplyTo(Michael michael) { }
 
-        michael.ModifyAttackDamage(damageBonus);
-        michael.ModifyAttackRange(attackRangeBonus);
-    }
+    protected abstract void ApplyWeaponProfile(Michael michael);
 }
