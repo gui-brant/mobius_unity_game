@@ -62,16 +62,20 @@ Assets/Scripts/(PGS) Procedural Generation Scripts/ProcedGenScripts/
 Assets/Scripts/(PGS) Procedural Generation Scripts/
  ProceduralGeneration/Spawner.cs
  SceneStuff/MoveScene.cs
-Assets/Scripts/Characters/
- Character.cs
- Enemies/
-  Boss.cs
-  Enemy.cs
-  HybrizoBoss.cs
- Michael.cs
- PierceBoss.cs
- SkullNPC.cs
 Assets/Scripts/
+ CameraFollow.cs
+ Characters/
+  Character.cs
+  Enemies/
+   Boss.cs
+   EmilBoss.cs
+   Enemy.cs
+   HybrizoBoss.cs
+   OrbitalProjectile.cs
+   RotationInFlight.cs
+  Michael.cs
+  PierceBoss.cs
+  SkullNPC.cs
  ColourPickerUI.cs
  ColourSwatchButton.cs
  Combat/
@@ -79,7 +83,9 @@ Assets/Scripts/
   HybrizoProjectile.cs
   Projectile.cs
   ProjectileSpawner.cs
+ DamageTile.cs
  DialogueController.cs
+ DiamondSpawner.cs
  Interfaces/
   IAttacker.cs
   ICollectible.cs
@@ -103,6 +109,7 @@ Assets/Scripts/
   ObjectiveItem.cs
   RangedWeapon.cs
   Weapon.cs
+ LightFlicker.cs
  MenuToggle.cs
  NPCDialogue.cs
  Objects/
@@ -110,6 +117,9 @@ Assets/Scripts/
   HybrizoPuzzleController.cs
   WorldObject.cs
  SkillTreeManager.cs
+ SpiritProjectile.cs
+ Torch.cs
+ TorchManager.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
 [metadataReferences]
