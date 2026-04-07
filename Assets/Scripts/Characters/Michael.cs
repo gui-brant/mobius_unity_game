@@ -71,10 +71,40 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
         HandleInput();
         HandleAttack();
         base.Update();
-
+        
+        HandleInteract();
+        
         if (interactableSkullNPC != null && Input.GetKeyDown(KeyCode.E))
         {
             interactableSkullNPC.Interact();
+        }
+    }
+
+    private void HandleInteract()
+    {
+        // only check if E is pressed
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("E is pressed");
+            float interactRadius = 0.8f; 
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
+
+            
+            foreach (var col in colliders)
+            {
+                // Look for the component (Interface)
+                IInteractable interactable = col.gameObject.GetComponent<IInteractable>();
+
+                
+                // Only representing Torch interactions for now
+                if (interactable != null && interactable is Torch)
+                {
+                    interactable.Interact(this.gameObject);
+                    break; // Stop after interacting with the first valid object
+                    // Ensuring only one interaction at a time
+                }
+            }
+
         }
     }
 
