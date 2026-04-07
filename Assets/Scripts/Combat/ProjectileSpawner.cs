@@ -8,7 +8,8 @@ public class ProjectileSpawner : MonoBehaviour
         GameObject sourceOwner,
         CombatTeam sourceTeam,
         float? damageOverride = null,
-        Vector2? directionOverride = null)
+        Vector2? directionOverride = null,
+        Vector2? spawnPositionOverride = null)
     {
         if (projectilePrefab == null)
         {
@@ -28,9 +29,14 @@ public class ProjectileSpawner : MonoBehaviour
             return null;
         }
 
+        Vector2 direction = ResolveDirection(spawnPoint, directionOverride);
+        Vector3 spawnPosition = spawnPositionOverride.HasValue
+            ? (Vector3)spawnPositionOverride.Value
+            : spawnPoint.position;
+
         GameObject instance = Instantiate(
             projectilePrefab,
-            spawnPoint.position,
+            spawnPosition,
             spawnPoint.rotation);
 
         if (!instance.TryGetComponent<Projectile>(out Projectile projectile))
@@ -40,7 +46,6 @@ public class ProjectileSpawner : MonoBehaviour
             return null;
         }
 
-        Vector2 direction = ResolveDirection(spawnPoint, directionOverride);
         int? convertedDamage = damageOverride.HasValue ? Mathf.RoundToInt(damageOverride.Value) : null;
         projectile.Initialize(direction, sourceOwner, sourceTeam, convertedDamage);
         return projectile;
