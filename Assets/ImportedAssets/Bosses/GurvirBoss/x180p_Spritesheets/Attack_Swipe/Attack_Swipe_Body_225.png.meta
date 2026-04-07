@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 4bda0d7d3dd02e547bc60fb7dcae1402
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1739767649736220373
+    second: Attack_Swipe_Body_225_0
+  - first:
+      213: -5501746127143239173
+    second: Attack_Swipe_Body_225_1
+  - first:
+      213: 8044160573065496467
+    second: Attack_Swipe_Body_225_2
+  - first:
+      213: 8447000916836006280
+    second: Attack_Swipe_Body_225_3
+  - first:
+      213: 315561756329392271
+    second: Attack_Swipe_Body_225_4
+  - first:
+      213: -7469368871916970740
+    second: Attack_Swipe_Body_225_5
+  - first:
+      213: 6978279840668662149
+    second: Attack_Swipe_Body_225_6
+  - first:
+      213: 6923995320904991750
+    second: Attack_Swipe_Body_225_7
+  - first:
+      213: 7979064485430094240
+    second: Attack_Swipe_Body_225_8
+  - first:
+      213: 950629762807906657
+    second: Attack_Swipe_Body_225_9
+  - first:
+      213: 8146952019506148411
+    second: Attack_Swipe_Body_225_10
+  - first:
+      213: -8647779099216089316
+    second: Attack_Swipe_Body_225_11
+  - first:
+      213: -2511783443904437302
+    second: Attack_Swipe_Body_225_12
+  - first:
+      213: -8697178928301227358
+    second: Attack_Swipe_Body_225_13
+  - first:
+      213: -9007705690644497258
+    second: Attack_Swipe_Body_225_14
+  - first:
+      213: -8193215682935712347
+    second: Attack_Swipe_Body_225_15
+  - first:
+      213: 8082396582369526891
+    second: Attack_Swipe_Body_225_16
+  - first:
+      213: 2961630133064014221
+    second: Attack_Swipe_Body_225_17
+  - first:
+      213: 8808048305996119365
+    second: Attack_Swipe_Body_225_18
+  - first:
+      213: 6859300093803765061
+    second: Attack_Swipe_Body_225_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 581
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de5e32b575e42810800000000000000
+      internalID: 1739767649736220373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 582
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf10f3ffb0fd5a3b0800000000000000
+      internalID: -5501746127143239173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 584
+        width: 63
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39785c1eb6992af60800000000000000
+      internalID: 8044160573065496467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 587
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889b8696496c93570800000000000000
+      internalID: 8447000916836006280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_4
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 595
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8836b6deb9116400800000000000000
+      internalID: 315561756329392271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 417
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d570dd598775890800000000000000
+      internalID: -7469368871916970740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_6
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 418
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5893356ea84d7d060800000000000000
+      internalID: 6978279840668662149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 414
+        width: 86
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60442093f09f61060800000000000000
+      internalID: 6923995320904991750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 413
+        width: 78
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9eef5efd45bbe60800000000000000
+      internalID: 7979064485430094240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_9
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 421
+        width: 85
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161441d8bb0513d00800000000000000
+      internalID: 950629762807906657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_10
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 232
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34b0d482b9cf0170800000000000000
+      internalID: 8146952019506148411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 210
+        width: 82
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f6d272abaecf780800000000000000
+      internalID: -8647779099216089316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 218
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac36e59044a542dd0800000000000000
+      internalID: -2511783443904437302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_13
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 219
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2c79628d96d4780800000000000000
+      internalID: -8697178928301227358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_14
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 219
+        width: 85
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cbed336633ef280800000000000000
+      internalID: -9007705690644497258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 39
+        width: 76
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a51572feb9db4e80800000000000000
+      internalID: -8193215682935712347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_16
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 34
+        width: 58
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6487f98ed07a2070800000000000000
+      internalID: 8082396582369526891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_17
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 39
+        width: 69
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d899f552ae2d91920800000000000000
+      internalID: 2961630133064014221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 40
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d316b64497c3a70800000000000000
+      internalID: 8808048305996119365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Swipe_Body_225_19
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 41
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d1afad711213f50800000000000000
+      internalID: 6859300093803765061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack_Swipe_Body_225_0: 1739767649736220373
+      Attack_Swipe_Body_225_1: -5501746127143239173
+      Attack_Swipe_Body_225_10: 8146952019506148411
+      Attack_Swipe_Body_225_11: -8647779099216089316
+      Attack_Swipe_Body_225_12: -2511783443904437302
+      Attack_Swipe_Body_225_13: -8697178928301227358
+      Attack_Swipe_Body_225_14: -9007705690644497258
+      Attack_Swipe_Body_225_15: -8193215682935712347
+      Attack_Swipe_Body_225_16: 8082396582369526891
+      Attack_Swipe_Body_225_17: 2961630133064014221
+      Attack_Swipe_Body_225_18: 8808048305996119365
+      Attack_Swipe_Body_225_19: 6859300093803765061
+      Attack_Swipe_Body_225_2: 8044160573065496467
+      Attack_Swipe_Body_225_3: 8447000916836006280
+      Attack_Swipe_Body_225_4: 315561756329392271
+      Attack_Swipe_Body_225_5: -7469368871916970740
+      Attack_Swipe_Body_225_6: 6978279840668662149
+      Attack_Swipe_Body_225_7: 6923995320904991750
+      Attack_Swipe_Body_225_8: 7979064485430094240
+      Attack_Swipe_Body_225_9: 950629762807906657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

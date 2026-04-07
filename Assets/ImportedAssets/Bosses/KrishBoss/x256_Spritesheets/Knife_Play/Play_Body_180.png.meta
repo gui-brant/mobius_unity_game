@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 7a1fc3511a7b80845a3fb18b929f4bf7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 341063948501001265
+    second: Play_Body_180_0
+  - first:
+      213: -1726142165418675214
+    second: Play_Body_180_1
+  - first:
+      213: -5073063648157951305
+    second: Play_Body_180_2
+  - first:
+      213: 6880822415634674377
+    second: Play_Body_180_3
+  - first:
+      213: 6069922907986205798
+    second: Play_Body_180_4
+  - first:
+      213: -6989486159329158254
+    second: Play_Body_180_5
+  - first:
+      213: 4725477701988116443
+    second: Play_Body_180_6
+  - first:
+      213: 8609363149293501334
+    second: Play_Body_180_7
+  - first:
+      213: -2713438896210659397
+    second: Play_Body_180_8
+  - first:
+      213: -2410287880781995379
+    second: Play_Body_180_9
+  - first:
+      213: -5224068730758668640
+    second: Play_Body_180_10
+  - first:
+      213: -7638635385137292596
+    second: Play_Body_180_11
+  - first:
+      213: 9131358264668015571
+    second: Play_Body_180_12
+  - first:
+      213: -3129483300039227307
+    second: Play_Body_180_13
+  - first:
+      213: 8833153968462573216
+    second: Play_Body_180_14
+  - first:
+      213: 5598712398872548500
+    second: Play_Body_180_15
+  - first:
+      213: -8959887834959637649
+    second: Play_Body_180_16
+  - first:
+      213: 6042252090926948049
+    second: Play_Body_180_17
+  - first:
+      213: -1411677736371538860
+    second: Play_Body_180_18
+  - first:
+      213: 2685133759366867540
+    second: Play_Body_180_19
+  - first:
+      213: -3375044874678861460
+    second: Play_Body_180_20
+  - first:
+      213: 7720321141229442831
+    second: Play_Body_180_21
+  - first:
+      213: -256297884582143274
+    second: Play_Body_180_22
+  - first:
+      213: -1643209067164594752
+    second: Play_Body_180_23
+  - first:
+      213: -220512441863016387
+    second: Play_Body_180_24
+  - first:
+      213: 6937398712303888579
+    second: Play_Body_180_25
+  - first:
+      213: -6558574741493280838
+    second: Play_Body_180_26
+  - first:
+      213: 5003606714291485437
+    second: Play_Body_180_27
+  - first:
+      213: 7579259871489096199
+    second: Play_Body_180_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Play_Body_180_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 578
+        width: 78
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1342818aad3bbb400800000000000000
+      internalID: 341063948501001265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 589
+        width: 75
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3756698d28b08e0800000000000000
+      internalID: -1726142165418675214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 599
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba19908d7bd899b0800000000000000
+      internalID: -5073063648157951305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_3
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 606
+        width: 81
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c23376e7879d7f50800000000000000
+      internalID: 6880822415634674377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_4
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 606
+        width: 83
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c168899b2bc3450800000000000000
+      internalID: 6069922907986205798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_5
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 607
+        width: 83
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b1da6be5b500f90800000000000000
+      internalID: -6989486159329158254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_6
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 606
+        width: 85
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7e70deee4449140800000000000000
+      internalID: 4725477701988116443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_7
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 606
+        width: 83
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b3aff7b2a9a7770800000000000000
+      internalID: 8609363149293501334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 337
+        width: 61
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7b2a743bde75ad0800000000000000
+      internalID: -2713438896210659397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 327
+        width: 77
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d826f8351ffec8ed0800000000000000
+      internalID: -2410287880781995379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_10
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 343
+        width: 105
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae57ecea216087b0800000000000000
+      internalID: -5224068730758668640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_11
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 359
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca9924a69d1ef590800000000000000
+      internalID: -7638635385137292596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_12
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 463
+        width: 55
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db4d5236f919be70800000000000000
+      internalID: 9131358264668015571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_13
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 356
+        width: 106
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55805a2f487d194d0800000000000000
+      internalID: -3129483300039227307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_14
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 352
+        width: 89
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae2b88fbbaa59a70800000000000000
+      internalID: 8833153968462573216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_15
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 349
+        width: 64
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4949f56734f92bd40800000000000000
+      internalID: 5598712398872548500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_16
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 360
+        width: 115
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6313e15c7518a380800000000000000
+      internalID: -8959887834959637649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_17
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 402
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dedf0373446ad350800000000000000
+      internalID: 6042252090926948049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_18
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 409
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4543f320496b86ce0800000000000000
+      internalID: -1411677736371538860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_19
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 306
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45aa87d7de2834520800000000000000
+      internalID: 2685133759366867540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_20
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 341
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6183c7719e6921d0800000000000000
+      internalID: -3375044874678861460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 93
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f075be68c27142b60800000000000000
+      internalID: 7720321141229442831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_22
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 93
+        width: 116
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da1cc09e62717cf0800000000000000
+      internalID: -256297884582143274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_23
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 92
+        width: 92
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd04fb3f062239e0800000000000000
+      internalID: -1643209067164594752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_24
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 89
+        width: 108
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30733a3a1590fcf0800000000000000
+      internalID: -220512441863016387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_25
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 83
+        width: 118
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c820287f57964060800000000000000
+      internalID: 6937398712303888579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_26
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 76
+        width: 115
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf817c75034bf4a0800000000000000
+      internalID: -6558574741493280838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_27
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 68
+        width: 75
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa7a11ebc1607540800000000000000
+      internalID: 5003606714291485437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Body_180_28
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 63
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70afa7c42b0fe2960800000000000000
+      internalID: 7579259871489096199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Play_Body_180_0: 341063948501001265
+      Play_Body_180_1: -1726142165418675214
+      Play_Body_180_10: -5224068730758668640
+      Play_Body_180_11: -7638635385137292596
+      Play_Body_180_12: 9131358264668015571
+      Play_Body_180_13: -3129483300039227307
+      Play_Body_180_14: 8833153968462573216
+      Play_Body_180_15: 5598712398872548500
+      Play_Body_180_16: -8959887834959637649
+      Play_Body_180_17: 6042252090926948049
+      Play_Body_180_18: -1411677736371538860
+      Play_Body_180_19: 2685133759366867540
+      Play_Body_180_2: -5073063648157951305
+      Play_Body_180_20: -3375044874678861460
+      Play_Body_180_21: 7720321141229442831
+      Play_Body_180_22: -256297884582143274
+      Play_Body_180_23: -1643209067164594752
+      Play_Body_180_24: -220512441863016387
+      Play_Body_180_25: 6937398712303888579
+      Play_Body_180_26: -6558574741493280838
+      Play_Body_180_27: 5003606714291485437
+      Play_Body_180_28: 7579259871489096199
+      Play_Body_180_3: 6880822415634674377
+      Play_Body_180_4: 6069922907986205798
+      Play_Body_180_5: -6989486159329158254
+      Play_Body_180_6: 4725477701988116443
+      Play_Body_180_7: 8609363149293501334
+      Play_Body_180_8: -2713438896210659397
+      Play_Body_180_9: -2410287880781995379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

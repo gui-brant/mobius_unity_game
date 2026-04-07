@@ -25,7 +25,7 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
 
     [Header("Defense")]
     [SerializeField] private int armor = 0;
-    [SerializeField][Min(0f)] private float stunReapplyLockoutSeconds = 0.2f;
+    [SerializeField] [Min(0f)] private float stunReapplyLockoutSeconds = 0.2f;
 
     private bool isAttacking = false;
     private bool isStunned = false;
@@ -58,7 +58,7 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
     [SerializeField] private float debugStunTimer;
     [SerializeField] private bool debugIsKnockedBack;
     [SerializeField] private float debugKnockBackTimer;
-    [SerializeField] private float inputDelay = 0.1f; // seconds of delay, adjust to taste
+
     private SkullNPC interactableSkullNPC;
 
     protected override void Update()
@@ -71,10 +71,40 @@ public class Michael : Character, ITargetable, ITeamMember, IAttacker, IStun, IK
         HandleInput();
         HandleAttack();
         base.Update();
-
+        
+        HandleInteract();
+        
         if (interactableSkullNPC != null && Input.GetKeyDown(KeyCode.E))
         {
             interactableSkullNPC.Interact();
+        }
+    }
+
+    private void HandleInteract()
+    {
+        // only check if E is pressed
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("E is pressed");
+            float interactRadius = 0.8f; 
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
+
+            
+            foreach (var col in colliders)
+            {
+                // Look for the component (Interface)
+                IInteractable interactable = col.gameObject.GetComponent<IInteractable>();
+
+                
+                // Only representing Torch interactions for now
+                if (interactable != null && interactable is Torch)
+                {
+                    interactable.Interact(this.gameObject);
+                    break; // Stop after interacting with the first valid object
+                    // Ensuring only one interaction at a time
+                }
+            }
+
         }
     }
 

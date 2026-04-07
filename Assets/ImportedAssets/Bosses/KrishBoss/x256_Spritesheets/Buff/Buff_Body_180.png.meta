@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 9383f46fb46d8ff418a1925bed513eeb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4096376827248374026
+    second: Buff_Body_180_0
+  - first:
+      213: 6274225005221838413
+    second: Buff_Body_180_1
+  - first:
+      213: -3037667011801418186
+    second: Buff_Body_180_2
+  - first:
+      213: 1345129350765980412
+    second: Buff_Body_180_3
+  - first:
+      213: 6868474781003316743
+    second: Buff_Body_180_4
+  - first:
+      213: -2845112516768434109
+    second: Buff_Body_180_5
+  - first:
+      213: 1828505145284362513
+    second: Buff_Body_180_6
+  - first:
+      213: 2358675560829207623
+    second: Buff_Body_180_7
+  - first:
+      213: 1836250484017874349
+    second: Buff_Body_180_8
+  - first:
+      213: -3673553854820250191
+    second: Buff_Body_180_9
+  - first:
+      213: -3707721525893084169
+    second: Buff_Body_180_10
+  - first:
+      213: -7614328474560399434
+    second: Buff_Body_180_11
+  - first:
+      213: 5338414920571848410
+    second: Buff_Body_180_12
+  - first:
+      213: -4130842998170712934
+    second: Buff_Body_180_13
+  - first:
+      213: -1261169118697675758
+    second: Buff_Body_180_14
+  - first:
+      213: 8378034140816762492
+    second: Buff_Body_180_15
+  - first:
+      213: 5303758114929190318
+    second: Buff_Body_180_16
+  - first:
+      213: 7086958942010377136
+    second: Buff_Body_180_17
+  - first:
+      213: -5131360238161516846
+    second: Buff_Body_180_18
+  - first:
+      213: 7686876095860488756
+    second: Buff_Body_180_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Buff_Body_180_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 831
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe08b9aafeb627c0800000000000000
+      internalID: -4096376827248374026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_1
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 827
+        width: 99
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4efe156666821750800000000000000
+      internalID: 6274225005221838413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_2
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 828
+        width: 86
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63677af62f908d5d0800000000000000
+      internalID: -3037667011801418186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_3
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 829
+        width: 68
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfaab59840cdaa210800000000000000
+      internalID: 1345129350765980412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 832
+        width: 51
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e7e6e2c69b15f50800000000000000
+      internalID: 6868474781003316743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 576
+        width: 50
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348fff37d312488d0800000000000000
+      internalID: -2845112516768434109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 576
+        width: 50
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11106a6edb7206910800000000000000
+      internalID: 1828505145284362513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_7
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 577
+        width: 50
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744ce9ffce2bbb020800000000000000
+      internalID: 2358675560829207623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_8
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 577
+        width: 49
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5468a161cab7910800000000000000
+      internalID: 1836250484017874349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_9
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 577
+        width: 49
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd0c2c7b3ae40dc0800000000000000
+      internalID: -3673553854820250191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 320
+        width: 51
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fbc213aae68b8cc0800000000000000
+      internalID: -3707721525893084169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 319
+        width: 54
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b77fa64898745690800000000000000
+      internalID: -7614328474560399434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 319
+        width: 130
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6845c061cd51a40800000000000000
+      internalID: 5338414920571848410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_13
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 319
+        width: 97
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a940027ed2c4ca6c0800000000000000
+      internalID: -4130842998170712934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_14
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 319
+        width: 73
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21425565e5d6f7ee0800000000000000
+      internalID: -1261169118697675758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 77
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c766a7f89a1c44470800000000000000
+      internalID: 8378034140816762492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_16
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 64
+        width: 87
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea523fea7ebba9940800000000000000
+      internalID: 5303758114929190318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_17
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 64
+        width: 92
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b38e440c9fe95260800000000000000
+      internalID: 7086958942010377136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_18
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 63
+        width: 84
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6a1ddec0fb9c8b0800000000000000
+      internalID: -5131360238161516846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff_Body_180_19
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 63
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ab43615154daa60800000000000000
+      internalID: 7686876095860488756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Buff_Body_180_0: -4096376827248374026
+      Buff_Body_180_1: 6274225005221838413
+      Buff_Body_180_10: -3707721525893084169
+      Buff_Body_180_11: -7614328474560399434
+      Buff_Body_180_12: 5338414920571848410
+      Buff_Body_180_13: -4130842998170712934
+      Buff_Body_180_14: -1261169118697675758
+      Buff_Body_180_15: 8378034140816762492
+      Buff_Body_180_16: 5303758114929190318
+      Buff_Body_180_17: 7086958942010377136
+      Buff_Body_180_18: -5131360238161516846
+      Buff_Body_180_19: 7686876095860488756
+      Buff_Body_180_2: -3037667011801418186
+      Buff_Body_180_3: 1345129350765980412
+      Buff_Body_180_4: 6868474781003316743
+      Buff_Body_180_5: -2845112516768434109
+      Buff_Body_180_6: 1828505145284362513
+      Buff_Body_180_7: 2358675560829207623
+      Buff_Body_180_8: 1836250484017874349
+      Buff_Body_180_9: -3673553854820250191
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
