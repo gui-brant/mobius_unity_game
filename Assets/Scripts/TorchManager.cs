@@ -28,7 +28,7 @@ public class TorchManager : MonoBehaviour
     {
         if (_torches.Count < realTorchesNeeded)
         {
-            Debug.LogError("Not enough torches in the list to meet the requirement!");
+            Debug.LogWarning("Not enough torches in the list to meet the requirement!");
             return;
         }
 
