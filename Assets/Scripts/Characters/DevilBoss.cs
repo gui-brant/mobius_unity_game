@@ -21,15 +21,40 @@ public class DevilBeastBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
     
     private void HandleAttack(int direction)
     {
-        Attack(michael);
-        
+        Invoke("AttackMichael", 1.6f);
+
     }
 
+    // Parameterless class to delay damage
+    public void AttackMichael()
+    {
+        if (michael is not null)
+        {
+            Attack(michael);
+        }   
+    }
+    
     public void Attack(IDamageable damageable)
     {
-        damageable.TakeDamage(AttackDamage);
+        if (damageable == null || target == null) 
+        {
+            attacking = false;
+            return;
+        }
+        
+        float currentDistance = Vector2.Distance(transform.position, target.position);
+        
+        if (currentDistance <= attackRange + 0.5f)
+        {
+            damageable.TakeDamage(AttackDamage);
+            Debug.Log("Hit landed!");
+        }
+        else
+        {
+            Debug.Log("Michael dodged the attack!");
+        }
+        
         attacking = false;
-        // Debug.Log("Done Attack");
     }
 
     public void ModifyAttackDamage(int amount)

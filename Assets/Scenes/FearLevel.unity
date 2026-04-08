@@ -22768,6 +22768,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1971617507}
     m_Modifications:
     - target: {fileID: 3241934544735921098, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241934544735921098, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.81
       objectReference: {fileID: 0}
@@ -22849,15 +22853,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8774370003177346051, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
       propertyPath: m_BodyType
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8774370003177346051, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3241934544735921098, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
-    - {fileID: 8774370003177346051, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
+    - target: {fileID: 8774370003177346051, guid: 2cc3d0e40a0e60a4bb816afcc6192034, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
