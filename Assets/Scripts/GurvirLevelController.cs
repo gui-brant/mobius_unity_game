@@ -55,8 +55,9 @@ public class GurvirLevelController : MonoBehaviour
         // Check if level is cleared
         if (boss.IsDead && !michael.IsDead && torchesRoom2.torchesCleared)
         {
+            Debug.Log("Congrats");
             if (moveScene == null) moveScene = FindFirstObjectByType<MoveScene>();
-        moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
+            moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
         }
 
     }
