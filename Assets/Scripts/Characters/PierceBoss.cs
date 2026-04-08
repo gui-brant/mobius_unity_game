@@ -9,6 +9,10 @@ public class PierceBoss : Character, ITargetable, ITeamMember
     [Header("Collision & Targeting")]
     // In the Inspector, set this to "Default" or whatever layers your walls are on
     [SerializeField] private LayerMask collisionLayers; 
+    [SerializeField] private BoxCollider2D topWall;
+    [SerializeField] private BoxCollider2D bottomWall;
+    [SerializeField] private BoxCollider2D leftWall;
+    [SerializeField] private BoxCollider2D rightWall;
 
     [Header("Passive Damage")]
     [SerializeField] private int passiveDamagePerSecond = 10;
@@ -16,7 +20,8 @@ public class PierceBoss : Character, ITargetable, ITeamMember
     [Header("Reactions")]
     [SerializeField] private float hurtDuration = 1f;       
     [SerializeField] private float awakeDisplayDuration = 1f; 
-    [SerializeField] private float dashDistance = 5f;        
+    [SerializeField] private float minDashDistance = 2f;
+    [SerializeField] private float maxDashDistance = 10f;
     [SerializeField] private float dashDuration = 0.15f; // Increased to prevent clipping
 
     [Header("Random Timing")]
@@ -28,6 +33,7 @@ public class PierceBoss : Character, ITargetable, ITeamMember
 
     private bool isMoving = false; 
     private float deathTimer;
+    private readonly Collider2D[] assignedWalls = new Collider2D[4];
 
     public CombatTeam Team => CombatTeam.Enemy;
     public Transform TargetTransform => transform;
@@ -46,6 +52,11 @@ public class PierceBoss : Character, ITargetable, ITeamMember
             rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         }
+
+        assignedWalls[0] = topWall;
+        assignedWalls[1] = bottomWall;
+        assignedWalls[2] = leftWall;
+        assignedWalls[3] = rightWall;
     }
 
     private void Start()
@@ -101,8 +112,15 @@ public class PierceBoss : Character, ITargetable, ITeamMember
         
         if (!isDead)
         {
-            Vector2 randomDir = Random.insideUnitCircle.normalized;
+            Vector2 randomDir = Random.insideUnitCircle;
+            if (randomDir.sqrMagnitude <= Mathf.Epsilon)
+                randomDir = Vector2.right;
+            else
+                randomDir.Normalize();
             Vector2 start = (Vector2)transform.position;
+            float dashDistance = Random.Range(
+                Mathf.Min(minDashDistance, maxDashDistance),
+                Mathf.Max(minDashDistance, maxDashDistance));
 
             // Get the size of our own collider to ensure the CircleCast matches our body
             float radius = 0.3f;
@@ -135,7 +153,13 @@ public class PierceBoss : Character, ITargetable, ITeamMember
     private IEnumerator DashTo(Vector2 destination)
     {
         float elapsed = 0f;
-        Vector2 start = rb != null ? rb.position : (Vector2)transform.position;
+        Vector2 start = (Vector2)transform.position;
+        Collider2D myCol = GetComponent<Collider2D>();
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
 
         while (elapsed < dashDuration)
         {
@@ -145,16 +169,108 @@ public class PierceBoss : Character, ITargetable, ITeamMember
             // Smoother movement curve
             t = t * t * (3f - 2f * t);
 
+            Vector2 currentPos = (Vector2)transform.position;
             Vector2 nextPos = Vector2.Lerp(start, destination, t);
+            Vector2 delta = nextPos - currentPos;
 
-            if (rb != null) rb.MovePosition(nextPos);
-            else transform.position = nextPos;
+            if (delta.sqrMagnitude > 0f)
+            {
+                nextPos = GetSafeDashPosition(currentPos, nextPos, myCol);
+            }
+
+            transform.position = nextPos;
+            if (rb != null)
+            {
+                rb.position = nextPos;
+            }
 
             yield return null; 
         }
 
-        if (rb != null) rb.MovePosition(destination);
-        else transform.position = destination;
+        Vector2 finalPosition = GetSafeDashPosition((Vector2)transform.position, destination, myCol);
+        transform.position = finalPosition;
+        if (rb != null)
+        {
+            rb.position = finalPosition;
+        }
+    }
+
+    private Vector2 GetSafeDashPosition(Vector2 from, Vector2 to, Collider2D myCollider)
+    {
+        if (myCollider == null)
+        {
+            return to;
+        }
+
+        Vector2 delta = to - from;
+        float distance = delta.magnitude;
+        if (distance <= Mathf.Epsilon)
+        {
+            return to;
+        }
+
+        Vector2 direction = delta / distance;
+        Vector2 safePos = to;
+
+        RaycastHit2D layerHit = Physics2D.CircleCast(from, GetColliderRadius(myCollider), direction, distance, collisionLayers);
+        if (layerHit.collider != null)
+        {
+            safePos = from + direction * Mathf.Max(0f, layerHit.distance - 0.05f);
+        }
+
+        return ClampPositionInsideAssignedWalls(safePos, myCollider);
+    }
+
+    private Vector2 ClampPositionInsideAssignedWalls(Vector2 targetPosition, Collider2D myCollider)
+    {
+        if (myCollider == null)
+        {
+            return targetPosition;
+        }
+
+        Bounds currentBounds = myCollider.bounds;
+        Vector2 extents = currentBounds.extents;
+        const float skin = 0.02f;
+
+        float minX = float.NegativeInfinity;
+        float maxX = float.PositiveInfinity;
+        float minY = float.NegativeInfinity;
+        float maxY = float.PositiveInfinity;
+
+        if (leftWall != null)
+        {
+            minX = leftWall.bounds.max.x + extents.x + skin;
+        }
+
+        if (rightWall != null)
+        {
+            maxX = rightWall.bounds.min.x - extents.x - skin;
+        }
+
+        if (bottomWall != null)
+        {
+            minY = bottomWall.bounds.max.y + extents.y + skin;
+        }
+
+        if (topWall != null)
+        {
+            maxY = topWall.bounds.min.y - extents.y - skin;
+        }
+
+        return new Vector2(
+            Mathf.Clamp(targetPosition.x, minX, maxX),
+            Mathf.Clamp(targetPosition.y, minY, maxY));
+    }
+
+    private float GetColliderRadius(Collider2D myCollider)
+    {
+        if (myCollider is CircleCollider2D circle)
+        {
+            return circle.radius * Mathf.Max(transform.lossyScale.x, transform.lossyScale.y);
+        }
+
+        Bounds bounds = myCollider.bounds;
+        return Mathf.Max(bounds.extents.x, bounds.extents.y);
     }
 
     public override void TakeDamage(int amount)
