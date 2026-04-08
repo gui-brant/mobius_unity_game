@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &159561267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5426337574756992492, guid: 187c2ceaee2ed7741b2ea0d58adab4f4, type: 3}
+  m_PrefabInstance: {fileID: 7242883793415586877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6214fb6c0d3b242a3fbcda8107bb37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!4 &194081226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7067816895424775203, guid: 543a76b8811fdf74a9949d28f85c54be, type: 3}
@@ -517,9 +528,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4764358963997872458, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
+      propertyPath: SkipRoom1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764358963997872458, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
       propertyPath: moveScene
       value: 
       objectReference: {fileID: 243050823}
+    - target: {fileID: 4764358963997872458, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
+      propertyPath: torchesRoom1
+      value: 
+      objectReference: {fileID: 159561267}
     - target: {fileID: 7995852090463310062, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.44822
@@ -875,9 +894,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1615936172}
+  - {fileID: 3855735372102933881}
   - {fileID: 1459251388}
   - {fileID: 7242883793415586877}
   - {fileID: 4796094534692173059}
   - {fileID: 771329856}
-  - {fileID: 3855735372102933881}
   - {fileID: 243050824}
