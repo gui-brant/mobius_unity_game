@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 278779522179389697, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.985
+      value: 2.6270998
       objectReference: {fileID: 0}
     - target: {fileID: 278779522179389697, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.392
+      value: 0.042707443
       objectReference: {fileID: 0}
     - target: {fileID: 278779522179389697, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8909077049625129672, guid: 81361ceb8dd75c34189bd0fe59b32a3b, type: 3}
+    - target: {fileID: 3551251796079062942, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4554000567328951269, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: m_Name
       value: SaahilBoss
@@ -60,8 +64,47 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6a901db9f23102346b3e87e15ef9f788, type: 2}
+    - target: {fileID: 6363677158070429795, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: m_Mass
+      value: 999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4554000567328951269, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4082456405712978147}
   m_SourcePrefab: {fileID: 100100000, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+--- !u!1 &6557942814639679360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4554000567328951269, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+  m_PrefabInstance: {fileID: 7219676325546404965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4082456405712978147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557942814639679360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce543c080debb34887466879aa00463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaahilBoss
+  health: 1
+  speed: 1
+  isDead: 0
+  targetMichael: {fileID: 0}
+  bossHealth: 10
+  moveSpeed: 1.5
+  attackDamage: 15
+  attackRange: 1.25
+  stopDistance: 1.1
+  attackCooldown: 2
+  attackDuration: 0.8
+  windupTime: 10
+  cooldownReductionPerAttack: 0.05
+  damageIncreasePerAttack: 2
+  deathDuration: 10
