@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 19220627}
   - component: {fileID: 19220626}
   m_Layer: 0
-  m_Name: hitbox (1)
+  m_Name: leftHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4212,7 +4212,7 @@ GameObject:
   - component: {fileID: 141117289}
   - component: {fileID: 141117288}
   m_Layer: 0
-  m_Name: hitbox
+  m_Name: topHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8840,7 +8840,7 @@ GameObject:
   - component: {fileID: 330211285}
   - component: {fileID: 330211284}
   m_Layer: 0
-  m_Name: hitbox (2)
+  m_Name: rightHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18554,6 +18554,30 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: health
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: topWall
+      value: 
+      objectReference: {fileID: 141117288}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: leftWall
+      value: 
+      objectReference: {fileID: 19220626}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: rightWall
+      value: 
+      objectReference: {fileID: 330211284}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: bottomWall
+      value: 
+      objectReference: {fileID: 1680971098}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: maxInterval
       value: 3
       objectReference: {fileID: 0}
@@ -18566,9 +18590,17 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: dashDuration
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: targetMichael
       value: 
       objectReference: {fileID: 1485201787}
+    - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+      propertyPath: collisionLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 278779522179389697, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -32875,7 +32907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: health
-      value: 2147483647
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: inputDelay
@@ -41925,7 +41957,7 @@ GameObject:
   - component: {fileID: 1680971099}
   - component: {fileID: 1680971098}
   m_Layer: 0
-  m_Name: hitbox (3)
+  m_Name: bottomHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

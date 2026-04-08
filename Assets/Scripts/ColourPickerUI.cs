@@ -7,6 +7,8 @@ public class ColourPickerUI : MonoBehaviour
 
     public GameObject colourPickerPanel;
     private SpriteRenderer targetRenderer;
+    private Color originalColour;
+    private bool colourStored =  false;
 
     void Awake()
     {
@@ -22,6 +24,12 @@ public class ColourPickerUI : MonoBehaviour
         Cursor.visible = true;
         
         targetRenderer = renderer;
+        if (!colourStored)
+        {
+            originalColour = targetRenderer.color;
+            colourStored = true;
+        }
+        
         colourPickerPanel.SetActive(true);
     }
 
@@ -41,6 +49,14 @@ public class ColourPickerUI : MonoBehaviour
         if (targetRenderer != null)
             targetRenderer.color = colour;
 
+        CloseColourPicker();
+    }
+
+    public void ResetColour()
+    {
+        if (targetRenderer != null)
+            targetRenderer.color = originalColour;
+        
         CloseColourPicker();
     }
 }

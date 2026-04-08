@@ -364,7 +364,7 @@ public class EmilBoss : Enemy
             moveScene = FindFirstObjectByType<MoveScene>();
 
         // Step 5: Trigger scene transition if MoveScene exists and is active
-        if (moveScene != null && moveScene.gameObject.activeInHierarchy)
+        if (moveScene != null)
         {
             moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms")
             );
