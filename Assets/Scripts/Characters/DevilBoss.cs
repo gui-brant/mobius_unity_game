@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class DevilBeastBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
+public class DevilBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
 {
     [Header("Stats")]
-    public int health = 500;
+    public int health = 200;
     private bool attacking = false;
     
     public int AttackDamage { get; set; }
