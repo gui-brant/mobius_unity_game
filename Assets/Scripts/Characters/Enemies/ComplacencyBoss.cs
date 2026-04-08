@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Combat;
+using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 
 public class ComplacencyBoss : Boss
@@ -10,7 +11,7 @@ public class ComplacencyBoss : Boss
 
     [Header("Slow Projectile")]
     [SerializeField] private ComplacencyProjectile projectilePrefab;
-    [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private Transform[] projectileSpawnPoints;
     [SerializeField] private float projectileFireRate = 1.5f;
     [SerializeField] private float projectileDamage = 8f;
     [SerializeField] private float slowMultiplier = 0.4f;
@@ -67,14 +68,17 @@ public class ComplacencyBoss : Boss
 
     private void FireProjectile()
     {
-        if (projectilePrefab == null || projectileSpawnPoint == null || targetMichael == null)
+        if (projectilePrefab == null || projectileSpawnPoints == null || targetMichael == null)
         {
             return;
         }
         
-        Vector2 directionToMichael = ((Vector2)targetMichael.transform.position - (Vector2)projectileSpawnPoint.position).normalized;
+        int index = UnityEngine.Random.Range(0, projectileSpawnPoints.Length);
+        Transform chosenSpawnPoint = projectileSpawnPoints[index];
         
-        ComplacencyProjectile spawnedProjectile = projectileSpawner.SpawnProjectile(projectilePrefab.gameObject, projectileSpawnPoint, gameObject, CombatTeam.Enemy, projectileDamage, directionToMichael) as ComplacencyProjectile;
+        Vector2 directionToMichael = ((Vector2)targetMichael.transform.position - (Vector2)chosenSpawnPoint.position).normalized;
+        
+        ComplacencyProjectile spawnedProjectile = projectileSpawner.SpawnProjectile(projectilePrefab.gameObject, chosenSpawnPoint, gameObject, CombatTeam.Enemy, projectileDamage, directionToMichael) as ComplacencyProjectile;
 
         if (spawnedProjectile == null)
         {
