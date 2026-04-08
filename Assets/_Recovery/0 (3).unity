@@ -135,7 +135,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7067816895424775203, guid: 543a76b8811fdf74a9949d28f85c54be, type: 3}
   m_PrefabInstance: {fileID: 6469816856634087573}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &451652465
+--- !u!1 &243050822
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,22 +143,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 451652467}
-  - component: {fileID: 451652466}
+  - component: {fileID: 243050824}
+  - component: {fileID: 243050823}
   m_Layer: 0
-  m_Name: SceneController
-  m_TagString: Player
+  m_Name: MoveScene
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &451652466
+--- !u!114 &243050823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451652465}
+  m_GameObject: {fileID: 243050822}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a7effbee3cb024e85a13be00930327, type: 3}
@@ -167,27 +167,21 @@ MonoBehaviour:
   pgrSceneName: (PGR) Procedurally generated rooms
   ListOfAllBossScenes:
   - EmilBoss
-  - FearLevel
-  - HybrizoRoom
-  - PierceBoss
-  - SaahilRoom
-  - ComplacencyRoom
   sampleSceneName: SampleScene
-  cameraOffset: {x: 0, y: 0, z: -10}
-  dontUseMoveSceneCamera: 0
+  cameraOffset: {x: 0, y: 0, z: 0}
   BossSceneForTransition: 0
   once: 0
   EmilBoss: {fileID: 0}
---- !u!4 &451652467
+--- !u!4 &243050824
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451652465}
+  m_GameObject: {fileID: 243050822}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14535, y: -4.1747, z: 0}
+  m_LocalPosition: {x: 19.37143, y: -22.86846, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -540,7 +534,7 @@ PrefabInstance:
     - target: {fileID: 4764358963997872458, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
       propertyPath: moveScene
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 243050823}
     - target: {fileID: 4764358963997872458, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
       propertyPath: torchesRoom1
       value: 
@@ -844,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1886378814393435852, guid: b7ffcfc1676da5048977f0f438c26662, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2284365378493488937, guid: b7ffcfc1676da5048977f0f438c26662, type: 3}
       propertyPath: m_Enabled
@@ -905,4 +899,4 @@ SceneRoots:
   - {fileID: 7242883793415586877}
   - {fileID: 4796094534692173059}
   - {fileID: 771329856}
-  - {fileID: 451652467}
+  - {fileID: 243050824}

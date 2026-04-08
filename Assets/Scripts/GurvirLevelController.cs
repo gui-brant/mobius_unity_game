@@ -11,6 +11,8 @@ public class GurvirLevelController : MonoBehaviour
     
     // Used to determine success in room two
     [SerializeField] private TorchManager torchesRoom2;
+
+    [SerializeField] private bool SkipRoom1 = false;
     
     [SerializeField] MoveScene moveScene;
 
@@ -23,6 +25,9 @@ public class GurvirLevelController : MonoBehaviour
         // Find Boss
         if (boss == null)
             boss = Object.FindFirstObjectByType<DevilBoss>();
+        
+        if (moveScene == null) moveScene = FindFirstObjectByType<MoveScene>();
+        moveScene.dontUseMoveSceneCamera = true;
 
         TorchManager[] managers = Object.FindObjectsByType<TorchManager>(FindObjectsSortMode.None);
 
@@ -39,7 +44,16 @@ public class GurvirLevelController : MonoBehaviour
 
 
         // Spawn him in the right place and get him going
-        michael.transform.position = new Vector3(0f, 0f, 1f);
+        if (SkipRoom1 == false)
+        {
+            michael.transform.position = new Vector3(0f, 0f, 1f);
+        }
+        else
+        {  
+            // Go straight to boss fight
+            torchesRoom1.RoomCleared();
+        }
+        
     }
 
 
@@ -53,12 +67,19 @@ public class GurvirLevelController : MonoBehaviour
     void Update()
     {
         // Check if level is cleared
+        Debug.Log(torchesRoom2.torchesCleared);
         if (boss.IsDead && !michael.IsDead && torchesRoom2.torchesCleared)
         {
-            Debug.Log("Congrats");
-            if (moveScene == null) moveScene = FindFirstObjectByType<MoveScene>();
-            moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
+            Invoke("MoveOn", 3f);
         }
 
+    }
+
+    // wrapper class for continuing with game functionality
+    private void MoveOn()
+    {
+        Debug.Log("Congrats");
+        moveScene.dontUseMoveSceneCamera = false;
+        moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
     }
 }
