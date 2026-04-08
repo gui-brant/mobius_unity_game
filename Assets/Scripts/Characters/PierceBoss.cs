@@ -33,10 +33,7 @@ public class PierceBoss : Character, ITargetable, ITeamMember
     private bool isMoving = false; 
     private float deathTimer;
     private readonly Collider2D[] assignedWalls = new Collider2D[4];
-    
     private MoveScene moveScene;
-    private bool transitionTriggered = false;
-
     public CombatTeam Team => CombatTeam.Enemy;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
@@ -314,9 +311,10 @@ public class PierceBoss : Character, ITargetable, ITeamMember
         if (hitbox != null) hitbox.enabled = false;
 
         PlayAnimation("Die");
-
-        HandleWinTransition();
-
+        //3.assign it through the object in scene
+        moveScene = FindFirstObjectByType<MoveScene>();
+        //4. call it
+        moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
     }
 
     private void HandleDeathState()
