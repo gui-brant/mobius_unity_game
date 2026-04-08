@@ -7,7 +7,6 @@ public class PierceBoss : Character, ITargetable, ITeamMember
     [SerializeField] private Michael targetMichael;
 
     [Header("Collision & Targeting")]
-    // In the Inspector, set this to "Default" or whatever layers your walls are on
     [SerializeField] private LayerMask collisionLayers; 
     [SerializeField] private BoxCollider2D topWall;
     [SerializeField] private BoxCollider2D bottomWall;
@@ -34,11 +33,32 @@ public class PierceBoss : Character, ITargetable, ITeamMember
     private bool isMoving = false; 
     private float deathTimer;
     private readonly Collider2D[] assignedWalls = new Collider2D[4];
+    
+    private MoveScene moveScene;
+    private bool transitionTriggered = false;
 
     public CombatTeam Team => CombatTeam.Enemy;
     public Transform TargetTransform => transform;
     public bool CanBeTargeted => !IsDead;
+    private IEnumerator HandleWinTransition()
+    {
+        Debug.Log("🕒 Player survived! Switching scene...");
 
+        yield return new WaitForSeconds(1f);
+
+        moveScene = FindFirstObjectByType<MoveScene>();
+
+        if (moveScene == null)
+        {
+            Debug.LogError("MoveScene NOT FOUND");
+            yield break;
+        }
+
+        yield return moveScene.StartCoroutine(
+            moveScene.TransitionProcess("(PGR) Procedurally generated rooms")
+        );
+    }
+    
     protected override void Awake()
     {
         base.Awake();
@@ -46,7 +66,6 @@ public class PierceBoss : Character, ITargetable, ITeamMember
         if (targetMichael == null)
             targetMichael = FindFirstObjectByType<Michael>();
 
-        // Enable continuous collision to help stop clipping at high speeds
         if (rb != null)
         {
             rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
@@ -122,13 +141,10 @@ public class PierceBoss : Character, ITargetable, ITeamMember
                 Mathf.Min(minDashDistance, maxDashDistance),
                 Mathf.Max(minDashDistance, maxDashDistance));
 
-            // Get the size of our own collider to ensure the CircleCast matches our body
             float radius = 0.3f;
             Collider2D myCol = GetComponent<Collider2D>();
             if (myCol is CircleCollider2D cc) radius = cc.radius * transform.localScale.x;
 
-            // Use the Serialized LayerMask from the Inspector
-            // We use a small offset (0.1f) so the boss doesn't get stuck perfectly flush inside a wall
             RaycastHit2D hit = Physics2D.CircleCast(start, radius, randomDir, dashDistance, collisionLayers);
 
             float safeDistance = (hit.collider != null) ? Mathf.Max(0f, hit.distance - 0.1f) : dashDistance;
@@ -298,6 +314,9 @@ public class PierceBoss : Character, ITargetable, ITeamMember
         if (hitbox != null) hitbox.enabled = false;
 
         PlayAnimation("Die");
+
+        HandleWinTransition();
+
     }
 
     private void HandleDeathState()
