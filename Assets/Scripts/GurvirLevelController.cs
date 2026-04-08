@@ -25,6 +25,9 @@ public class GurvirLevelController : MonoBehaviour
         // Find Boss
         if (boss == null)
             boss = Object.FindFirstObjectByType<DevilBoss>();
+        
+        if (moveScene == null) moveScene = FindFirstObjectByType<MoveScene>();
+        moveScene.dontUseMoveSceneCamera = true;
 
         TorchManager[] managers = Object.FindObjectsByType<TorchManager>(FindObjectsSortMode.None);
 
@@ -76,7 +79,7 @@ public class GurvirLevelController : MonoBehaviour
     private void MoveOn()
     {
         Debug.Log("Congrats");
-        if (moveScene == null) moveScene = FindFirstObjectByType<MoveScene>();
+        moveScene.dontUseMoveSceneCamera = false;
         moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
     }
 }
