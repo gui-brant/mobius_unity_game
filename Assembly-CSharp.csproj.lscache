@@ -66,6 +66,7 @@ Assets/Scripts/
  CameraFollow.cs
  Characters/
   Character.cs
+  DevilBoss.cs
   Enemies/
    Boss.cs
    EmilBoss.cs
@@ -75,9 +76,10 @@ Assets/Scripts/
    RotationInFlight.cs
   Michael.cs
   PierceBoss.cs
+  SaahilBoss.cs
   SkullNPC.cs
-Assets/Scripts/
  ColourPickerUI.cs
+ ColourResetButton.cs
  ColourSwatchButton.cs
  Combat/
   CombatTeam.cs
@@ -87,6 +89,7 @@ Assets/Scripts/
  DamageTile.cs
  DialogueController.cs
  DiamondSpawner.cs
+ GurvirLevelController.cs
  Interfaces/
   IAttacker.cs
   ICollectible.cs
@@ -121,6 +124,7 @@ Assets/Scripts/
  SpiritProjectile.cs
  Torch.cs
  TorchManager.cs
+ UI/MichaelHealthHUD.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
 [metadataReferences]
