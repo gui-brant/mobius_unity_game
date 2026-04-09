@@ -414,6 +414,10 @@ PrefabInstance:
       propertyPath: torchesRoom1
       value: 
       objectReference: {fileID: 159561267}
+    - target: {fileID: 4764358963997872458, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
+      propertyPath: torchesRoom2
+      value: 
+      objectReference: {fileID: 4796094534692173060}
     - target: {fileID: 7995852090463310062, guid: 3526503629c6abb4d83d1a783205e488, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.44822
@@ -540,6 +544,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0780678b41efd4db638e9071052712, type: 3}
+--- !u!114 &4796094534692173060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6294037611726132893, guid: 2c0780678b41efd4db638e9071052712, type: 3}
+  m_PrefabInstance: {fileID: 4796094534692173059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6214fb6c0d3b242a3fbcda8107bb37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &6469816856634087573
 PrefabInstance:
   m_ObjectHideFlags: 0
