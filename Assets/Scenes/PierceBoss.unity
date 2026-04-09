@@ -18662,6 +18662,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
+--- !u!1 &713114228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713114230}
+  - component: {fileID: 713114229}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &713114229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713114228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a7effbee3cb024e85a13be00930327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveScene
+  pgrSceneName: (PGR) Procedurally generated rooms
+  ListOfAllBossScenes:
+  - EmilBoss
+  - FearLevel
+  - HybrizoRoom
+  - PierceBoss
+  - SaahilRoom
+  - ComplacencyRoom
+  sampleSceneName: SampleScene
+  cameraOffset: {x: 0, y: 0, z: -10}
+  BossSceneForTransition: 0
+  once: 0
+  EmilBoss: {fileID: 0}
+--- !u!4 &713114230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713114228}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14535, y: -4.1747, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &720891300
 GameObject:
   m_ObjectHideFlags: 0
@@ -52904,3 +52961,4 @@ SceneRoots:
   - {fileID: 19220627}
   - {fileID: 330211285}
   - {fileID: 1680971099}
+  - {fileID: 713114230}

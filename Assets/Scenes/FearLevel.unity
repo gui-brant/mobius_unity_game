@@ -371,7 +371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: health
-      value: 100
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: inputDelay
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -610,6 +614,10 @@ PrefabInstance:
       propertyPath: visionCircle
       value: 
       objectReference: {fileID: 2144339064}
+    - target: {fileID: 6294037611726132893, guid: 2c0780678b41efd4db638e9071052712, type: 3}
+      propertyPath: torchesCleared
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7479209203128184883, guid: 2c0780678b41efd4db638e9071052712, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60

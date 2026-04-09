@@ -1,4 +1,5 @@
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GurvirLevelController : MonoBehaviour
@@ -15,7 +16,7 @@ public class GurvirLevelController : MonoBehaviour
     [SerializeField] private bool SkipRoom1 = false;
     
     [SerializeField] MoveScene moveScene;
-
+    private bool once = false;
     void Awake()
     {
         // Find Micheal script
@@ -39,8 +40,13 @@ public class GurvirLevelController : MonoBehaviour
                 {
                     torchesRoom2 = manager;
                 }
+                if (manager.room == 1)
+                {
+                    torchesRoom1 = manager;
+                }
             }
         }
+
 
 
         // Spawn him in the right place and get him going
@@ -70,7 +76,9 @@ public class GurvirLevelController : MonoBehaviour
         Debug.Log(torchesRoom2.torchesCleared);
         if (boss.IsDead && !michael.IsDead && torchesRoom2.torchesCleared)
         {
-            Invoke("MoveOn", 3f);
+            //once = true;
+            //Invoke("MoveOn", 3f);
+            //Debug.Log("TRIGGERED");
         }
 
     }

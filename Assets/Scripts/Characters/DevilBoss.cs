@@ -16,7 +16,7 @@ public class DevilBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
     private Animator _anim;
     private float _cooldownTimer;
     private bool _isDead = false;
-
+    private MoveScene moveScene;
     public IDamageable michael;
     
     private void HandleAttack(int direction)
@@ -118,13 +118,20 @@ public class DevilBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
     {
         if (_isDead) return;
         health -= amount;
-        if (health <= 0) Die();
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     public void Die()
     {
         _isDead = true;
         _anim.Play("Die");
+        //3.assign it through the object in scene
+        moveScene = FindFirstObjectByType<MoveScene>();
+        //4. call it
+        moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
         // Debug.Log("The Beast has fallen.");
     }
 
