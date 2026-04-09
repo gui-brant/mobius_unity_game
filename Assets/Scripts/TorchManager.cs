@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class TorchManager : MonoBehaviour
 {
-    
+
     [SerializeField] Michael michael;
     private List<Torch> _torches;
-    public int realTorchesNeeded = 3;
+    [SerializeField] private int realTorchesNeeded;
     private int realTorchesFound = 0;
 
     public int room;
@@ -77,14 +77,17 @@ public class TorchManager : MonoBehaviour
         lf.baseScale.x += vis;
         lf.baseScale.y += vis;
         
-        
+        // Debug.Log(realTorchesFound+"/"+realTorchesNeeded+" found");
         if (realTorchesFound >= realTorchesNeeded)
         {
             RoomCleared();
         }
+        
     }
-    void RoomCleared()
+    public void RoomCleared()
     {
+        torchesCleared = true;
+        
         Debug.Log("Room Cleared! Stopping all traps.");
         foreach (var torch in _torches)
         {
@@ -98,6 +101,7 @@ public class TorchManager : MonoBehaviour
             Destroy(SpiritProjectile.ActiveSpirits[i].gameObject);
         }
 
+        // Move to second room
         if (room == 1)
         {
             michael.transform.position = new Vector3(53f, -40f, 1f);
@@ -113,6 +117,7 @@ public class TorchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         
     }
 }

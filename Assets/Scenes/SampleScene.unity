@@ -4035,6 +4035,7 @@ MonoBehaviour:
   damage1: {fileID: 1006189139}
   damage2: {fileID: 160000546}
   damage3: {fileID: 1278811346}
+<<<<<<< krish2
   damage4: {fileID: 0}
   damage5: {fileID: 0}
   speed1: {fileID: 417145326}
@@ -4047,6 +4048,20 @@ MonoBehaviour:
   health3: {fileID: 40476070}
   health4: {fileID: 0}
   health5: {fileID: 0}
+=======
+  damage4: {fileID: 472509812}
+  damage5: {fileID: 1297893938}
+  speed1: {fileID: 417145326}
+  speed2: {fileID: 2073547078}
+  speed3: {fileID: 741758622}
+  speed4: {fileID: 1998197153}
+  speed5: {fileID: 1827875427}
+  health1: {fileID: 745662174}
+  health2: {fileID: 1827180698}
+  health3: {fileID: 40476070}
+  health4: {fileID: 538317270}
+  health5: {fileID: 1771426737}
+>>>>>>> sprint2
 --- !u!4 &403238165
 Transform:
   m_ObjectHideFlags: 0
@@ -15190,6 +15205,8 @@ MonoBehaviour:
   - FearLevel
   - HybrizoRoom
   - PierceBoss
+  - SaahilRoom
+  - ComplacencyRoom
   sampleSceneName: SampleScene
   cameraOffset: {x: 0, y: 0, z: -10}
   BossSceneForTransition: 0

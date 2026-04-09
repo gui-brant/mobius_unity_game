@@ -21,6 +21,9 @@ public class MoveScene : MonoBehaviour
     [Header("Scene Names")]
     public string sampleSceneName = "SampleScene";
     public Vector3 cameraOffset = new Vector3(-5f, 0f, 0f);
+    
+    [Header("Camera Settings")]
+    public bool dontUseMoveSceneCamera = false;
 
     private bool isTransitioning = false;
     public int BossSceneForTransition;
@@ -60,7 +63,11 @@ public class MoveScene : MonoBehaviour
         // 4. FOURTH: Movement Logic
         Vector3 currentPos = prefabInstance.transform.position;
         string currentActiveScene = SceneManager.GetActiveScene().name;
-        FollowActivePlayerWithCamera(currentPos);
+        if (!dontUseMoveSceneCamera)
+        {
+             FollowActivePlayerWithCamera(currentPos);
+        }
+       
 
         if (!isTransitioning)
         {
@@ -160,6 +167,7 @@ public class MoveScene : MonoBehaviour
 
     public IEnumerator TransitionProcess(string toScene)
     {
+        michaelScript.transform.position = Vector3.zero;
         Scene destinationScene = SceneManager.GetSceneByName(toScene);
         if (!destinationScene.isLoaded)
         {
