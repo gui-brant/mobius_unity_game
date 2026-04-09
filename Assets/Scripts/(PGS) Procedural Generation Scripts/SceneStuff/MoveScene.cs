@@ -167,6 +167,7 @@ public class MoveScene : MonoBehaviour
 
     public IEnumerator TransitionProcess(string toScene)
     {
+        michaelScript.transform.position = Vector3.zero;
         Scene destinationScene = SceneManager.GetSceneByName(toScene);
         if (!destinationScene.isLoaded)
         {

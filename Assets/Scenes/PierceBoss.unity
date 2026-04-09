@@ -18596,7 +18596,7 @@ PrefabInstance:
     - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: targetMichael
       value: 
-      objectReference: {fileID: 1485201787}
+      objectReference: {fileID: 0}
     - target: {fileID: -2397882859613708875, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
       propertyPath: collisionLayers.m_Bits
       value: 0
@@ -18662,63 +18662,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56ded99a3ddcc2449349afc0af28f9a, type: 3}
---- !u!1 &713114228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 713114230}
-  - component: {fileID: 713114229}
-  m_Layer: 0
-  m_Name: SceneController
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &713114229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713114228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14a7effbee3cb024e85a13be00930327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveScene
-  pgrSceneName: (PGR) Procedurally generated rooms
-  ListOfAllBossScenes:
-  - EmilBoss
-  - FearLevel
-  - HybrizoRoom
-  - PierceBoss
-  - SaahilRoom
-  - ComplacencyRoom
-  sampleSceneName: SampleScene
-  cameraOffset: {x: 0, y: 0, z: -10}
-  BossSceneForTransition: 0
-  once: 0
-  EmilBoss: {fileID: 0}
---- !u!4 &713114230
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713114228}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14535, y: -4.1747, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &720891300
 GameObject:
   m_ObjectHideFlags: 0
@@ -32906,75 +32849,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &1309697715
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63112033624156657, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220837781185724671, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3367867620678197763, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: m_Name
-      value: Michael
-      objectReference: {fileID: 0}
-    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: health
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-      propertyPath: inputDelay
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 083805666f317e9408f22b9a4224f087, type: 3}
 --- !u!1 &1313279898
 GameObject:
   m_ObjectHideFlags: 0
@@ -37715,17 +37589,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1485201787 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
-  m_PrefabInstance: {fileID: 1309697715}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b95642c83a83c4f4aba863b59924382c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Michael
 --- !u!1 &1486454344
 GameObject:
   m_ObjectHideFlags: 0
@@ -52954,11 +52817,9 @@ SceneRoots:
   - {fileID: 746282947}
   - {fileID: 1097264583}
   - {fileID: 1059624159}
-  - {fileID: 1309697715}
   - {fileID: 478031506}
   - {fileID: 710681669}
   - {fileID: 141117289}
   - {fileID: 19220627}
   - {fileID: 330211285}
   - {fileID: 1680971099}
-  - {fileID: 713114230}

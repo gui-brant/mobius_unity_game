@@ -32270,7 +32270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f78cf44bb338f2408b25cf7d552e784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EmilBoss
-  health: 1
+  health: 300
   speed: 0
   isDead: 0
   targetMichael: {fileID: 0}
@@ -32294,7 +32294,7 @@ MonoBehaviour:
   lightningSpawner: {fileID: 0}
   lightningSpawnInterval: 0.5
   lightningsPerBurst: 5
-  shieldWindowSeconds: 1
+  shieldWindowSeconds: 7
   actionWindowSeconds: 15
   mirrorsHitThreshold: 2
   lightningHitThreshold: 4
