@@ -75,7 +75,7 @@ public class SaahilBoss : Enemy
         }
 
         yield return moveScene.StartCoroutine(
-            moveScene.TransitionProcess("(PGR) Procedurally generated rooms")
+            moveScene.MoveToPGR()
         );
     }
 

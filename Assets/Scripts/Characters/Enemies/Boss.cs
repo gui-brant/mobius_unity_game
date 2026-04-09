@@ -32,7 +32,7 @@ public abstract class Boss : Enemy
         MoveScene moveScene = FindFirstObjectByType<MoveScene>();
         if (moveScene != null)
         {
-            moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
+            moveScene.StartCoroutine(moveScene.MoveToPGR());
         }
         else
         {
