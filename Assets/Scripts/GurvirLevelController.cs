@@ -17,11 +17,25 @@ public class GurvirLevelController : MonoBehaviour
     
     [SerializeField] MoveScene moveScene;
     private bool once = false;
+
+    private Renderer _renderer;
+    private string _initSortingLayerName;
+    private int _initOrderInLayer;
+    
     void Awake()
     {
         // Find Micheal script
         if (michael == null)
             michael = Object.FindFirstObjectByType<Michael>();
+        
+        _renderer = michael.GetComponent<SpriteRenderer>();
+        // Saving pre-scene settings
+        _initSortingLayerName = _renderer.sortingLayerName;
+        _initOrderInLayer = _renderer.sortingOrder;
+        
+        // Updating for compatibility with scene
+        _renderer.sortingLayerName = "Character";
+        _renderer.sortingOrder = 0;
 
         // Find Boss
         if (boss == null)
@@ -73,6 +87,9 @@ public class GurvirLevelController : MonoBehaviour
     {
         Debug.Log("Congrats");
         moveScene.dontUseMoveSceneCamera = false;
+        // Resetting micehal sprite renderer settings
+        _renderer.sortingLayerName = _initSortingLayerName;
+        _renderer.sortingOrder = _initOrderInLayer;
         moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
     }
 }
