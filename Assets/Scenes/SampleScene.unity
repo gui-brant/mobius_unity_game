@@ -15185,7 +15185,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveScene
   pgrSceneName: (PGR) Procedurally generated rooms
   ListOfAllBossScenes:
-  - ComplacencyRoom
   - EmilBoss
   - FearLevel
   - HybrizoRoom
@@ -15194,6 +15193,7 @@ MonoBehaviour:
   - ComplacencyRoom
   sampleSceneName: SampleScene
   cameraOffset: {x: 0, y: 0, z: -10}
+  dontUseMoveSceneCamera: 0
   BossSceneForTransition: 0
   once: 0
   EmilBoss: {fileID: 0}
