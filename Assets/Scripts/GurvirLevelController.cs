@@ -16,6 +16,8 @@ public class GurvirLevelController : MonoBehaviour
     
     [SerializeField] MoveScene moveScene;
 
+    private bool once = false;
+
     void Awake()
     {
         // Find Micheal script
@@ -27,14 +29,21 @@ public class GurvirLevelController : MonoBehaviour
             boss = Object.FindFirstObjectByType<DevilBoss>();
         
         if (moveScene == null) moveScene = FindFirstObjectByType<MoveScene>();
-        moveScene.dontUseMoveSceneCamera = true;
-
+        if (moveScene != null) 
+        {
+            moveScene.dontUseMoveSceneCamera = true;
+        }
         TorchManager[] managers = Object.FindObjectsByType<TorchManager>(FindObjectsSortMode.None);
 
         if (torchesRoom1 == null || torchesRoom2 == null)
         {
             foreach (TorchManager manager in managers)
             {
+                if (manager.room == 1)
+                {
+                    torchesRoom1 = manager;
+                }
+                
                 if (manager.room == 2)
                 {
                     torchesRoom2 = manager;
@@ -67,19 +76,23 @@ public class GurvirLevelController : MonoBehaviour
     void Update()
     {
         // Check if level is cleared
-        Debug.Log(torchesRoom2.torchesCleared);
-        if (boss.IsDead && !michael.IsDead && torchesRoom2.torchesCleared)
+        // Debug.Log(torchesRoom2.torchesCleared);
+        
+        if (boss.IsDead && !michael.IsDead && torchesRoom2.torchesCleared && !once)
         {
+            once = true;
+            Debug.Log("Moving on");
             Invoke("MoveOn", 3f);
         }
 
     }
 
     // wrapper class for continuing with game functionality
-    private void MoveOn()
+    public void MoveOn()
     {
         Debug.Log("Congrats");
         moveScene.dontUseMoveSceneCamera = false;
         moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
+        // stop it
     }
 }
