@@ -131,7 +131,7 @@ public class DevilBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
         //3.assign it through the object in scene
         moveScene = FindFirstObjectByType<MoveScene>();
         //4. call it
-        moveScene.StartCoroutine(moveScene.TransitionProcess("(PGR) Procedurally generated rooms"));
+        moveScene.StartCoroutine(moveScene.MoveToPGR());
         // Debug.Log("The Beast has fallen.");
     }
 

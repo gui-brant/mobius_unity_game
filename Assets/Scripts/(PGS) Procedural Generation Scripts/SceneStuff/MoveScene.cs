@@ -17,7 +17,7 @@ public class MoveScene : MonoBehaviour
     [Header("Scene Names")]
     public string pgrSceneName = "(PGR) Procedurally generated rooms";
     [Header("Scene Names")]
-    public List<String> ListOfAllBossScenes = new List<String> { "EmilBoss" };
+    public List<String> ListOfAllBossScenes = new List<String> { "EmilBoss", "SaahilRoom", "ComplacencyRoom", "PierceBoss", "HybrizoRoom", "FearLevel", "EmilBoss" };
     [Header("Scene Names")]
     public string sampleSceneName = "SampleScene";
     public Vector3 cameraOffset = new Vector3(-5f, 0f, 0f);
@@ -26,9 +26,8 @@ public class MoveScene : MonoBehaviour
     public bool dontUseMoveSceneCamera = false;
 
     private bool isTransitioning = false;
-    public int BossSceneForTransition;
-    public bool once;
-    public EmilBoss EmilBoss;
+    private int BossSceneForTransition;
+    
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -143,9 +142,16 @@ public class MoveScene : MonoBehaviour
 
     public IEnumerator MoveToPGR()
     {
-        Debug.Log("<color=yellow>Entering PGR...</color>");
+        if (ListOfAllBossScenes.Count == 0)
+        {
+            yield return StartCoroutine(TransitionProcess("Victory"));
+            yield break;
+        }
+        else {Debug.Log("<color=yellow>Entering PGR...</color>");
         yield return StartCoroutine(TransitionProcess(pgrSceneName));
         isTransitioning = false;
+        }
+            
     }
 
     public IEnumerator MoveBackToSample()
