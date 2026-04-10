@@ -76,6 +76,7 @@ public class GurvirLevelController : MonoBehaviour
         if (boss.IsDead && !michael.IsDead && torchesRoom2.torchesCleared && !once)
         {
             once = true;
+            moveScene.dontUseMoveSceneCamera = false;
             Invoke("MoveOn", 3f);
             //Debug.Log("TRIGGERED");
         }

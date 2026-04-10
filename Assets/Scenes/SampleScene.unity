@@ -1504,6 +1504,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &130017449
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 377947037369754235, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_Name
+      value: Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9368628
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.650237
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69abedc549104b9c96633a99d3c1f2ef, type: 3}
 --- !u!1 &160000544
 GameObject:
   m_ObjectHideFlags: 0
@@ -15200,12 +15257,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveScene
   pgrSceneName: (PGR) Procedurally generated rooms
   ListOfAllBossScenes:
-  - EmilBoss
-  - SaahilRoom
   - ComplacencyRoom
-  - PierceBoss
+  - EmilBoss
   - FearLevel
   - HybrizoRoom
+  - PierceBoss
+  - SaahilRoom
   sampleSceneName: SampleScene
   cameraOffset: {x: 0, y: 0, z: -10}
   dontUseMoveSceneCamera: 0
@@ -16516,6 +16573,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1661375819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 377947037369754235, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.6548343
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1448398
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469966632625805696, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da8404b43cfcc414bbad6b09132c8735, type: 3}
 --- !u!1 &1667495862
 GameObject:
   m_ObjectHideFlags: 0
@@ -22434,12 +22548,20 @@ PrefabInstance:
       value: Michael
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: health
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: inputDelay
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
       propertyPath: attackDamage
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084629782038300645, guid: 083805666f317e9408f22b9a4224f087, type: 3}
+      propertyPath: defaultMeleeDamage
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22463,3 +22585,5 @@ SceneRoots:
   - {fileID: 1515212206}
   - {fileID: 1066041523}
   - {fileID: 566192178}
+  - {fileID: 130017449}
+  - {fileID: 1661375819}

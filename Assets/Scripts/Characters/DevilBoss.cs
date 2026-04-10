@@ -130,6 +130,7 @@ public class DevilBoss : MonoBehaviour, IDamageable, IKillable, IAttacker
         _anim.Play("Die");
         //3.assign it through the object in scene
         moveScene = FindFirstObjectByType<MoveScene>();
+        moveScene.dontUseMoveSceneCamera = false;
         //4. call it
         moveScene.StartCoroutine(moveScene.MoveToPGR());
         // Debug.Log("The Beast has fallen.");
